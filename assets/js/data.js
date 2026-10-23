@@ -418,9 +418,9 @@ window.SITE = {
     { date: { en: "Grad TA", zh: "研究生助教" }, text: {
       en: "<strong>BIOE 415 / ECE 415: Biomedical Instrumentation Lab</strong>, University of Illinois Urbana-Champaign",
       zh: "<strong>BIOE 415 / ECE 415：生物医学仪器实验</strong>，UIUC" } },
-    { date: "2020, 2021", text: {
-      en: "<strong>ME 170: Computer-Aided Design</strong>, University of Illinois Urbana-Champaign (Spring semesters)",
-      zh: "<strong>ME 170：计算机辅助设计</strong>，UIUC（春季学期）" } }
+    { date: "2020 – 2022", text: {
+      en: "<strong>ME 170: Computer-Aided Design</strong>, University of Illinois Urbana-Champaign (three spring semesters)",
+      zh: "<strong>ME 170：计算机辅助设计</strong>，UIUC（连续三个春季学期）" } }
   ],
 
   // ---------- 奖项（首页和 CV 页都会显示）----------
@@ -508,7 +508,7 @@ window.SITE = {
       zh: [
         "完成“声电刺激辅助睡眠”与“多模态脑电疲劳监测”两个项目的研究任务。"
       ] } },
-    { role: { en: "Teaching Assistant", zh: "助教" }, org: { en: "ME 170 Computer-Aided Design, UIUC", zh: "UIUC ME 170 计算机辅助设计" }, date: "Spring 2020, Spring 2021", bullets: {
+    { role: { en: "Teaching Assistant", zh: "助教" }, org: { en: "ME 170 Computer-Aided Design, UIUC", zh: "UIUC ME 170 计算机辅助设计" }, date: "Spring 2020, Spring 2021, Spring 2022", bullets: {
       en: ["Supported instruction in CAD modeling for undergraduate mechanical engineering students."],
       zh: ["协助机械工程本科生 CAD 建模课程教学。"] } },
     { role: { en: "Undergraduate Research Leader", zh: "本科科研负责人" }, org: { en: "ZJU-UIUC Institute, Zhejiang University", zh: "浙江大学 浙大国际联合学院" }, date: "2019 – 2021", bullets: {
