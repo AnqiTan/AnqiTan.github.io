@@ -89,8 +89,8 @@
     new Date(d + "T00:00:00").toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
 
   const projectCard = (p) => `
-    <article class="project">
-      <div class="project-img"><img src="${url(p.image)}" alt="" loading="lazy"></div>
+    <article class="project${p.image ? "" : " no-img"}">
+      ${p.image ? `<div class="project-img"><img src="${url(p.image)}" alt="" loading="lazy">${p.imageCredit ? `<span class="img-credit">${p.imageCredit}</span>` : ""}</div>` : ""}
       <div class="project-body">
         <h3>${p.link ? `<a href="${url(p.link)}">${p.title}</a>` : p.title}</h3>
         <p>${p.summary}</p>
@@ -123,6 +123,7 @@
         <span class="venue">${p.venue || ""}</span>
         ${p.badge ? `<span class="venue-badge">${p.badge}</span>` : ""}
         ${p.image ? `<img src="${url(p.image)}" alt="" loading="lazy">` : ""}
+        ${p.image && p.imageCredit ? `<span class="img-credit">${p.imageCredit}</span>` : ""}
       </div>
       <div class="pub-main">
         <h3>${p.title}</h3>
@@ -174,10 +175,11 @@
         ? `<details class="more-news"><summary>Show more</summary>${dated(n.slice(lim))}</details>` : "");
     },
     "talks": () => dated(S.talks || []),
+    "teaching": () => dated(S.teaching || []),
     "awards-list": () => S.awards.map((a) => `<li><span>${a.name}</span><span class="date">${a.date || ""}</span></li>`).join(""),
     "projects-mini": () => S.projects.filter((p) => p.featured).map((p) => `
-      <a class="mini-project" href="${url(p.link || "projects.html")}">
-        <img src="${url(p.image)}" alt="" loading="lazy">
+      <a class="mini-project${p.image ? "" : " no-img"}" href="${url(p.link || "projects.html")}">
+        ${p.image ? `<img src="${url(p.image)}" alt="" loading="lazy">` : ""}
         <div><h3>${p.title}</h3><p>${p.summary}</p>
         ${p.meta && p.meta.Period ? `<span class="date">${p.meta.Period}</span>` : ""}</div>
       </a>`).join(""),

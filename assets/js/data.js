@@ -40,7 +40,8 @@ window.SITE = {
   newsLimit: 6,                   // 首页最多显示几条，多余的折叠在 "Show more" 里
 
   // ---------- 论文：selected: true 的会显示在首页 ----------
-  // venue: 左侧徽章文字；badge: 徽章下的小标签；image: 缩略图（可留空）
+  // venue: 左侧徽章文字；badge: 徽章下的小标签；image: 缩略图（可留空）；imageCredit: 图片出处（转载他人/期刊图片时必填）
+  // ⚠️ 只能用 CC BY 等开放许可论文的图，或你自己制作的图。ACS / IEEE / Elsevier 版权论文的图不要直接放。
   // links: 按钮名 → 链接（如 PAPER / PDF / CODE / SLIDES），留空的不显示；作者里你的名字自动加粗
   publications: [
     {
@@ -59,7 +60,8 @@ window.SITE = {
       selected: true,
       venue: "Lab Chip'26",
       badge: "Review",
-      image: "",
+      image: "assets/img/papers/labchip-2026.jpg",
+      imageCredit: "Graphical abstract, Bhaskar et al., Lab Chip 2026 (CC BY)",
       title: "Point of Care Molecular Cancer Diagnostics",
       authors: "Seemesh Bhaskar, Saurabh Umrao, Han Keun Lee, Joseph Tibbs, Amanda Bacon, Skye Shepherd, Takhmina Ayupova, Fatma Uysal Ciloglu, Leyang Liu, Anqi Tan, Wang-Chien Chen, My Thi Tra Nguyen, Maria Grace Scannell, Ugur Aygun, Ugur Parlatan, Catherine Zhang, Manish Kohli, Guy R. Adami, Wali Badar, Ron C. Gaba, Aaron Mansfield, Joel Schwartz, Xing Wang, Utkan Demirci, and Brian T. Cunningham",
       venueFull: "Lab on a Chip, 26(10), 2948–3001. 2026",
@@ -107,7 +109,8 @@ window.SITE = {
       selected: false,
       venue: "Biosensors'23",
       badge: "Review",
-      image: "",
+      image: "assets/img/papers/biosensors-2023.jpg",
+      imageCredit: "Fig. 1, Bacon et al., Biosensors 2023 (CC BY 4.0)",
       title: "Review of HIV Self Testing Technologies and Promising Approaches for the Next Generation",
       authors: "Amanda Bacon, Weijing Wang, Hankeun Lee, Saurabh Umrao, Prima Dewi Sinawang, Demir Akin, Kodchakorn Khemtonglang, Anqi Tan, Sabina Hirshfield, Utkan Demirci, Xing Wang, and Brian T. Cunningham",
       venueFull: "Biosensors, 13(2), 298. 2023",
@@ -135,7 +138,7 @@ window.SITE = {
       title: "Portable Plasmonic-Fluor LFA for Salivary Cortisol in Community Settings",
       status: "current",
       featured: true,
-      image: "assets/img/placeholder.svg",   // TODO: 换成项目图片
+      image: "",                  // TODO: 放一张自己的项目图（实验装置/试纸条/读取器照片等）
       summary: "Building a portable, plasmonic-fluor-enhanced lateral flow assay and reader for quantitative measurement of salivary cortisol, a key stress biomarker, enabling non-invasive monitoring outside the lab. To be presented at APHA 2026.",
       meta: {
         "Role": "Lead researcher",
@@ -149,7 +152,7 @@ window.SITE = {
       title: "Plasmon-Enhanced Lateral Flow Assays for Point-of-Care Diagnostics",
       status: "current",
       featured: true,
-      image: "assets/img/placeholder.svg",   // TODO: 换成项目图片
+      image: "",                  // TODO: 放一张自己的项目图
       summary: "Developing plasmon-enhanced lateral flow assays (p-LFAs) for ultrasensitive detection of infectious-disease antigens and nucleic acids, such as SARS-CoV-2 and Neisseria gonorrhoeae, in point-of-care settings.",
       meta: {
         "Lab": "Nanosensors Group, UIUC",
@@ -162,7 +165,7 @@ window.SITE = {
       title: "Re-Localizable Remote-Center-of-Motion Mechanism for Minimally Invasive Surgery",
       status: "past",
       featured: true,
-      image: "assets/img/placeholder.svg",   // TODO: 换成项目图片
+      image: "",                  // TODO: 放一张自己的项目图（机构 CAD 图/样机照片）
       summary: "Designed and optimized a mechanically constrained, re-localizable remote-center-of-motion (RCM) mechanism for robot-assisted minimally invasive procedures. Published at IEEE ICARM 2021.",
       meta: {
         "Lab": "ZJU-UIUC Institute",
@@ -173,9 +176,14 @@ window.SITE = {
     }
   ],
 
-  // ---------- Talks / 报告（目前为空，所以首页不显示）----------
+  // ---------- Talks / 报告 ----------
   talks: [
     { date: "Nov 2026", text: "Presentation at the <strong>APHA 2026 Annual Meeting and Expo</strong> on a portable plasmonic-fluor-enhanced lateral flow assay for salivary cortisol." }
+  ],
+
+  // ---------- Teaching / 助教 ----------
+  teaching: [
+    { date: "TA", text: "<strong>BIOE 415 / ECE 415: Biomedical Instrumentation Lab</strong>, University of Illinois Urbana-Champaign" }   // TODO: 把 "TA" 换成学期，如 "Spring 2025"
   ],
 
   // ---------- 奖项（首页和 CV 页都会显示）----------
@@ -227,6 +235,8 @@ window.SITE = {
   ],
   experience: [
     { role: "Graduate Research Assistant", org: "Nanosensors Group, UIUC", date: "2022 – Present", bullets: ["Developing plasmon-enhanced lateral flow assays for ultrasensitive point-of-care detection of infectious diseases."] },
-    { role: "Undergraduate Researcher", org: "ZJU-UIUC Institute", date: "2020 – 2021", bullets: ["Designed and optimized a re-localizable remote-center-of-motion mechanism for minimally invasive surgical robotics (IEEE ICARM 2021)."] }
+    // TODO: Teaching Assistant 的 date 填学期
+    { role: "Teaching Assistant", org: "BIOE/ECE 415 Biomedical Instrumentation Lab, UIUC", date: "", bullets: ["Supported laboratory instruction in biomedical instrumentation for undergraduate students."] },
+    { role: "Undergraduate Research Assistant", org: "ZJU-UIUC Institute, Zhejiang University", date: "2021", bullets: ["Designed and optimized a re-localizable remote-center-of-motion mechanism for minimally invasive surgical robotics (IEEE ICARM 2021)."] }
   ]
 };

@@ -227,6 +227,8 @@ h3 { font-size: 20px; }
 .mini-project h3 { font-size: 18px; margin-bottom: 4px; }
 .mini-project p { margin: 0 0 4px; font-size: 15.5px; color: var(--muted); }
 
+.img-credit { display: block; font-size: 11px; line-height: 1.4; color: var(--muted); margin-top: 4px; text-align: center; }
+.mini-project.no-img, .project.no-img { grid-template-columns: 1fr; }
 .award-list { list-style: none; padding: 0; margin: 0; }
 .award-list li { display: flex; justify-content: space-between; gap: 16px; padding: 8px 0; border-bottom: 1px dashed var(--border); }
 
