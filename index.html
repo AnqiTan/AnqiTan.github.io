@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{name}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="home" data-root="">
+  <!-- 首页内容全部来自 assets/js/data.js；某个列表为空时对应板块自动隐藏 -->
+  <main class="home">
+    <section class="about">
+      <img class="about-photo" data-src="photo" alt="Portrait">
+      <h1 class="home-name" data-render="name-split"></h1>
+      <div class="about-text" data-render="intro"></div>
+      <div class="social icons" data-render="social-icons"></div>
+    </section>
+
+    <section class="home-sec" data-hide-if-empty="news">
+      <h2><span class="emoji">🔥</span>News</h2>
+      <div data-render="news"></div>
+    </section>
+
+    <section class="home-sec" data-hide-if-empty="publications">
+      <h2><span class="emoji">📃</span>Selected Papers</h2>
+      <div class="pub-list" data-render="pubs-selected"></div>
+      <p class="more-link"><a href="research.html#publications">All publications →</a></p>
+    </section>
+
+    <section class="home-sec" data-hide-if-empty="projects">
+      <h2><span class="emoji">🛠️</span>Selected Projects</h2>
+      <div class="mini-projects" data-render="projects-mini"></div>
+      <p class="more-link"><a href="projects.html">All projects →</a></p>
+    </section>
+
+    <section class="home-sec" data-hide-if-empty="talks">
+      <h2><span class="emoji">🎤</span>Talks</h2>
+      <div data-render="talks"></div>
+    </section>
+
+    <section class="home-sec" data-hide-if-empty="awards">
+      <h2><span class="emoji">🏅</span>Awards &amp; Honors</h2>
+      <ul class="award-list" data-render="awards-list"></ul>
+    </section>
+  </main>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

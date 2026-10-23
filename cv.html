@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV | {name}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="cv" data-root="">
+  <main>
+    <section class="page-banner">
+      <div class="wrap">
+        <p class="eyebrow">Curriculum Vitae</p>
+        <h1>CV</h1>
+        <p>A summary of my education and experience. <a data-href="cv" target="_blank">Download the full PDF →</a></p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap">
+        <div class="two-col">
+          <div>
+            <div class="block"><h2>Education</h2><div data-render="education"></div></div>
+            <div class="block" data-hide-if-empty="awards"><h2>Honors &amp; Awards</h2><div data-render="awards"></div></div>
+          </div>
+          <div class="block"><h2>Experience</h2><div data-render="experience"></div></div>
+        </div>
+        <div class="block">
+          <h2>Full CV</h2>
+          <iframe class="cv-frame" data-src="cv" title="CV PDF"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
