@@ -211,11 +211,11 @@ window.SITE = {
       featured: true,
       image: "",
       summary: {
-        en: "A $4.87M Department of Defense project to build a rapid blood test and handheld reader that measures IL-8 and sTNFR-1 on a single multiplexed plasmonic-fluor lateral flow strip and classifies critically ill patients into hyperinflammatory or hypoinflammatory phenotypes at the bedside, including in military and resource-limited settings. Our lab develops the portable fluorescence reader.",
-        zh: "美国国防部资助的 487 万美元项目：开发快速血液检测与手持式读取仪，在一条多重 plasmonic-fluor 侧向流试纸上同时检测 IL-8 和 sTNFR-1，并在床旁将危重患者分为高炎症型或低炎症型表型，可用于军事和资源有限的场景。我们课题组负责便携式荧光读取仪的研发。" },
+        en: "A $4.87M Department of Defense project to build a rapid blood test and handheld reader that measures IL-8 and sTNFR-1 on a single multiplexed plasmonic-fluor lateral flow strip and classifies critically ill patients into hyperinflammatory or hypoinflammatory phenotypes at the bedside, including in military and resource-limited settings. I lead the development of the portable, field-deployable fluorescence reader.",
+        zh: "美国国防部资助的 487 万美元项目：开发快速血液检测与手持式读取仪，在一条多重 plasmonic-fluor 侧向流试纸上同时检测 IL-8 和 sTNFR-1，并在床旁将危重患者分为高炎症型或低炎症型表型，可用于军事和资源有限的场景。我负责便携式、可现场部署的荧光读取仪的研发。" },
       meta: {
-        "Role": { en: "Graduate researcher", zh: "研究生研究员" },   // TODO: 写具体负责的部分
-        "Collaborators": { en: "WashU (Prof. Pratik Sinha, Prof. Srikanth Singamaneni), UCSF (Prof. Carolyn Calfee)", zh: "圣路易斯华盛顿大学（Pratik Sinha 教授、Srikanth Singamaneni 教授）、加州大学旧金山分校（Carolyn Calfee 教授）" },   // TODO: 更新已转到斯坦福的课题组
+        "Role": { en: "Lead developer, portable fluorescence reader", zh: "便携式荧光读取仪 研发负责人" },
+        "Collaborators": { en: "Prof. Pratik Sinha (Stanford), Prof. Srikanth Singamaneni (WashU), Prof. Carolyn Calfee (UCSF)", zh: "Pratik Sinha 教授（斯坦福大学）、Srikanth Singamaneni 教授（圣路易斯华盛顿大学）、Carolyn Calfee 教授（加州大学旧金山分校）" },
         "Funding": { en: "DoD Peer Reviewed Medical Research Program, Award HT9425-25-1-0825", zh: "美国国防部 PRMRP，项目号 HT9425-25-1-0825" },
         "Period": "2025 – Present"
       },
@@ -227,8 +227,8 @@ window.SITE = {
       featured: true,
       image: "",                  // TODO: 扫描仪照片
       summary: {
-        en: "Designing a low-cost, pocket-size fluorescence scanner that reads plasmonic-fluor-tagged paper test strips, bringing ultrasensitive, quantitative lateral flow assay readout out of the lab and into point-of-care settings. First-author manuscript in preparation.",
-        zh: "设计一款低成本、口袋大小的荧光扫描仪，用于读取 plasmonic-fluor 标记的纸基试纸条，让超灵敏、定量的侧向流检测读数走出实验室、进入即时诊断场景。第一作者论文撰写中。" },
+        en: "Designing a low-cost, pocket-size fluorescence scanner that reads plasmonic-fluor-tagged paper test strips, bringing ultrasensitive, quantitative lateral flow assay readout out of the lab and into point-of-care settings. This reader is the device platform for our DoD sepsis/ARDS project. First-author manuscript in preparation.",
+        zh: "设计一款低成本、口袋大小的荧光扫描仪，用于读取 plasmonic-fluor 标记的纸基试纸条，让超灵敏、定量的侧向流检测读数走出实验室、进入即时诊断场景。该读取仪也是我们国防部脓毒症/ARDS 项目的设备平台。第一作者论文撰写中。" },
       meta: {
         "Role": { en: "Lead researcher", zh: "项目负责人" },
         "Lab": { en: "Nanosensors Group, UIUC", zh: "UIUC Nanosensors Group" },
@@ -471,11 +471,13 @@ window.SITE = {
   experience: [
     { role: { en: "Graduate Research Assistant", zh: "研究助理（博士生）" }, org: { en: "Nanosensors Group, UIUC", zh: "UIUC Nanosensors Group" }, date: "Sep 2022 – Present", bullets: {
       en: [
+        "Leading development of the portable fluorescence reader for a $4.87M DoD (PRMRP) project on point-of-care phenotyping of sepsis and ARDS, in collaboration with Stanford, WashU, and UCSF.",
         "Leading development of a pocket-size scanner for plasmonic-fluor-tagged lateral flow test strips (first-author manuscript in preparation).",
         "Leading the Live Hormone project: a competitive LFA platform for real-time testosterone, cortisol, and progesterone monitoring.",
         "Contributing to plasmon-enhanced LFAs for infectious disease detection and to reviews in Chemical Reviews and Lab on a Chip."
       ],
       zh: [
+        "负责美国国防部（PRMRP）487 万美元脓毒症/ARDS 即时表型检测项目中的便携式荧光读取仪研发，合作方包括斯坦福、圣路易斯华盛顿大学和 UCSF。",
         "负责开发面向 plasmonic-fluor 标记侧向流试纸条的口袋式扫描仪（第一作者论文撰写中）。",
         "负责 Live Hormone 项目：基于竞争法侧向流检测的睾酮、皮质醇、孕酮实时监测平台。",
         "参与等离激元增强侧向流传染病检测研究，以及 Chemical Reviews、Lab on a Chip 综述的撰写。"
