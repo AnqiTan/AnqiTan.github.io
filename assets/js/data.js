@@ -4,38 +4,62 @@
  * 图片路径都是相对网站根目录，例如 "assets/img/projects/xxx.jpg"
  * 任何列表留空 [] 时，对应板块会自动隐藏。
  * 标有 TODO 的地方是还需要你确认或补充的。
+ *
+ * 【中英文】任何文字都可以写成 { en: "English", zh: "中文" }，网页右上角切换语言时自动显示对应版本；
+ *          只写一个字符串则中英文都显示同一内容（如论文标题、人名）。
+ *          日期写英文即可（如 "Sep 2022 – Present"），中文模式会自动显示为 "2022.09 – 至今"。
  * ========================================================= */
 
 window.SITE = {
-  name: "Anqi Tan",               // 首页大标题：第一个词加粗，其余细体
-  brand: "Anqi Tan",              // 左上角显示的名字
-  title: "Ph.D. Student in Bioengineering · University of Illinois Urbana-Champaign",
+  name: "Anqi Tan",               // 英文名：首页标题 + 论文作者列表里自动加粗（保持纯文本）
+  nameZh: "谭安琪",               // 中文模式下的首页标题
+  brand: { en: "Anqi Tan", zh: "谭安琪" },   // 左上角显示的名字
+  title: { en: "Ph.D. Student in Bioengineering · University of Illinois Urbana-Champaign", zh: "伊利诺伊大学厄巴纳-香槟分校 · 生物工程博士生" },
   photo: "assets/img/photo.jpg",  // 首页头像
   cv: "assets/cv.pdf",            // CV PDF 路径
-  updated: "October 22, 2026",    // 页脚 "Last updated"
+  updated: "Oct 23, 2026",        // 页脚 "Last updated"
 
   // 首页自我介绍：每个字符串是一段。可用 <strong>加粗</strong> 和 <a href="...">链接</a>
-  intro: [
-    "I am a Ph.D. student in <strong>Bioengineering</strong> at <strong>UIUC</strong>, working with <a href=\"https://nano.ece.illinois.edu/people/brian-t-cunningham/\" target=\"_blank\">Prof. Brian T. Cunningham</a> in the <a href=\"https://nano.ece.illinois.edu\" target=\"_blank\">Nanosensors Group</a>. I study <strong>biosensors and portable monitoring devices</strong>, with a focus on <strong>plasmon-enhanced lateral flow assays</strong> and portable readers for ultrasensitive point-of-care diagnostics, such as quantitative salivary cortisol measurement in community settings.",
-    "I am passionate about bridging biomedical monitoring with engineering so that people can better understand their own health. Before my Ph.D., I received B.S. degrees in Mechanical Engineering from both UIUC and Zhejiang University, where I worked on robotic mechanism design for minimally invasive surgery.",
-    "🙋 Feel free to reach out via <a href=\"mailto:anqitan2@illinois.edu\">email</a> if you are interested in my research."
-  ],
+  intro: {
+    en: [
+      "I am a Ph.D. student in <strong>Bioengineering</strong> at <strong>UIUC</strong>, working with <a href=\"https://nano.ece.illinois.edu/people/brian-t-cunningham/\" target=\"_blank\">Prof. Brian T. Cunningham</a> in the <a href=\"https://nano.ece.illinois.edu\" target=\"_blank\">Nanosensors Group</a>. I study <strong>biosensors and portable monitoring devices</strong>, with a focus on <strong>plasmon-enhanced lateral flow assays</strong> and <strong>pocket-size readers</strong> for ultrasensitive point-of-care diagnostics, from infectious disease detection to real-time hormone monitoring.",
+      "I am passionate about bridging biomedical monitoring with engineering so that people can better understand their own health. Before my Ph.D., I received B.S. degrees in Mechanical Engineering from both UIUC and Zhejiang University, where I led a national-level research project on surgical robot mechanism design and was product leader of an intelligent cell culture platform that won a <strong>National Silver Medal</strong> in the China \"Internet+\" Competition.",
+      "🙋 Feel free to reach out via <a href=\"mailto:anqitan2@illinois.edu\">email</a> if you are interested in my research."
+    ],
+    zh: [
+      "我是<strong>伊利诺伊大学厄巴纳-香槟分校（UIUC）生物工程系</strong>的博士生，师从 <a href=\"https://nano.ece.illinois.edu/people/brian-t-cunningham/\" target=\"_blank\">Brian T. Cunningham 教授</a>，就读于 <a href=\"https://nano.ece.illinois.edu\" target=\"_blank\">Nanosensors Group（纳米传感器课题组）</a>。我的研究方向是<strong>生物传感器与便携式健康监测设备</strong>，重点关注<strong>等离激元增强侧向流层析检测（LFA）</strong>和<strong>口袋式读取仪</strong>，应用于从传染病检测到实时激素监测的超灵敏即时诊断（POC）。",
+      "我希望把生物医学监测与工程设计结合起来，让每个人都能更好地了解自己的身体状况。博士之前，我获得了 UIUC 与浙江大学的机械工程双学士学位；本科期间主持了国家级大学生创新训练项目，研究微创手术机器人机构设计，并作为产品负责人参与“智能细胞培养平台”项目，获得中国“互联网+”大学生创新创业大赛<strong>全国银奖</strong>。",
+      "🙋 如果你对我的研究感兴趣，欢迎通过<a href=\"mailto:anqitan2@illinois.edu\">邮件</a>联系我。"
+    ]
+  },
 
   social: {
     email: "anqitan2@illinois.edu",
     scholar: "https://scholar.google.com/citations?user=SkxZzOoAAAAJ",
-    github: "",                   // TODO: 确认 GitHub 用户名后填 "https://github.com/用户名"
+    github: "",                   // TODO: 想放的话填 "https://github.com/AnqiTan"
     linkedin: ""                  // TODO: LinkedIn 链接
   },
 
   // ---------- 首页 News：日期 + 一句话，新的放最上面 ----------
   news: [
-    { date: "Nov 2026", text: "I will present our <strong>portable plasmonic-fluor-enhanced lateral flow assay for salivary cortisol</strong> at the <strong>APHA 2026 Annual Meeting and Expo</strong>." },
-    { date: "May 2026", text: "Our critical review <strong>Point of Care Molecular Cancer Diagnostics</strong> was published in <strong>Lab on a Chip</strong>." },
-    { date: "Feb 2026", text: "Our paper on an <strong>ultrasensitive point-of-care antigen test for <em>Neisseria gonorrhoeae</em></strong> using plasmon-enhanced lateral flow assays was published in <strong>ACS Nano Medicine</strong>." },
-    { date: "Jul 2025", text: "Our review <strong>Photonic Crystal Grating Resonance and Interfaces for Health Diagnostic Technologies</strong> was published in <strong>Chemical Reviews</strong>." },
-    { date: "Feb 2023", text: "Our review on <strong>HIV self-testing technologies</strong> was published in <strong>Biosensors</strong>." },
-    { date: "2022", text: "Graduated with B.S. degrees in Mechanical Engineering from UIUC and Zhejiang University, and joined the <strong>Nanosensors Group</strong> at UIUC as a Ph.D. student." }
+    { date: "Nov 2026", text: {
+      en: "I will present our <strong>portable plasmonic-fluor-enhanced lateral flow assay for salivary cortisol</strong> at the <strong>APHA 2026 Annual Meeting and Expo</strong>.",
+      zh: "我将在 <strong>APHA 2026 年会</strong>上展示我们的<strong>便携式 plasmonic-fluor 增强侧向流检测（唾液皮质醇）</strong>工作。" } },
+    { date: "May 2026", text: {
+      en: "Our critical review <strong>Point of Care Molecular Cancer Diagnostics</strong> was published in <strong>Lab on a Chip</strong>.",
+      zh: "我们的综述 <strong>Point of Care Molecular Cancer Diagnostics</strong> 发表于 <strong>Lab on a Chip</strong>。" } },
+    { date: "Feb 2026", text: {
+      en: "Our paper on an <strong>ultrasensitive point-of-care antigen test for <em>Neisseria gonorrhoeae</em></strong> using plasmon-enhanced lateral flow assays was published in <strong>ACS Nano Medicine</strong>.",
+      zh: "我们基于等离激元增强侧向流检测的<strong>淋病奈瑟菌超灵敏即时抗原检测</strong>论文发表于 <strong>ACS Nano Medicine</strong>。" } },
+    { date: "Jul 2025", text: {
+      en: "Our review <strong>Photonic Crystal Grating Resonance and Interfaces for Health Diagnostic Technologies</strong> was published in <strong>Chemical Reviews</strong>.",
+      zh: "我们的综述 <strong>Photonic Crystal Grating Resonance and Interfaces for Health Diagnostic Technologies</strong> 发表于 <strong>Chemical Reviews</strong>。" } },
+    { date: "Feb 2023", text: {
+      en: "Our review on <strong>HIV self-testing technologies</strong> was published in <strong>Biosensors</strong>.",
+      zh: "我们关于 <strong>HIV 自检技术</strong>的综述发表于 <strong>Biosensors</strong>。" } },
+    { date: "2022", text: {
+      en: "Graduated with B.S. degrees in Mechanical Engineering from UIUC and Zhejiang University, and joined the <strong>Nanosensors Group</strong> at UIUC as a Ph.D. student.",
+      zh: "获得 UIUC 与浙江大学机械工程双学士学位，加入 UIUC <strong>Nanosensors Group</strong> 攻读博士学位。" } }
   ],
   newsLimit: 6,                   // 首页最多显示几条，多余的折叠在 "Show more" 里
 
@@ -44,6 +68,18 @@ window.SITE = {
   // ⚠️ 只能用 CC BY 等开放许可论文的图，或你自己制作的图。ACS / IEEE / Elsevier 版权论文的图不要直接放。
   // links: 按钮名 → 链接（如 PAPER / PDF / CODE / SLIDES），留空的不显示；作者里你的名字自动加粗
   publications: [
+    {
+      selected: false,
+      venue: "In Prep.",
+      badge: "First Author",
+      image: "",
+      title: "Pocket Size Lateral Flow Assay Scanner for Plasmonic Fluor Tagged Paper Test Strip Assays",
+      authors: "Anqi Tan, Han Keun Lee, Yuxiong Liu, Liang-ching Chen, Leyang Liu, Siyi Li, Xiaoyang Chu, Saurabh Umrao, Xing Wang, Srikanth Singamaneni, and Brian T. Cunningham",
+      venueFull: "Manuscript in preparation",
+      highlights: [],
+      links: {},
+      bibtex: ""
+    },
     {
       selected: true,
       venue: "APHA'26",
@@ -80,6 +116,18 @@ window.SITE = {
       highlights: [],
       links: { PAPER: "https://doi.org/10.1021/acsnanomed.5c00150" },
       bibtex: "@article{liu2026ultrasensitive,\n  title = {Ultrasensitive Point-of-Care Antigen Test for Detection of Neisseria gonorrhoeae Using Plasmon-Enhanced Lateral Flow Assays},\n  author = {Liu, Yuxiong and Jiang, Qisheng and Tan, Anqi and Kondepati, Gayathri and Gupta, Prashant and Wang, Yixuan and Chandar, Yajur and Bach, Tracey H. and House, Stacey L. and Rice, Peter A. and Parikh, Bijal A. and Cunningham, Brian T. and Ram, Sanjay and George, Ige A. and Singamaneni, Srikanth and Gandra, Sumanth},\n  journal = {ACS Nano Medicine},\n  volume = {1},\n  number = {4},\n  pages = {1036--1047},\n  year = {2026},\n  doi = {10.1021/acsnanomed.5c00150}\n}"
+    },
+    {
+      selected: false,
+      venue: "Elsevier'26",
+      badge: "Under Review",
+      image: "",
+      title: "Application of Hybrid Photo-Plasmonic Interfaces: Insights from the Synergy of LSPR and Photonic Crystal Modes",
+      authors: "Weinan Liu, Skye Shepherd, Joseph Tibbs, Amanda Bacon, Leyang Liu, Huyen Thi Ngoc Nguyen, Anqi Tan, Wang-Chien Chen, My Thi Tra Nguyen, Saurabh Umrao, Anh Igarashi, Seemesh Bhaskar, Xing Wang, and Brian T. Cunningham",
+      venueFull: "Book chapter, Elsevier (under review)",
+      highlights: [],
+      links: {},
+      bibtex: ""
     },
     {
       selected: true,
@@ -129,75 +177,204 @@ window.SITE = {
       highlights: [],
       links: { PAPER: "https://doi.org/10.1109/ICARM52023.2021.9536150" },
       bibtex: "@inproceedings{tan2021design,\n  title = {Design Optimization of a Mechanically Constrained Re-Localizable Remote-Center-of-Motion},\n  author = {Tan, Anqi and Chen, Shenwei and Gan, Hanyu and Yang, Liangjing},\n  booktitle = {2021 6th IEEE International Conference on Advanced Robotics and Mechatronics (ICARM)},\n  year = {2021},\n  doi = {10.1109/ICARM52023.2021.9536150}\n}"
+    },
+    {
+      selected: false,
+      venue: "ACEM'20",
+      badge: "",
+      image: "",
+      title: "Utilization of 3D Printing for Concrete Dragon Boat Model",
+      authors: "Y.Q. Feng, K.H. Zhang, <strong>A.Q. Tan</strong>, K. Ma, and Y. Xiao",
+      venueFull: "The 2020 World Congress on Advances in Civil, Environmental, & Materials Research (ACEM20). 2020",
+      highlights: ["🏆 Outstanding Performance and Innovation Award, 1st International Concrete Dragon Boat Invitational Competition"],
+      links: {},
+      bibtex: ""
     }
   ],
 
   // ---------- 项目：status 为 "current" 或 "past"；featured: true 的显示在首页 ----------
+  // image 留空则不显示图片。项目图请用自己的照片/示意图，放在 assets/img/projects/
+  // meta 的键名（Role / Lab / Advisor / Collaborators / Period）会自动翻译，值可写 {en, zh}
   projects: [
     {
-      title: "Portable Plasmonic-Fluor LFA for Salivary Cortisol in Community Settings",
+      title: { en: "Pocket-Size Lateral Flow Assay Scanner for Plasmonic-Fluor-Tagged Test Strips", zh: "面向 Plasmonic-Fluor 标记试纸条的口袋式侧向流检测扫描仪" },
       status: "current",
       featured: true,
-      image: "",                  // TODO: 放一张自己的项目图（实验装置/试纸条/读取器照片等）
-      summary: "Building a portable, plasmonic-fluor-enhanced lateral flow assay and reader for quantitative measurement of salivary cortisol, a key stress biomarker, enabling non-invasive monitoring outside the lab. To be presented at APHA 2026.",
+      image: "",                  // TODO: 扫描仪照片
+      summary: {
+        en: "Designing a low-cost, pocket-size fluorescence scanner that reads plasmonic-fluor-tagged paper test strips, bringing ultrasensitive, quantitative lateral flow assay readout out of the lab and into point-of-care settings. First-author manuscript in preparation.",
+        zh: "设计一款低成本、口袋大小的荧光扫描仪，用于读取 plasmonic-fluor 标记的纸基试纸条，让超灵敏、定量的侧向流检测读数走出实验室、进入即时诊断场景。第一作者论文撰写中。" },
       meta: {
-        "Role": "Lead researcher",
-        "Lab": "Nanosensors Group, UIUC",
-        "Collaborators": "Singamaneni Lab (WashU), Prof. Jenna Riis, Prof. Jacinda K. Dariotis"
-        // TODO: 加上 "Period": "20XX – Present"
+        "Role": { en: "Lead researcher", zh: "项目负责人" },
+        "Lab": { en: "Nanosensors Group, UIUC", zh: "UIUC Nanosensors Group" },
+        "Collaborators": { en: "Singamaneni Lab (WashU)", zh: "圣路易斯华盛顿大学 Singamaneni 课题组" },
+        "Period": "Sep 2022 – Present"
       },
       link: ""
     },
     {
-      title: "Plasmon-Enhanced Lateral Flow Assays for Point-of-Care Diagnostics",
+      title: { en: "Live Hormone: Competitive LFA Platform for Real-Time Testosterone, Cortisol, and Progesterone Monitoring", zh: "Live Hormone：基于竞争法侧向流检测的睾酮、皮质醇与孕酮实时监测平台" },
       status: "current",
       featured: true,
-      image: "",                  // TODO: 放一张自己的项目图
-      summary: "Developing plasmon-enhanced lateral flow assays (p-LFAs) for ultrasensitive detection of infectious-disease antigens and nucleic acids, such as SARS-CoV-2 and Neisseria gonorrhoeae, in point-of-care settings.",
+      image: "",                  // TODO: 试纸条/读取器照片
+      summary: {
+        en: "Developing a competitive, plasmonic-fluor-enhanced lateral flow assay platform for real-time monitoring of steroid hormones in saliva, including quantitative salivary cortisol measurement in community settings (APHA 2026).",
+        zh: "开发竞争法、plasmonic-fluor 增强的侧向流检测平台，实时监测唾液中的类固醇激素，包括在社区场景中定量检测唾液皮质醇（APHA 2026）。" },
       meta: {
-        "Lab": "Nanosensors Group, UIUC",
-        "Advisor": "Prof. Brian T. Cunningham",
-        "Period": "2022 – Present"
+        "Role": { en: "Lead researcher", zh: "项目负责人" },
+        "Lab": { en: "Nanosensors Group, UIUC", zh: "UIUC Nanosensors Group" },
+        "Collaborators": { en: "Prof. Jenna Riis, Prof. Jacinda K. Dariotis, Singamaneni Lab (WashU)", zh: "Jenna Riis 教授、Jacinda K. Dariotis 教授、圣路易斯华盛顿大学 Singamaneni 课题组" },
+        "Period": "Sep 2024 – Present"
       },
-      link: ""                    // 项目详情链接（博客文章、论文、GitHub），留空则不显示
+      link: ""
     },
     {
-      title: "Re-Localizable Remote-Center-of-Motion Mechanism for Minimally Invasive Surgery",
+      title: { en: "Plasmon-Enhanced Lateral Flow Assays for Infectious Disease Detection", zh: "等离激元增强侧向流检测用于传染病诊断" },
+      status: "current",
+      featured: false,
+      image: "",
+      summary: {
+        en: "Contributing to plasmon-enhanced lateral flow assays (p-LFAs) for ultrasensitive point-of-care detection of infectious-disease antigens and nucleic acids, including SARS-CoV-2 and Neisseria gonorrhoeae (ACS Nano Medicine 2026).",
+        zh: "参与等离激元增强侧向流检测（p-LFA）研究，用于新冠病毒、淋病奈瑟菌等传染病抗原和核酸的超灵敏即时检测（ACS Nano Medicine 2026）。" },
+      meta: {
+        "Lab": { en: "Nanosensors Group, UIUC", zh: "UIUC Nanosensors Group" },
+        "Collaborators": { en: "Singamaneni Lab & WashU School of Medicine", zh: "圣路易斯华盛顿大学 Singamaneni 课题组及医学院" },
+        "Period": "2022 – Present"
+      },
+      link: "https://doi.org/10.1021/acsnanomed.5c00150"
+    },
+    {
+      title: { en: "Re-Localizable Remote-Center-of-Motion Mechanism for Minimally Invasive Surgery", zh: "面向微创手术的可重定位远程运动中心（RCM）机构" },
       status: "past",
       featured: true,
-      image: "",                  // TODO: 放一张自己的项目图（机构 CAD 图/样机照片）
-      summary: "Designed and optimized a mechanically constrained, re-localizable remote-center-of-motion (RCM) mechanism for robot-assisted minimally invasive procedures. Published at IEEE ICARM 2021.",
+      image: "",                  // TODO: 机构 CAD 图/样机照片
+      summary: {
+        en: "Led a national-level undergraduate research project to design and optimize a mechanically constrained, re-localizable remote-center-of-motion (RCM) mechanism for robot-assisted minimally invasive procedures. Published as first author at IEEE ICARM 2021.",
+        zh: "主持国家级大学生创新训练项目，设计并优化一种机械约束式、可重定位的远程运动中心（RCM）机构，用于机器人辅助微创手术。以第一作者发表于 IEEE ICARM 2021。" },
       meta: {
-        "Lab": "ZJU-UIUC Institute",
-        "Advisor": "Prof. Liangjing Yang",
-        "Period": "2020 – 2021"     // TODO: 确认时间
+        "Role": { en: "Project leader (National-Level Undergraduate Research Training Program)", zh: "项目负责人（国家级大学生创新训练项目）" },
+        "Advisor": { en: "Prof. Liangjing Yang, ZJU-UIUC Institute", zh: "浙大国际联合学院（ZJUI） Liangjing Yang 老师" },
+        "Period": "Jun 2020 – Jun 2021"
       },
       link: "https://doi.org/10.1109/ICARM52023.2021.9536150"
+    },
+    {
+      title: { en: "Intelligent Cell Culture Platform (China \"Internet+\" Competition)", zh: "智能细胞培养平台（“互联网+”大赛项目）" },
+      status: "past",
+      featured: false,
+      image: "",
+      summary: {
+        en: "Served as product leader for a fully compatible intelligent cell culture platform built around an automated, modular manipulator for standardized cell production. The project received RMB 8 million in R&D funding and won a National Silver Medal (International Track).",
+        zh: "担任产品负责人，打造以自动化、模块化“机械手”为核心技术的全兼容智能细胞培养平台，实现细胞生产的自动化与标准化。项目获得 800 万元研发资金支持，并获“互联网+”大赛国际赛道全国银奖。" },
+      meta: { "Role": { en: "Product leader", zh: "产品负责人" }, "Period": "2021" },
+      link: ""
+    },
+    {
+      title: { en: "Biocompatible Electrically Stimulated Band-Aid", zh: "高生物相容性电刺激创可贴" },
+      status: "past",
+      featured: false,
+      image: "",
+      summary: {
+        en: "Independent research project on constructing a highly biocompatible, electrically stimulated wound dressing.",
+        zh: "独立研究项目：构建一种高生物相容性的电刺激伤口敷料。" },
+      meta: { "Role": { en: "Personal project", zh: "个人项目" }, "Advisor": { en: "Prof. Yong He, Zhejiang University", zh: "浙江大学 Yong He 老师" }, "Period": "Jun 2021 – Sep 2021" },
+      link: ""
+    },
+    {
+      title: { en: "3D-Printed Lightweight ECC Concrete Dragon Boat", zh: "3D 打印轻骨料 ECC 混凝土龙舟" },
+      status: "past",
+      featured: false,
+      image: "",
+      summary: {
+        en: "Developed a lightweight-aggregate engineered cementitious composite (ECC) structure using a 3D-printed skeleton with FRP bars and film as structural components. Published at ACEM20 and received the Outstanding Performance and Innovation Award at the 1st International Concrete Dragon Boat Invitational Competition.",
+        zh: "以 3D 打印骨架为支撑、FRP 筋与 FRP 膜为结构构件，研制轻骨料 ECC 水泥基复合材料结构。成果发表于 ACEM20，并获首届国际混凝土龙舟邀请赛“杰出表现与创新奖”。" },
+      meta: { "Role": { en: "Main member (School-Level Research Training Program)", zh: "主要成员（校级大学生科研训练项目）" }, "Advisor": { en: "Prof. Yan Xiao, ZJU-UIUC Institute & USC", zh: "浙大国际联合学院（ZJUI）/ 南加州大学 Yan Xiao 老师" }, "Period": "Mar 2019 – May 2020" },
+      link: ""
+    },
+    {
+      title: { en: "Camera Tracking Method for a Manipulated Endoscope", zh: "机器人操控内窥镜的相机跟踪方法" },
+      status: "past",
+      featured: false,
+      image: "",
+      summary: {
+        en: "Led a team implementing a camera tracking method for a robot-manipulated endoscope.",
+        zh: "带领团队实现一种用于机器人操控内窥镜的相机跟踪方法。" },
+      meta: { "Role": { en: "Team leader", zh: "团队负责人" }, "Advisor": { en: "Prof. Liangjing Yang, ZJU-UIUC Institute", zh: "浙大国际联合学院（ZJUI） Liangjing Yang 老师" }, "Period": "Jun 2019 – Aug 2019" },
+      link: ""
+    },
+    {
+      title: { en: "Single-Motor Legged Robots", zh: "单电机驱动足式机器人" },
+      status: "past",
+      featured: false,
+      image: "",
+      summary: {
+        en: "Designed all transmission mechanisms for a four-legged linkage robot and a two-legged cam robot, each driven by a single motor, through 5+ design iterations (3D models and physical prototypes), using GeoGebra and MATLAB to optimize gait. Completed the rough-terrain course and placed third in the race.",
+        zh: "独立完成单电机驱动的四足连杆机器人与双足凸轮机器人全部传动机构设计，迭代 5 个以上版本（三维模型 + 实物），并用 GeoGebra 和 MATLAB 仿真优化运动轨迹与步态。完成复杂地形赛道并获竞速第三名。" },
+      meta: { "Role": { en: "Project leader", zh: "项目负责人" }, "Period": "Oct 2020 – Dec 2020" },
+      link: ""
+    },
+    {
+      title: { en: "RoboMaster Competition Robot", zh: "RoboMaster 机甲大师比赛机器人" },
+      status: "past",
+      featured: false,
+      image: "",
+      summary: {
+        en: "Designed the full mechanical structure of a competition robot, including motor selection, transmission, gimbal, buffer mechanism, and projectile system. Won First Prize in the college-level RoboMaster Mecha Master competition.",
+        zh: "负责比赛机器人整体机械结构设计，包括电机选型、传动系统、云台、缓冲机构与发射机构。获 RoboMaster 机甲大师校级赛一等奖。" },
+      meta: { "Role": { en: "Mechanical lead", zh: "机械负责人" }, "Period": "2019" },
+      link: ""
+    },
+    {
+      title: { en: "Intlife: Campus Life Interactive App", zh: "Intlife：校园生活互动 App" },
+      status: "past",
+      featured: false,
+      image: "",
+      summary: {
+        en: "Led needs analysis, feasibility research, and product/UI design for a one-stop campus life platform, built simultaneously as a web app and WeChat mini-program with uni-app and a uniCloud cloud database.",
+        zh: "负责需求分析、可行性调研与产品/界面设计，基于 uni-app 同时构建网页端与微信小程序，并用 uniCloud 搭建云数据库，打造一站式校园生活交流平台。" },
+      meta: { "Role": { en: "Project leader", zh: "项目负责人" }, "Period": "2020" },
+      link: ""
     }
   ],
 
   // ---------- Talks / 报告 ----------
   talks: [
-    { date: "Nov 2026", text: "Presentation at the <strong>APHA 2026 Annual Meeting and Expo</strong> on a portable plasmonic-fluor-enhanced lateral flow assay for salivary cortisol." }
+    { date: "Nov 2026", text: {
+      en: "Presentation at the <strong>APHA 2026 Annual Meeting and Expo</strong> on a portable plasmonic-fluor-enhanced lateral flow assay for salivary cortisol.",
+      zh: "在 <strong>APHA 2026 年会</strong>上报告便携式 plasmonic-fluor 增强侧向流检测唾液皮质醇的研究。" } }
   ],
 
   // ---------- Teaching / 助教 ----------
   teaching: [
-    { date: "TA", text: "<strong>BIOE 415 / ECE 415: Biomedical Instrumentation Lab</strong>, University of Illinois Urbana-Champaign" }   // TODO: 把 "TA" 换成学期，如 "Spring 2025"
+    // TODO: BIOE 415 的 date 换成学期，如 "Spring 2025"
+    { date: { en: "Grad TA", zh: "研究生助教" }, text: {
+      en: "<strong>BIOE 415 / ECE 415: Biomedical Instrumentation Lab</strong>, University of Illinois Urbana-Champaign",
+      zh: "<strong>BIOE 415 / ECE 415：生物医学仪器实验</strong>，UIUC" } },
+    { date: "2020, 2021", text: {
+      en: "<strong>ME 170: Computer-Aided Design</strong>, University of Illinois Urbana-Champaign (Spring semesters)",
+      zh: "<strong>ME 170：计算机辅助设计</strong>，UIUC（春季学期）" } }
   ],
 
   // ---------- 奖项（首页和 CV 页都会显示）----------
   awards: [
-    { name: "National Silver Medal, China \"Internet+\" Innovation and Entrepreneurship Competition", date: "2021" },
-    { name: "Scholarship of Zhejiang University", date: "2019" },
-    { name: "First Prize, RoboMaster Mecha Master (College Level)", date: "2019" },
-    { name: "Second Prize, Zhejiang Province Biology Olympiad", date: "2017" }
+    { name: { en: "National Silver Medal, China \"Internet+\" Innovation and Entrepreneurship Competition", zh: "中国“互联网+”大学生创新创业大赛 全国银奖" }, date: "2021" },
+    { name: { en: "First Prize, RoboMaster Mecha Master (College Level)", zh: "RoboMaster 机甲大师校级赛 一等奖" }, date: "2019" },
+    { name: { en: "Outstanding Performance and Innovation Award, 1st International Concrete Dragon Boat Invitational Competition", zh: "首届国际混凝土龙舟邀请赛 杰出表现与创新奖" }, date: "2019" },
+    { name: { en: "Third-Class Scholarship, Zhejiang University", zh: "浙江大学三等奖学金" }, date: "2019" },
+    { name: { en: "Public Service Pacesetter, Zhejiang University", zh: "浙江大学公益服务标兵" }, date: "2019" },
+    { name: { en: "Model of Social Work, Zhejiang University (twice)", zh: "浙江大学社会工作标兵（两次）" }, date: "2019, 2020" },
+    { name: { en: "Second Place, Social Research Competition, as team leader (three times)", zh: "社会调研 二等奖（负责人，三次）" }, date: "2019 – 2020" },
+    { name: { en: "Second Prize, Zhejiang Province Biology Olympiad", zh: "浙江省生物学奥林匹克竞赛 二等奖" }, date: "2017" }
   ],
 
   // ---------- Research 页面 ----------
   research: {
-    statement: "My research focuses on ultrasensitive, low-cost biosensing technologies that bring laboratory-grade diagnostics to the point of care. I work on plasmon-enhanced lateral flow assays and portable readout systems, aiming to integrate biomedical monitoring with engineering design so that people can better understand and manage their own health.",
-    interests: ["Biosensors", "Point-of-Care Diagnostics", "Plasmon-Enhanced Lateral Flow Assays", "Portable Monitoring Devices", "Salivary Biomarkers", "Photonic Biosensing"]
+    statement: {
+      en: "My research focuses on ultrasensitive, low-cost biosensing technologies that bring laboratory-grade diagnostics to the point of care. I develop plasmon-enhanced lateral flow assays and pocket-size readout systems for applications ranging from infectious disease detection to real-time hormone monitoring, aiming to integrate biomedical monitoring with engineering design so that people can better understand and manage their own health.",
+      zh: "我的研究聚焦于超灵敏、低成本的生物传感技术，把实验室级别的诊断能力带到即时检测场景。我开发等离激元增强侧向流检测和口袋式读取系统，应用范围涵盖传染病检测到实时激素监测，希望将生物医学监测与工程设计相结合，帮助人们更好地了解和管理自己的健康。" },
+    interests: {
+      en: ["Biosensors", "Point-of-Care Diagnostics", "Plasmon-Enhanced Lateral Flow Assays", "Portable Readers & Instrumentation", "Hormone Monitoring", "Salivary Biomarkers"],
+      zh: ["生物传感器", "即时诊断（POC）", "等离激元增强侧向流检测", "便携式读取仪器", "激素监测", "唾液生物标志物"] }
   },
 
   // ---------- 博客：每篇文章在 blog/ 文件夹下一个 html 文件 ----------
@@ -219,24 +396,57 @@ window.SITE = {
     { src: "assets/img/placeholder.svg", caption: "Photo caption" }
   ],
 
-  // ---------- 技能（TODO: 按实际情况修改）----------
+  // ---------- 技能 ----------
   skills: [
-    { group: "Biosensing & Wet Lab", items: ["Lateral Flow Assays", "Plasmonic Nanomaterials", "Immunoassays"] },
-    { group: "Engineering", items: ["Mechanical Design", "CAD", "3D Printing"] },
-    { group: "Programming", items: ["Python", "MATLAB"] },
-    { group: "Languages", items: ["English (Fluent)", "Chinese (Native)"] }
+    { group: { en: "Biosensing & Wet Lab", zh: "生物传感与湿实验" }, items: ["Lateral Flow Assays", "Plasmonic-Fluor Labels", "ELISA", "3D Cell Culture", "Fluorescence Staining"] },
+    { group: { en: "Mechanical Design & CAD", zh: "机械设计与 CAD" }, items: ["SolidWorks", "Creo", "Inventor", "Fusion 360", "AutoCAD"] },
+    { group: { en: "Fabrication & Simulation", zh: "制造与仿真" }, items: ["3D Printing", "Melt Electrowriting", "COMSOL", "FEA"] },
+    { group: { en: "Programming & Hardware", zh: "编程与硬件" }, items: ["Python", "MATLAB", "LabVIEW", "Arduino"] },
+    { group: { en: "Languages", zh: "语言" }, items: [{ en: "English (Fluent)", zh: "英语（流利）" }, { en: "Chinese (Native)", zh: "中文（母语）" }] }
   ],
 
   // ---------- CV 页面上的摘要（PDF 之外的网页版简历）----------
   education: [
-    { school: "University of Illinois Urbana-Champaign", degree: "Ph.D. in Bioengineering", date: "2022 – Present", note: "Advisor: Prof. Brian T. Cunningham" },
-    { school: "University of Illinois Urbana-Champaign", degree: "B.S. in Mechanical Engineering", date: "2022", note: "" },
-    { school: "Zhejiang University (ZJU-UIUC Institute)", degree: "B.S. in Mechanical Engineering", date: "2022", note: "" }
+    { school: { en: "University of Illinois Urbana-Champaign", zh: "伊利诺伊大学厄巴纳-香槟分校（UIUC）" }, degree: { en: "Ph.D. in Bioengineering", zh: "生物工程 博士" }, date: "Aug 2022 – Present", note: { en: "Advisor: Prof. Brian T. Cunningham", zh: "导师：Brian T. Cunningham 教授" } },
+    // TODO: 确认硕士是否已授予/授予时间
+    { school: { en: "University of Illinois Urbana-Champaign", zh: "伊利诺伊大学厄巴纳-香槟分校（UIUC）" }, degree: { en: "M.S. in Bioengineering", zh: "生物工程 硕士" }, date: "Aug 2022 – Present", note: "" },
+    { school: { en: "University of Illinois Urbana-Champaign", zh: "伊利诺伊大学厄巴纳-香槟分校（UIUC）" }, degree: { en: "B.S. in Mechanical Engineering", zh: "机械工程 学士" }, date: "Aug 2018 – Jun 2022", note: "" },
+    { school: { en: "Zhejiang University (ZJU-UIUC Institute)", zh: "浙江大学（浙江大学伊利诺伊大学厄巴纳香槟校区联合学院）" }, degree: { en: "B.S. in Mechanical Engineering", zh: "机械工程 学士" }, date: "Aug 2018 – Jun 2022", note: "" }
   ],
   experience: [
-    { role: "Graduate Research Assistant", org: "Nanosensors Group, UIUC", date: "2022 – Present", bullets: ["Developing plasmon-enhanced lateral flow assays for ultrasensitive point-of-care detection of infectious diseases."] },
-    // TODO: Teaching Assistant 的 date 填学期
-    { role: "Teaching Assistant", org: "BIOE/ECE 415 Biomedical Instrumentation Lab, UIUC", date: "", bullets: ["Supported laboratory instruction in biomedical instrumentation for undergraduate students."] },
-    { role: "Undergraduate Research Assistant", org: "ZJU-UIUC Institute, Zhejiang University", date: "2021", bullets: ["Designed and optimized a re-localizable remote-center-of-motion mechanism for minimally invasive surgical robotics (IEEE ICARM 2021)."] }
+    { role: { en: "Graduate Research Assistant", zh: "研究助理（博士生）" }, org: { en: "Nanosensors Group, UIUC", zh: "UIUC Nanosensors Group" }, date: "Sep 2022 – Present", bullets: {
+      en: [
+        "Leading development of a pocket-size scanner for plasmonic-fluor-tagged lateral flow test strips (first-author manuscript in preparation).",
+        "Leading the Live Hormone project: a competitive LFA platform for real-time testosterone, cortisol, and progesterone monitoring.",
+        "Contributing to plasmon-enhanced LFAs for infectious disease detection and to reviews in Chemical Reviews and Lab on a Chip."
+      ],
+      zh: [
+        "负责开发面向 plasmonic-fluor 标记侧向流试纸条的口袋式扫描仪（第一作者论文撰写中）。",
+        "负责 Live Hormone 项目：基于竞争法侧向流检测的睾酮、皮质醇、孕酮实时监测平台。",
+        "参与等离激元增强侧向流传染病检测研究，以及 Chemical Reviews、Lab on a Chip 综述的撰写。"
+      ] } },
+    // TODO: BIOE 415 助教的 date 填学期
+    { role: { en: "Teaching Assistant", zh: "助教" }, org: { en: "BIOE/ECE 415 Biomedical Instrumentation Lab, UIUC", zh: "UIUC BIOE/ECE 415 生物医学仪器实验" }, date: "", bullets: {
+      en: ["Supported laboratory instruction in biomedical instrumentation for undergraduate students."],
+      zh: ["协助本科生生物医学仪器实验课程教学。"] } },
+    { role: { en: "Teaching Assistant", zh: "助教" }, org: { en: "ME 170 Computer-Aided Design, UIUC", zh: "UIUC ME 170 计算机辅助设计" }, date: "Spring 2020, Spring 2021", bullets: {
+      en: ["Supported instruction in CAD modeling for undergraduate mechanical engineering students."],
+      zh: ["协助机械工程本科生 CAD 建模课程教学。"] } },
+    { role: { en: "Undergraduate Research Leader", zh: "本科科研负责人" }, org: { en: "ZJU-UIUC Institute, Zhejiang University", zh: "浙江大学 浙大国际联合学院" }, date: "2019 – 2021", bullets: {
+      en: [
+        "Led a national-level research training project on a re-localizable RCM mechanism for minimally invasive surgery (first-author paper, IEEE ICARM 2021).",
+        "Led a team implementing camera tracking for a robot-manipulated endoscope; contributed to 3D-printed ECC structures (ACEM20)."
+      ],
+      zh: [
+        "主持国家级大学生创新训练项目，研究面向微创手术的可重定位 RCM 机构（第一作者论文，IEEE ICARM 2021）。",
+        "带领团队实现机器人操控内窥镜的相机跟踪；参与 3D 打印 ECC 结构研究（ACEM20）。"
+      ] } },
+    // TODO: 确认学园学生会主席的结束时间
+    { role: { en: "President, Residential College Student Committee", zh: "学园学生委员会 主席" }, org: { en: "Zhejiang University, Haining Campus", zh: "浙江大学海宁国际校区" }, date: "2019 – 2022", bullets: {
+      en: ["Led student committee activities and community events for the residential college."],
+      zh: ["组织学园学生委员会工作与社区活动。"] } },
+    { role: { en: "Volunteer Teacher", zh: "支教志愿者" }, org: { en: "Rural Education Program, Guizhou Province", zh: "贵州山区支教活动" }, date: "Aug 2019", bullets: {
+      en: ["Taught in volunteer education activities for students in underserved mountainous areas."],
+      zh: ["参与贵州贫困山区的志愿支教活动。"] } }
   ]
 };
