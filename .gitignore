@@ -2,3 +2,6 @@
 __pycache__/
 # 原始照片不公开，网站只用 assets/img/photo.jpg
 照片/
+
+# 私人记录，不上传
+私人记录/

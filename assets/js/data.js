@@ -333,7 +333,7 @@ window.SITE = {
       image: "",
       summary: {
         en: "Served as product leader for a fully compatible intelligent cell culture platform built around an automated, modular manipulator for standardized cell production. The project received RMB 8 million in R&D funding and won a National Silver Medal (International Track).",
-        zh: "担任产品负责人，打造以自动化、模块化“机械手”为核心技术的全兼容智能细胞培养平台，实现细胞生产的自动化与标准化。项目获得 800 万元研发资金支持，并获“互联网+”大赛国际赛道全国银奖。" },
+        zh: "担任产品负责人，打造以自动化、模块化“机械手”为核心技术的全兼容智能细胞培养平台，实现细胞生产的自动化与标准化。项目获得 800 万元研发资金支持，获“互联网+”大赛国际赛道全国银奖。" },
       meta: { "Role": { en: "Product leader", zh: "产品负责人" }, "Period": "2021" },
       link: ""
     },
