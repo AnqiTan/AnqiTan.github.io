@@ -44,8 +44,14 @@ window.SITE = {
   // ---------- 首页 News：日期 + 一句话，新的放最上面 ----------
   news: [
     { date: "Nov 2026", text: {
-      en: "I will present our <strong>portable plasmonic-fluor-enhanced lateral flow assay for salivary cortisol</strong> at the <strong><a href=\"https://www.apha.org/events-and-meetings/annual\" target=\"_blank\">APHA 2026 Annual Meeting and Expo</a></strong> in San Antonio.",
-      zh: "我将在圣安东尼奥举行的 <strong><a href=\"https://www.apha.org/events-and-meetings/annual\" target=\"_blank\">APHA 2026 年会</a></strong>上展示我们的<strong>便携式 plasmonic-fluor 增强侧向流检测（唾液皮质醇）</strong>工作。" } },
+      en: "I will give an <strong>oral presentation</strong> on our portable plasmonic-fluor-enhanced lateral flow assay for salivary cortisol at the <strong><a href=\"https://www.apha.org/events-and-meetings/apha-calendar/2026-apha-annual-meeting-and-expo\" target=\"_blank\">APHA 2026 Annual Meeting and Expo</a></strong> in San Antonio (Nov 3).",
+      zh: "我将在圣安东尼奥举行的 <strong><a href=\"https://www.apha.org/events-and-meetings/apha-calendar/2026-apha-annual-meeting-and-expo\" target=\"_blank\">APHA 2026 年会</a></strong>上就便携式 plasmonic-fluor 增强侧向流唾液皮质醇检测做<strong>口头报告</strong>（11 月 3 日）。" } },
+    { date: "Oct 2026", text: {
+      en: "Presenting posters on our portable cortisol platform at the <strong><a href=\"https://www.selectbioconferences.com/loacwc2026\" target=\"_blank\">Lab-on-a-Chip and Microfluidics World Congress 2026</a></strong> (Laguna Hills, CA) and the <strong><a href=\"https://www.osfinnovation.org/invent/innovation-academic-incubator/jump-arches/health-care-engineering-systems-symposium\" target=\"_blank\">Jump ARCHES Health Care Engineering Systems Symposium</a></strong> (Peoria, IL).",
+      zh: "在 <strong><a href=\"https://www.selectbioconferences.com/loacwc2026\" target=\"_blank\">2026 芯片实验室与微流控世界大会</a></strong>（加州 Laguna Hills）和 <strong><a href=\"https://www.osfinnovation.org/invent/innovation-academic-incubator/jump-arches/health-care-engineering-systems-symposium\" target=\"_blank\">Jump ARCHES 医疗工程系统研讨会</a></strong>（伊利诺伊州 Peoria）展示便携式皮质醇检测平台海报。" } },
+    { date: "Sep 2026", text: {
+      en: "Presented two posters on real-time salivary cortisol sensing and its community acceptability at the <strong><a href=\"https://personalizednutrition.research.illinois.edu/2026-pn-innovation-day/\" target=\"_blank\">2026 Personalized Nutrition Innovation Day</a></strong>.",
+      zh: "在 <strong><a href=\"https://personalizednutrition.research.illinois.edu/2026-pn-innovation-day/\" target=\"_blank\">2026 个性化营养创新日</a></strong>展示两张海报：实时唾液皮质醇检测，以及其在社区中的可接受性研究。" } },
     { date: "May 2026", text: {
       en: "Our critical review <strong><a href=\"https://pubs.rsc.org/lc/article/26/10/2948/1230310\" target=\"_blank\">Point of Care Molecular Cancer Diagnostics</a></strong> was published in <strong>Lab on a Chip</strong>.",
       zh: "我们的综述 <strong><a href=\"https://pubs.rsc.org/lc/article/26/10/2948/1230310\" target=\"_blank\">Point of Care Molecular Cancer Diagnostics</a></strong> 发表于 <strong>Lab on a Chip</strong>。" } },
@@ -55,6 +61,9 @@ window.SITE = {
     { date: "Nov 2025", text: {
       en: "🏆 Our team won <strong>First Place</strong> in the <a href=\"https://odsr.illinois.edu/2025-ashby-prize-in-computational-science-hackathon-winners-streamline-crispr-screening-with-ai/\" target=\"_blank\">2025 Ashby Prize in Computational Science Hackathon</a> at NCSA for using LLMs to predict CRISPR screen outcomes.",
       zh: "🏆 我们团队在 NCSA <a href=\"https://odsr.illinois.edu/2025-ashby-prize-in-computational-science-hackathon-winners-streamline-crispr-screening-with-ai/\" target=\"_blank\">2025 Ashby Prize 计算科学黑客松</a>中获得<strong>第一名</strong>，项目利用大语言模型预测 CRISPR 筛选结果。" } },
+    { date: "Oct 2025", text: {
+      en: "Presented our first-generation LFA scanning device for real-time salivary cortisol at the <strong><a href=\"https://personalizednutrition.research.illinois.edu/2025-pn-innovation-day/\" target=\"_blank\">2025 Personalized Nutrition Innovation Day</a></strong>. [<a href=\"https://personalizednutrition.research.illinois.edu/files/2025/10/2025_PN_Innovation-Day_DigitalBooklet.pdf#page=38\" target=\"_blank\">Abstract</a>]",
+      zh: "在 <strong><a href=\"https://personalizednutrition.research.illinois.edu/2025-pn-innovation-day/\" target=\"_blank\">2025 个性化营养创新日</a></strong>展示第一代实时唾液皮质醇侧向流扫描设备。[<a href=\"https://personalizednutrition.research.illinois.edu/files/2025/10/2025_PN_Innovation-Day_DigitalBooklet.pdf#page=38\" target=\"_blank\">摘要</a>]" } },
     { date: "Sep 2025", text: {
       en: "Our collaborative project with WashU and UCSF on point-of-care phenotyping of sepsis and ARDS was funded by the <strong>Department of Defense</strong> ($4.87M). [<a href=\"https://source.washu.edu/2025/09/4-87-million-grant-supports-development-of-sepsis-diagnostic-device/\" target=\"_blank\">WashU</a>] [<a href=\"https://bioengineering.illinois.edu/news/sepsis-ards-detection\" target=\"_blank\">Illinois</a>]",
       zh: "我们与圣路易斯华盛顿大学、UCSF 合作的脓毒症与 ARDS 表型即时检测项目获<strong>美国国防部</strong>资助（487 万美元）。[<a href=\"https://source.washu.edu/2025/09/4-87-million-grant-supports-development-of-sepsis-diagnostic-device/\" target=\"_blank\">WashU 报道</a>] [<a href=\"https://bioengineering.illinois.edu/news/sepsis-ards-detection\" target=\"_blank\">UIUC 报道</a>]" } },
@@ -93,13 +102,13 @@ window.SITE = {
     {
       selected: true,
       venue: "APHA'26",
-      badge: "First Author",
-      image: "",
+      badge: "Oral",
+      image: "assets/img/projects/reader-phone.jpg",
       title: "Portable Plasmonic Fluor-Enhanced Lateral Flow Assay for Quantitative Salivary Cortisol Measurement in Community Settings",
-      authors: "Anqi Tan, Kai-Ning Wang, Tasfia Ashrafee, Ami Patel, Yuxiong Liu, Saurabh Umrao, Srikanth Singamaneni, Jenna Riis, Jacinda K. Dariotis, and Brian T. Cunningham",
-      venueFull: "APHA 2026 Annual Meeting and Expo. 2026",
-      highlights: [],
-      links: {},
+      authors: "Anqi Tan, Kai-Ning Wang, Tasfia Ashrafee, Ami Patel, Yuxiong Liu, Saurabh Umrao, Srikanth Singamaneni, Jenna L. Riis, Jacinda K. Dariotis, and Brian T. Cunningham",
+      venueFull: "APHA 2026 Annual Meeting and Expo, San Antonio, TX. Accepted for oral presentation, Nov 3, 2026",
+      highlights: [{ en: "First author · Also presented at LOAC 2026, Jump ARCHES 2026, and PNI Innovation Day 2026", zh: "第一作者 · 同时在 LOAC 2026、Jump ARCHES 2026 和 2026 个性化营养创新日展示" }],
+      links: { MEETING: "https://www.apha.org/events-and-meetings/apha-calendar/2026-apha-annual-meeting-and-expo" },
       bibtex: "@inproceedings{tan2026portable,\n  title = {Portable Plasmonic Fluor-Enhanced Lateral Flow Assay for Quantitative Salivary Cortisol Measurement in Community Settings},\n  author = {Tan, Anqi and Wang, Kai-Ning and Ashrafee, Tasfia and Patel, Ami and Liu, Yuxiong and Umrao, Saurabh and Singamaneni, Srikanth and Riis, Jenna and Dariotis, Jacinda K. and Cunningham, Brian T.},\n  booktitle = {APHA 2026 Annual Meeting and Expo},\n  year = {2026}\n}"
     },
     {
@@ -226,10 +235,10 @@ window.SITE = {
       title: { en: "Pocket-Size Lateral Flow Assay Scanner for Plasmonic-Fluor-Tagged Test Strips", zh: "面向 Plasmonic-Fluor 标记试纸条的口袋式侧向流检测扫描仪" },
       status: "current",
       featured: true,
-      image: "",                  // TODO: 扫描仪照片
+      image: "assets/img/projects/reader-render.jpg",
       summary: {
-        en: "Designing a low-cost, pocket-size fluorescence scanner that reads plasmonic-fluor-tagged paper test strips, bringing ultrasensitive, quantitative lateral flow assay readout out of the lab and into point-of-care settings. This reader is the device platform for our DoD sepsis/ARDS project. First-author manuscript in preparation.",
-        zh: "设计一款低成本、口袋大小的荧光扫描仪，用于读取 plasmonic-fluor 标记的纸基试纸条，让超灵敏、定量的侧向流检测读数走出实验室、进入即时诊断场景。该读取仪也是我们国防部脓毒症/ARDS 项目的设备平台。第一作者论文撰写中。" },
+        en: "Designing a low-cost (~$100), pocket-size (66 × 68 × 95 mm) near-infrared fluorescence reader for plasmonic-fluor-tagged paper test strips, built on a Raspberry Pi with 750 nm LED excitation, optical filtering, phone-controlled acquisition, and automated T/C quantification. Its fluorescence images are comparable to a laboratory ImageQuant scanner at a fraction of the size and cost. This reader is also the device platform for our DoD sepsis/ARDS project. First-author manuscript in preparation.",
+        zh: "设计一款低成本（约 100 美元）、口袋大小（66 × 68 × 95 mm）的近红外荧光读取仪，用于读取 plasmonic-fluor 标记的纸基试纸条：基于树莓派，750 nm LED 激发、光学滤波、手机控制采集与自动 T/C 定量。荧光成像效果与实验室 ImageQuant 扫描仪相当，而体积和成本大幅降低。该读取仪也是我们国防部脓毒症/ARDS 项目的设备平台。第一作者论文撰写中。" },
       meta: {
         "Role": { en: "Lead researcher", zh: "项目负责人" },
         "Lab": { en: "Nanosensors Group, UIUC", zh: "UIUC Nanosensors Group" },
@@ -242,14 +251,15 @@ window.SITE = {
       title: { en: "Live Hormone: Competitive LFA Platform for Real-Time Testosterone, Cortisol, and Progesterone Monitoring", zh: "Live Hormone：基于竞争法侧向流检测的睾酮、皮质醇与孕酮实时监测平台" },
       status: "current",
       featured: true,
-      image: "",                  // TODO: 试纸条/读取器照片
+      image: "assets/img/projects/reader-phone.jpg",
       summary: {
-        en: "Developing a competitive, plasmonic-fluor-enhanced lateral flow assay platform for real-time monitoring of steroid hormones in saliva, including quantitative salivary cortisol measurement in community settings (APHA 2026).",
-        zh: "开发竞争法、plasmonic-fluor 增强的侧向流检测平台，实时监测唾液中的类固醇激素，包括在社区场景中定量检测唾液皮质醇（APHA 2026）。" },
+        en: "Developing a competitive plasmonic-fluor-enhanced lateral flow assay (PF-LFA) with a phone-controlled portable reader for real-time monitoring of salivary hormones in community settings. The cortisol assay reaches a reported detection limit of ≤0.12 ng/mL, covering the physiological range, and saliva has been collected from 153 adults in laboratory and community settings. In a companion mixed-methods study, 95% of participants would recommend the device. Presented at APHA 2026 (oral), LOAC 2026, Jump ARCHES 2026, and PNI Innovation Day 2025–2026.",
+        zh: "开发竞争法 plasmonic-fluor 增强侧向流检测（PF-LFA）与手机控制的便携读取仪，用于在社区场景中实时监测唾液激素。皮质醇检测的报告检测限 ≤0.12 ng/mL，覆盖生理浓度范围；已在实验室和社区采集 153 名成人的唾液样本。在配套的混合方法研究中，95% 的参与者愿意推荐该设备。成果在 APHA 2026（口头报告）、LOAC 2026、Jump ARCHES 2026 及 2025–2026 个性化营养创新日展示。" },
       meta: {
         "Role": { en: "Lead researcher", zh: "项目负责人" },
         "Lab": { en: "Nanosensors Group, UIUC", zh: "UIUC Nanosensors Group" },
-        "Collaborators": { en: "Prof. Jenna Riis, Prof. Jacinda K. Dariotis, Singamaneni Lab (WashU)", zh: "Jenna Riis 教授、Jacinda K. Dariotis 教授、圣路易斯华盛顿大学 Singamaneni 课题组" },
+        "Collaborators": { en: "Prof. Jenna L. Riis, Prof. Jacinda K. Dariotis (UIUC), Singamaneni Lab (WashU)", zh: "Jenna L. Riis 教授、Jacinda K. Dariotis 教授（UIUC）、圣路易斯华盛顿大学 Singamaneni 课题组" },
+        "Funding": { en: "UIUC Personalized Nutrition Initiative Seed Grant, NSF, Jump ARCHES", zh: "UIUC 个性化营养计划种子基金、美国国家科学基金会（NSF）、Jump ARCHES" },
         "Period": "Sep 2024 – Present"
       },
       link: ""
@@ -407,10 +417,26 @@ window.SITE = {
   ],
 
   // ---------- Talks / 报告 ----------
+  // 只放已确认的报告/海报；APHA Phase II（Wang et al., Submitted）待接收后再加
   talks: [
     { date: "Nov 2026", text: {
-      en: "Presentation at the <strong>APHA 2026 Annual Meeting and Expo</strong> on a portable plasmonic-fluor-enhanced lateral flow assay for salivary cortisol.",
-      zh: "在 <strong>APHA 2026 年会</strong>上报告便携式 plasmonic-fluor 增强侧向流检测唾液皮质醇的研究。" } }
+      en: "<strong>Oral presentation (accepted)</strong>: \"Portable plasmonic fluor-enhanced lateral flow assay for quantitative salivary cortisol measurement in community settings.\" <a href=\"https://www.apha.org/events-and-meetings/apha-calendar/2026-apha-annual-meeting-and-expo\" target=\"_blank\">APHA 2026 Annual Meeting and Expo</a>, San Antonio, TX, Nov 3, 2026.",
+      zh: "<strong>口头报告（已接收）</strong>：便携式 plasmonic-fluor 增强侧向流检测定量测量社区唾液皮质醇。<a href=\"https://www.apha.org/events-and-meetings/apha-calendar/2026-apha-annual-meeting-and-expo\" target=\"_blank\">APHA 2026 年会</a>，美国德州圣安东尼奥，2026 年 11 月 3 日。" } },
+    { date: "Oct 2026", text: {
+      en: "<strong>Poster</strong>: \"A portable plasmonic fluor-enhanced lateral flow platform for quantitative salivary cortisol measurement.\" <a href=\"https://www.selectbioconferences.com/loacwc2026\" target=\"_blank\">Lab-on-a-Chip and Microfluidics World Congress 2026</a> (SelectBIO), Laguna Hills, CA.",
+      zh: "<strong>海报</strong>：用于唾液皮质醇定量检测的便携式 plasmonic-fluor 增强侧向流平台。<a href=\"https://www.selectbioconferences.com/loacwc2026\" target=\"_blank\">2026 芯片实验室与微流控世界大会</a>（SelectBIO），美国加州 Laguna Hills。" } },
+    { date: "Oct 2026", text: {
+      en: "<strong>Poster</strong>: \"Portable plasmonic fluor-enhanced lateral flow assay for quantitative salivary cortisol measurement in community settings.\" <a href=\"https://www.osfinnovation.org/invent/innovation-academic-incubator/jump-arches/health-care-engineering-systems-symposium\" target=\"_blank\">Health Care Engineering Systems Symposium 2026</a> (Jump ARCHES), Peoria, IL.",
+      zh: "<strong>海报</strong>：便携式 plasmonic-fluor 增强侧向流检测定量测量社区唾液皮质醇。<a href=\"https://www.osfinnovation.org/invent/innovation-academic-incubator/jump-arches/health-care-engineering-systems-symposium\" target=\"_blank\">2026 医疗工程系统研讨会</a>（Jump ARCHES），美国伊利诺伊州 Peoria。" } },
+    { date: "Sep 2026", text: {
+      en: "<strong>Poster</strong>: \"Portable plasmonic fluor-enhanced lateral flow assay for quantitative salivary cortisol measurement in community settings.\" <a href=\"https://personalizednutrition.research.illinois.edu/2026-pn-innovation-day/\" target=\"_blank\">2026 Personalized Nutrition Innovation Day</a>, UIUC.",
+      zh: "<strong>海报</strong>：便携式 plasmonic-fluor 增强侧向流检测定量测量社区唾液皮质醇。<a href=\"https://personalizednutrition.research.illinois.edu/2026-pn-innovation-day/\" target=\"_blank\">2026 个性化营养创新日</a>，UIUC。" } },
+    { date: "Sep 2026", text: {
+      en: "<strong>Poster (co-author)</strong>: \"Assessing the acceptability and feasibility of real-time salivary hormone feedback and implications for building trust in biomedical research: A mixed-methods study.\" <a href=\"https://personalizednutrition.research.illinois.edu/2026-pn-innovation-day/\" target=\"_blank\">2026 Personalized Nutrition Innovation Day</a>, UIUC.",
+      zh: "<strong>海报（合作者）</strong>：实时唾液激素反馈的可接受性与可行性及其对建立生物医学研究信任的意义——混合方法研究。<a href=\"https://personalizednutrition.research.illinois.edu/2026-pn-innovation-day/\" target=\"_blank\">2026 个性化营养创新日</a>，UIUC。" } },
+    { date: "Oct 2025", text: {
+      en: "<strong>Poster</strong>: \"Validating a lateral flow assay (LFA) scanning device for real-time salivary cortisol assaying.\" <a href=\"https://personalizednutrition.research.illinois.edu/2025-pn-innovation-day/\" target=\"_blank\">2025 Personalized Nutrition Innovation Day</a>, UIUC. [<a href=\"https://personalizednutrition.research.illinois.edu/files/2025/10/2025_PN_Innovation-Day_DigitalBooklet.pdf#page=38\" target=\"_blank\">Abstract</a>]",
+      zh: "<strong>海报</strong>：用于实时唾液皮质醇检测的侧向流扫描设备验证。<a href=\"https://personalizednutrition.research.illinois.edu/2025-pn-innovation-day/\" target=\"_blank\">2025 个性化营养创新日</a>，UIUC。[<a href=\"https://personalizednutrition.research.illinois.edu/files/2025/10/2025_PN_Innovation-Day_DigitalBooklet.pdf#page=38\" target=\"_blank\">摘要</a>]" } }
   ],
 
   // ---------- Teaching / 助教 ----------
