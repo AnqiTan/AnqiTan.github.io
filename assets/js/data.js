@@ -51,9 +51,15 @@ window.SITE = {
     { date: "Feb 2026", text: {
       en: "Our paper on an <strong>ultrasensitive point-of-care antigen test for <em>Neisseria gonorrhoeae</em></strong> using plasmon-enhanced lateral flow assays was published in <strong>ACS Nano Medicine</strong>.",
       zh: "我们基于等离激元增强侧向流检测的<strong>淋病奈瑟菌超灵敏即时抗原检测</strong>论文发表于 <strong>ACS Nano Medicine</strong>。" } },
+    { date: "Nov 2025", text: {
+      en: "🏆 Our team won <strong>First Place</strong> in the <a href=\"https://odsr.illinois.edu/2025-ashby-prize-in-computational-science-hackathon-winners-streamline-crispr-screening-with-ai/\" target=\"_blank\">2025 Ashby Prize in Computational Science Hackathon</a> at NCSA for using LLMs to predict CRISPR screen outcomes.",
+      zh: "🏆 我们团队在 NCSA <a href=\"https://odsr.illinois.edu/2025-ashby-prize-in-computational-science-hackathon-winners-streamline-crispr-screening-with-ai/\" target=\"_blank\">2025 Ashby Prize 计算科学黑客松</a>中获得<strong>第一名</strong>，项目利用大语言模型预测 CRISPR 筛选结果。" } },
     { date: "Jul 2025", text: {
       en: "Our review <strong>Photonic Crystal Grating Resonance and Interfaces for Health Diagnostic Technologies</strong> was published in <strong>Chemical Reviews</strong>.",
       zh: "我们的综述 <strong>Photonic Crystal Grating Resonance and Interfaces for Health Diagnostic Technologies</strong> 发表于 <strong>Chemical Reviews</strong>。" } },
+    { date: "May 2024", text: {
+      en: "Our team received an <strong>Honorable Mention</strong> in the <a href=\"https://ai.ncsa.illinois.edu/2024-hackathon-winners-announced/\" target=\"_blank\">2024 Ashby Prize in Computational Science Hackathon</a> for an LLM-automated gravitational wave detection workflow.",
+      zh: "我们团队在 <a href=\"https://ai.ncsa.illinois.edu/2024-hackathon-winners-announced/\" target=\"_blank\">2024 Ashby Prize 计算科学黑客松</a>中获得<strong>荣誉奖</strong>，项目利用大语言模型自动化引力波探测工作流。" } },
     { date: "Feb 2023", text: {
       en: "Our review on <strong>HIV self-testing technologies</strong> was published in <strong>Biosensors</strong>.",
       zh: "我们关于 <strong>HIV 自检技术</strong>的综述发表于 <strong>Biosensors</strong>。" } },
@@ -244,6 +250,34 @@ window.SITE = {
       link: "https://doi.org/10.1021/acsnanomed.5c00150"
     },
     {
+      title: { en: "LLM-Based Prediction of CRISPR Screen Outcomes (Hackathon, 1st Place)", zh: "基于大语言模型的 CRISPR 筛选结果预测（黑客松第一名）" },
+      status: "past",
+      featured: false,
+      image: "",
+      summary: {
+        en: "Two-person team at the 2025 Ashby Prize in Computational Science Hackathon (NCSA). We used large language models to computationally predict CRISPR screen outcomes so scientists can prioritize experiments, splitting the task into separate classification and reasoning stages, and identified a label imbalance in the benchmark test set. Won First Place ($3,000).",
+        zh: "2025 Ashby Prize 计算科学黑客松（NCSA）两人团队项目。利用大语言模型计算预测 CRISPR 筛选结果，帮助科学家决定优先开展哪些实验；我们把任务拆分为“分类”与“推理”两个阶段，并发现了基准测试集的标签不平衡问题。获第一名（3000 美元）。" },
+      meta: {
+        "Team": "Jiahua Dong, Anqi Tan",
+        "Period": "Oct 2025"
+      },
+      link: "https://ai.ncsa.illinois.edu/the-science-behind-the-2025-ashby-prize-in-computational-science-hackathon-winners-streamlining-crispr-screening-with-ai/"
+    },
+    {
+      title: { en: "InitToWinIt: Automated Gravitational Wave Detection Workflow (Hackathon, Honorable Mention)", zh: "InitToWinIt：引力波探测自动化工作流（黑客松荣誉奖）" },
+      status: "past",
+      featured: false,
+      image: "",
+      summary: {
+        en: "Built a streamlined code architecture using OpenAI services to automate the classification of gravitational waves from black hole collisions, using LLMs as a front-end to computational workflows. Honorable Mention at the 2024 Ashby Prize in Computational Science Hackathon (NCSA).",
+        zh: "以大语言模型作为计算工作流的前端，基于 OpenAI 服务搭建精简的代码架构，自动化分类黑洞碰撞产生的引力波信号。获 2024 Ashby Prize 计算科学黑客松（NCSA）荣誉奖。" },
+      meta: {
+        "Team": "Anusha Verma Chandraju, Shengzhu Yin, Tanmoy Debnath, Anqi Tan, Jiahua Dong",
+        "Period": "Apr 2024"
+      },
+      link: "https://ai.ncsa.illinois.edu/2024-hackathon-winners-announced/"
+    },
+    {
       title: { en: "Re-Localizable Remote-Center-of-Motion Mechanism for Minimally Invasive Surgery", zh: "面向微创手术的可重定位远程运动中心（RCM）机构" },
       status: "past",
       featured: true,
@@ -357,6 +391,8 @@ window.SITE = {
 
   // ---------- 奖项（首页和 CV 页都会显示）----------
   awards: [
+    { name: { en: "First Place ($3,000), Ashby Prize in Computational Science Hackathon, NCSA, UIUC", zh: "UIUC NCSA Ashby Prize 计算科学黑客松 第一名（3000 美元）" }, date: "2025" },
+    { name: { en: "Honorable Mention, Ashby Prize in Computational Science Hackathon, NCSA, UIUC", zh: "UIUC NCSA Ashby Prize 计算科学黑客松 荣誉奖" }, date: "2024" },
     { name: { en: "National Silver Medal, China \"Internet+\" Innovation and Entrepreneurship Competition", zh: "中国“互联网+”大学生创新创业大赛 全国银奖" }, date: "2021" },
     { name: { en: "First Prize, RoboMaster Mecha Master (College Level)", zh: "RoboMaster 机甲大师校级赛 一等奖" }, date: "2019" },
     { name: { en: "Outstanding Performance and Innovation Award, 1st International Concrete Dragon Boat Invitational Competition", zh: "首届国际混凝土龙舟邀请赛 杰出表现与创新奖" }, date: "2019" },
