@@ -177,6 +177,7 @@ h3 { font-size: 20px; }
 /* ===== Contact ===== */
 .contact-card { max-width: 640px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; box-shadow: var(--shadow); }
 .contact-card .social { margin-top: 16px; }
+[hidden] { display: none !important; }
 .form { display: grid; gap: 14px; margin-top: 24px; }
 .form input, .form textarea { font: inherit; padding: 12px 14px; border-radius: 10px; border: 1px solid var(--border); background: var(--bg); color: var(--text); }
 .form textarea { min-height: 140px; resize: vertical; }

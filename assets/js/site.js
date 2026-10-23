@@ -39,7 +39,8 @@
       contact_eyebrow: "Get in touch", contact_desc: "I'm always happy to talk about research, collaborations, and opportunities.",
       say_hello: "Say hello", contact_text: 'The best way to reach me is by email: <a data-href="email">send me an email</a>.',
       "meta:Role": "Role", "meta:Lab": "Lab", "meta:Advisor": "Advisor", "meta:Collaborators": "Collaborators",
-      "meta:Period": "Period", "meta:Team": "Team", "meta:Funding": "Funding"
+      "meta:Period": "Period", "meta:Team": "Team", "meta:Funding": "Funding",
+      primary_email: "Primary", alt_email: "Alternate"
     },
     zh: {
       switch: "EN", home: "首页", cv: "简历", skills: "技能", research: "研究",
@@ -63,6 +64,7 @@
       say_hello: "打个招呼", contact_text: '最方便的联系方式是邮件：<a data-href="email">给我发邮件</a>。',
       "meta:Role": "角色", "meta:Lab": "实验室", "meta:Advisor": "导师", "meta:Collaborators": "合作者",
       "meta:Period": "时间", "meta:Team": "团队", "meta:Funding": "资助",
+      primary_email: "主邮箱", alt_email: "备用邮箱",
       "badge:First Author": "第一作者", "badge:Review": "综述", "badge:Under Review": "审稿中",
       "badge:Book Chapter": "书籍章节", "badge:Oral": "口头报告"
     }
@@ -170,6 +172,7 @@
 
   const socialLinks = () => [
     so.email && `<a href="mailto:${so.email}">${t("email")}</a>`,
+    so.emailAlt && `<a href="mailto:${so.emailAlt}">Gmail</a>`,
     so.linkedin && `<a href="${so.linkedin}" target="_blank" rel="noopener">LinkedIn</a>`,
     so.github && `<a href="${so.github}" target="_blank" rel="noopener">GitHub</a>`,
     so.scholar && `<a href="${so.scholar}" target="_blank" rel="noopener">${t("google_scholar")}</a>`
@@ -194,7 +197,7 @@
       return `<strong>${first}</strong> ${rest.join(" ")}`;
     },
     "social-icons": () => [
-      ...Object.entries(so).filter(([, v]) => v).map(([k, v]) =>
+      ...Object.entries(so).filter(([k, v]) => v && k !== "emailAlt").map(([k, v]) =>
         `<a href="${k === "email" ? "mailto:" + v : v}" target="_blank" rel="noopener" title="${t(k)}">${ICONS[k] || ""}<span>${t(k)}</span></a>`),
       S.cv && `<a href="${url(S.cv)}" target="_blank" title="${t("cv")}">${ICONS.cv}<span>${t("cv")}</span></a>`
     ].filter(Boolean).join(""),
@@ -224,7 +227,11 @@
     "awards": () => S.awards.map((a) => `<div class="entry-head"><span>${L(a.name)}</span><span class="date">${D(a.date)}</span></div>`).join(""),
     "gallery": () => S.gallery.map((g, i) =>
       `<figure data-i="${i}"><img src="${url(g.src)}" alt="${L(g.caption) || ""}" loading="lazy"><figcaption>${L(g.caption) || ""}</figcaption></figure>`).join(""),
-    "contact-links": () => socialLinks()
+    "contact-links": () => socialLinks(),
+    "contact-emails": () => [
+      so.email && `<strong>${t("primary_email")}:</strong> <a href="mailto:${so.email}">${so.email}</a>`,
+      so.emailAlt && `<strong>${t("alt_email")}:</strong> <a href="mailto:${so.emailAlt}">${so.emailAlt}</a>`
+    ].filter(Boolean).join("<br>")
   };
 
   // ---------- 整页渲染（切换语言时重新执行）----------

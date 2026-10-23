@@ -34,7 +34,8 @@ window.SITE = {
   },
 
   social: {
-    email: "anqitan2@illinois.edu",
+    email: "anqitan2@illinois.edu",          // 主邮箱
+    emailAlt: "angie.anqi.tan@gmail.com",    // 备用邮箱（只在联系页和页脚显示）
     scholar: "https://scholar.google.com/citations?user=SkxZzOoAAAAJ",
     github: "",                   // TODO: 想放的话填 "https://github.com/AnqiTan"
     linkedin: ""                  // TODO: LinkedIn 链接
@@ -43,14 +44,14 @@ window.SITE = {
   // ---------- 首页 News：日期 + 一句话，新的放最上面 ----------
   news: [
     { date: "Nov 2026", text: {
-      en: "I will present our <strong>portable plasmonic-fluor-enhanced lateral flow assay for salivary cortisol</strong> at the <strong>APHA 2026 Annual Meeting and Expo</strong>.",
-      zh: "我将在 <strong>APHA 2026 年会</strong>上展示我们的<strong>便携式 plasmonic-fluor 增强侧向流检测（唾液皮质醇）</strong>工作。" } },
+      en: "I will present our <strong>portable plasmonic-fluor-enhanced lateral flow assay for salivary cortisol</strong> at the <strong><a href=\"https://www.apha.org/events-and-meetings/annual\" target=\"_blank\">APHA 2026 Annual Meeting and Expo</a></strong> in San Antonio.",
+      zh: "我将在圣安东尼奥举行的 <strong><a href=\"https://www.apha.org/events-and-meetings/annual\" target=\"_blank\">APHA 2026 年会</a></strong>上展示我们的<strong>便携式 plasmonic-fluor 增强侧向流检测（唾液皮质醇）</strong>工作。" } },
     { date: "May 2026", text: {
-      en: "Our critical review <strong>Point of Care Molecular Cancer Diagnostics</strong> was published in <strong>Lab on a Chip</strong>.",
-      zh: "我们的综述 <strong>Point of Care Molecular Cancer Diagnostics</strong> 发表于 <strong>Lab on a Chip</strong>。" } },
+      en: "Our critical review <strong><a href=\"https://pubs.rsc.org/lc/article/26/10/2948/1230310\" target=\"_blank\">Point of Care Molecular Cancer Diagnostics</a></strong> was published in <strong>Lab on a Chip</strong>.",
+      zh: "我们的综述 <strong><a href=\"https://pubs.rsc.org/lc/article/26/10/2948/1230310\" target=\"_blank\">Point of Care Molecular Cancer Diagnostics</a></strong> 发表于 <strong>Lab on a Chip</strong>。" } },
     { date: "Feb 2026", text: {
-      en: "Our paper on an <strong>ultrasensitive point-of-care antigen test for <em>Neisseria gonorrhoeae</em></strong> using plasmon-enhanced lateral flow assays was published in <strong>ACS Nano Medicine</strong>.",
-      zh: "我们基于等离激元增强侧向流检测的<strong>淋病奈瑟菌超灵敏即时抗原检测</strong>论文发表于 <strong>ACS Nano Medicine</strong>。" } },
+      en: "Our paper on an <strong><a href=\"https://doi.org/10.1021/acsnanomed.5c00150\" target=\"_blank\">ultrasensitive point-of-care antigen test for <em>Neisseria gonorrhoeae</em></a></strong> using plasmon-enhanced lateral flow assays was published in <strong>ACS Nano Medicine</strong>.",
+      zh: "我们基于等离激元增强侧向流检测的<strong><a href=\"https://doi.org/10.1021/acsnanomed.5c00150\" target=\"_blank\">淋病奈瑟菌超灵敏即时抗原检测</a></strong>论文发表于 <strong>ACS Nano Medicine</strong>。" } },
     { date: "Nov 2025", text: {
       en: "🏆 Our team won <strong>First Place</strong> in the <a href=\"https://odsr.illinois.edu/2025-ashby-prize-in-computational-science-hackathon-winners-streamline-crispr-screening-with-ai/\" target=\"_blank\">2025 Ashby Prize in Computational Science Hackathon</a> at NCSA for using LLMs to predict CRISPR screen outcomes.",
       zh: "🏆 我们团队在 NCSA <a href=\"https://odsr.illinois.edu/2025-ashby-prize-in-computational-science-hackathon-winners-streamline-crispr-screening-with-ai/\" target=\"_blank\">2025 Ashby Prize 计算科学黑客松</a>中获得<strong>第一名</strong>，项目利用大语言模型预测 CRISPR 筛选结果。" } },
@@ -58,17 +59,17 @@ window.SITE = {
       en: "Our collaborative project with WashU and UCSF on point-of-care phenotyping of sepsis and ARDS was funded by the <strong>Department of Defense</strong> ($4.87M). [<a href=\"https://source.washu.edu/2025/09/4-87-million-grant-supports-development-of-sepsis-diagnostic-device/\" target=\"_blank\">WashU</a>] [<a href=\"https://bioengineering.illinois.edu/news/sepsis-ards-detection\" target=\"_blank\">Illinois</a>]",
       zh: "我们与圣路易斯华盛顿大学、UCSF 合作的脓毒症与 ARDS 表型即时检测项目获<strong>美国国防部</strong>资助（487 万美元）。[<a href=\"https://source.washu.edu/2025/09/4-87-million-grant-supports-development-of-sepsis-diagnostic-device/\" target=\"_blank\">WashU 报道</a>] [<a href=\"https://bioengineering.illinois.edu/news/sepsis-ards-detection\" target=\"_blank\">UIUC 报道</a>]" } },
     { date: "Jul 2025", text: {
-      en: "Our review <strong>Photonic Crystal Grating Resonance and Interfaces for Health Diagnostic Technologies</strong> was published in <strong>Chemical Reviews</strong>.",
-      zh: "我们的综述 <strong>Photonic Crystal Grating Resonance and Interfaces for Health Diagnostic Technologies</strong> 发表于 <strong>Chemical Reviews</strong>。" } },
+      en: "Our review <strong><a href=\"https://doi.org/10.1021/acs.chemrev.4c00653\" target=\"_blank\">Photonic Crystal Grating Resonance and Interfaces for Health Diagnostic Technologies</a></strong> was published in <strong>Chemical Reviews</strong>.",
+      zh: "我们的综述 <strong><a href=\"https://doi.org/10.1021/acs.chemrev.4c00653\" target=\"_blank\">Photonic Crystal Grating Resonance and Interfaces for Health Diagnostic Technologies</a></strong> 发表于 <strong>Chemical Reviews</strong>。" } },
     { date: "May 2024", text: {
       en: "Our team received an <strong>Honorable Mention</strong> in the <a href=\"https://ai.ncsa.illinois.edu/2024-hackathon-winners-announced/\" target=\"_blank\">2024 Ashby Prize in Computational Science Hackathon</a> for an LLM-automated gravitational wave detection workflow.",
       zh: "我们团队在 <a href=\"https://ai.ncsa.illinois.edu/2024-hackathon-winners-announced/\" target=\"_blank\">2024 Ashby Prize 计算科学黑客松</a>中获得<strong>荣誉奖</strong>，项目利用大语言模型自动化引力波探测工作流。" } },
     { date: "Feb 2023", text: {
-      en: "Our review on <strong>HIV self-testing technologies</strong> was published in <strong>Biosensors</strong>.",
-      zh: "我们关于 <strong>HIV 自检技术</strong>的综述发表于 <strong>Biosensors</strong>。" } },
+      en: "Our review on <strong><a href=\"https://doi.org/10.3390/bios13020298\" target=\"_blank\">HIV self-testing technologies</a></strong> was published in <strong>Biosensors</strong>.",
+      zh: "我们关于 <strong><a href=\"https://doi.org/10.3390/bios13020298\" target=\"_blank\">HIV 自检技术</a></strong>的综述发表于 <strong>Biosensors</strong>。" } },
     { date: "2022", text: {
-      en: "Graduated with B.S. degrees in Mechanical Engineering from UIUC and Zhejiang University, and joined the <strong>Nanosensors Group</strong> at UIUC as a Ph.D. student.",
-      zh: "获得 UIUC 与浙江大学机械工程双学士学位，加入 UIUC <strong>Nanosensors Group</strong> 攻读博士学位。" } }
+      en: "Graduated with B.S. degrees in Mechanical Engineering from UIUC and Zhejiang University, and joined the <strong><a href=\"https://nano.ece.illinois.edu\" target=\"_blank\">Nanosensors Group</a></strong> at UIUC as a Ph.D. student.",
+      zh: "获得 UIUC 与浙江大学机械工程双学士学位，加入 UIUC <strong><a href=\"https://nano.ece.illinois.edu\" target=\"_blank\">Nanosensors Group</a></strong> 攻读博士学位。" } }
   ],
   newsLimit: 6,                   // 首页最多显示几条，多余的折叠在 "Show more" 里
 
