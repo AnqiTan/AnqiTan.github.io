@@ -54,6 +54,9 @@ window.SITE = {
     { date: "Nov 2025", text: {
       en: "🏆 Our team won <strong>First Place</strong> in the <a href=\"https://odsr.illinois.edu/2025-ashby-prize-in-computational-science-hackathon-winners-streamline-crispr-screening-with-ai/\" target=\"_blank\">2025 Ashby Prize in Computational Science Hackathon</a> at NCSA for using LLMs to predict CRISPR screen outcomes.",
       zh: "🏆 我们团队在 NCSA <a href=\"https://odsr.illinois.edu/2025-ashby-prize-in-computational-science-hackathon-winners-streamline-crispr-screening-with-ai/\" target=\"_blank\">2025 Ashby Prize 计算科学黑客松</a>中获得<strong>第一名</strong>，项目利用大语言模型预测 CRISPR 筛选结果。" } },
+    { date: "Sep 2025", text: {
+      en: "Our collaborative project with WashU and UCSF on point-of-care phenotyping of sepsis and ARDS was funded by the <strong>Department of Defense</strong> ($4.87M). [<a href=\"https://source.washu.edu/2025/09/4-87-million-grant-supports-development-of-sepsis-diagnostic-device/\" target=\"_blank\">WashU</a>] [<a href=\"https://bioengineering.illinois.edu/news/sepsis-ards-detection\" target=\"_blank\">Illinois</a>]",
+      zh: "我们与圣路易斯华盛顿大学、UCSF 合作的脓毒症与 ARDS 表型即时检测项目获<strong>美国国防部</strong>资助（487 万美元）。[<a href=\"https://source.washu.edu/2025/09/4-87-million-grant-supports-development-of-sepsis-diagnostic-device/\" target=\"_blank\">WashU 报道</a>] [<a href=\"https://bioengineering.illinois.edu/news/sepsis-ards-detection\" target=\"_blank\">UIUC 报道</a>]" } },
     { date: "Jul 2025", text: {
       en: "Our review <strong>Photonic Crystal Grating Resonance and Interfaces for Health Diagnostic Technologies</strong> was published in <strong>Chemical Reviews</strong>.",
       zh: "我们的综述 <strong>Photonic Crystal Grating Resonance and Interfaces for Health Diagnostic Technologies</strong> 发表于 <strong>Chemical Reviews</strong>。" } },
@@ -202,6 +205,22 @@ window.SITE = {
   // image 留空则不显示图片。项目图请用自己的照片/示意图，放在 assets/img/projects/
   // meta 的键名（Role / Lab / Advisor / Collaborators / Period）会自动翻译，值可写 {en, zh}
   projects: [
+    {
+      title: { en: "Point-of-Care Molecular Phenotyping of Sepsis and ARDS (DoD PRMRP)", zh: "脓毒症与 ARDS 分子表型的即时检测（美国国防部 PRMRP 项目）" },
+      status: "current",
+      featured: true,
+      image: "",
+      summary: {
+        en: "A $4.87M Department of Defense project to build a rapid blood test and handheld reader that measures IL-8 and sTNFR-1 on a single multiplexed plasmonic-fluor lateral flow strip and classifies critically ill patients into hyperinflammatory or hypoinflammatory phenotypes at the bedside, including in military and resource-limited settings. Our lab develops the portable fluorescence reader.",
+        zh: "美国国防部资助的 487 万美元项目：开发快速血液检测与手持式读取仪，在一条多重 plasmonic-fluor 侧向流试纸上同时检测 IL-8 和 sTNFR-1，并在床旁将危重患者分为高炎症型或低炎症型表型，可用于军事和资源有限的场景。我们课题组负责便携式荧光读取仪的研发。" },
+      meta: {
+        "Role": { en: "Graduate researcher", zh: "研究生研究员" },   // TODO: 写具体负责的部分
+        "Collaborators": { en: "WashU (Prof. Pratik Sinha, Prof. Srikanth Singamaneni), UCSF (Prof. Carolyn Calfee)", zh: "圣路易斯华盛顿大学（Pratik Sinha 教授、Srikanth Singamaneni 教授）、加州大学旧金山分校（Carolyn Calfee 教授）" },   // TODO: 更新已转到斯坦福的课题组
+        "Funding": { en: "DoD Peer Reviewed Medical Research Program, Award HT9425-25-1-0825", zh: "美国国防部 PRMRP，项目号 HT9425-25-1-0825" },
+        "Period": "2025 – Present"
+      },
+      link: "https://bioengineering.illinois.edu/news/sepsis-ards-detection"
+    },
     {
       title: { en: "Pocket-Size Lateral Flow Assay Scanner for Plasmonic-Fluor-Tagged Test Strips", zh: "面向 Plasmonic-Fluor 标记试纸条的口袋式侧向流检测扫描仪" },
       status: "current",

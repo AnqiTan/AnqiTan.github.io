@@ -39,7 +39,7 @@
       contact_eyebrow: "Get in touch", contact_desc: "I'm always happy to talk about research, collaborations, and opportunities.",
       say_hello: "Say hello", contact_text: 'The best way to reach me is by email: <a data-href="email">send me an email</a>.',
       "meta:Role": "Role", "meta:Lab": "Lab", "meta:Advisor": "Advisor", "meta:Collaborators": "Collaborators",
-      "meta:Period": "Period", "meta:Team": "Team"
+      "meta:Period": "Period", "meta:Team": "Team", "meta:Funding": "Funding"
     },
     zh: {
       switch: "EN", home: "首页", cv: "简历", skills: "技能", research: "研究",
@@ -62,7 +62,7 @@
       contact_eyebrow: "保持联系", contact_desc: "欢迎交流研究、合作与工作机会。",
       say_hello: "打个招呼", contact_text: '最方便的联系方式是邮件：<a data-href="email">给我发邮件</a>。',
       "meta:Role": "角色", "meta:Lab": "实验室", "meta:Advisor": "导师", "meta:Collaborators": "合作者",
-      "meta:Period": "时间", "meta:Team": "团队",
+      "meta:Period": "时间", "meta:Team": "团队", "meta:Funding": "资助",
       "badge:First Author": "第一作者", "badge:Review": "综述", "badge:Under Review": "审稿中",
       "badge:Book Chapter": "书籍章节", "badge:Oral": "口头报告"
     }
