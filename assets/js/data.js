@@ -269,6 +269,21 @@ window.SITE = {
       link: "https://doi.org/10.1021/acsnanomed.5c00150"
     },
     {
+      title: { en: "EEG-Based Sleep Assistance and Fatigue Monitoring (Industry Internship)", zh: "基于脑电的辅助睡眠与疲劳监测（企业实习）" },
+      status: "past",
+      featured: false,
+      image: "",
+      summary: {
+        en: "Research assistant intern at the Institute of Brain Science of BrainCo (Zhejiang Qiangnao Technology). Completed research tasks for two projects: sleep assisted by acoustic and electrical stimulation, and fatigue monitoring with multimodal EEG.",
+        zh: "在浙江强脑科技（BrainCo）脑科学研究院担任研究助理实习生，完成“声电刺激辅助睡眠”与“多模态脑电疲劳监测”两个项目的研究任务。" },
+      meta: {
+        "Role": { en: "Research assistant intern", zh: "研究助理实习生" },
+        "Lab": { en: "Institute of Brain Science, BrainCo, Hangzhou", zh: "强脑科技 脑科学研究院，杭州" },
+        "Period": "May 2022 – Aug 2022"
+      },
+      link: ""
+    },
+    {
       title: { en: "LLM-Based Prediction of CRISPR Screen Outcomes (Hackathon, 1st Place)", zh: "基于大语言模型的 CRISPR 筛选结果预测（黑客松第一名）" },
       status: "past",
       featured: false,
@@ -486,6 +501,13 @@ window.SITE = {
     { role: { en: "Teaching Assistant", zh: "助教" }, org: { en: "BIOE/ECE 415 Biomedical Instrumentation Lab, UIUC", zh: "UIUC BIOE/ECE 415 生物医学仪器实验" }, date: "", bullets: {
       en: ["Supported laboratory instruction in biomedical instrumentation for undergraduate students."],
       zh: ["协助本科生生物医学仪器实验课程教学。"] } },
+    { role: { en: "Research Assistant Intern, Institute of Brain Science", zh: "脑科学研究院 研究助理实习生" }, org: { en: "Zhejiang Qiangnao Technology Co., Ltd. (BrainCo), Hangzhou", zh: "浙江强脑科技有限公司（BrainCo），杭州" }, date: "May 2022 – Aug 2022", bullets: {
+      en: [
+        "Completed research tasks for two projects: sleep assisted by acoustic and electrical stimulation, and fatigue monitoring with multimodal EEG."
+      ],
+      zh: [
+        "完成“声电刺激辅助睡眠”与“多模态脑电疲劳监测”两个项目的研究任务。"
+      ] } },
     { role: { en: "Teaching Assistant", zh: "助教" }, org: { en: "ME 170 Computer-Aided Design, UIUC", zh: "UIUC ME 170 计算机辅助设计" }, date: "Spring 2020, Spring 2021", bullets: {
       en: ["Supported instruction in CAD modeling for undergraduate mechanical engineering students."],
       zh: ["协助机械工程本科生 CAD 建模课程教学。"] } },
