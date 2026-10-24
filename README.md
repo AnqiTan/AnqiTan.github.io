@@ -22,7 +22,7 @@
 | 放 CV | 把 PDF 存为 `assets/cv.pdf` |
 | 首页横幅背景 | 放 `assets/img/banner-projects.jpg`、`assets/img/banner-blog.jpg`（没有就显示纯色） |
 | 加项目 | 在 `data.js` 的 `projects` 里复制一条，图片放 `assets/img/projects/` |
-| 写博客 | 复制 `blog/hello-world.html` 改名改内容，再在 `data.js` 的 `posts` 里加一条 |
+| 写博客 | 复制 `blog/2019-guizhou-volunteer-teaching.html` 改名改内容（中英双语写在 `data-lang="en"` / `data-lang="zh"` 两段里），再在 `data.js` 的 `posts` 里加一条 |
 | 加相册照片 | 图片放 `assets/img/gallery/`，在 `data.js` 的 `gallery` 里加一条 |
 | 改配色 | 改 `assets/css/style.css` 最上面的 `:root` 颜色变量 |
 
