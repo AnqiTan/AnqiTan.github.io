@@ -275,3 +275,13 @@ html[lang="en"] [data-lang="zh"], html[lang="zh-CN"] [data-lang="en"] { display:
 .gallery figure.is-video { cursor: default; }
 .gallery video { width: 100%; display: block; background: #000; }
 .project-video { width: 100%; max-width: 520px; margin-top: 12px; border-radius: 10px; background: #000; display: block; }
+
+/* ===== CV 页：按岗位下载简历 ===== */
+.muted-text { color: var(--muted); margin: 0 0 14px; }
+.resume-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 16px; }
+.resume-card { display: flex; flex-direction: column; gap: 6px; padding: 18px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); color: var(--text); transition: transform .15s, box-shadow .15s, border-color .15s; }
+.resume-card:hover { text-decoration: none; transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--accent); }
+.resume-card h3 { font-size: 17px; margin: 0; }
+.resume-card p { font-size: 14px; color: var(--muted); margin: 0; flex: 1; }
+.resume-tag { align-self: flex-start; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); background: var(--tint); padding: 2px 9px; border-radius: 99px; }
+.resume-dl { font-size: 14px; font-weight: 700; color: var(--accent); }

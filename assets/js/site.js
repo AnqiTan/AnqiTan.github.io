@@ -47,7 +47,8 @@
       say_hello: "Say hello", contact_text: 'The best way to reach me is by email: <a data-href="email">send me an email</a>.',
       "meta:Role": "Role", "meta:Lab": "Lab", "meta:Advisor": "Advisor", "meta:Collaborators": "Collaborators",
       "meta:Period": "Period", "meta:Team": "Team", "meta:Funding": "Funding",
-      primary_email: "Primary", alt_email: "Alternate"
+      primary_email: "Primary", alt_email: "Alternate",
+      download_cv: "Download CV & Resumes", download_cv_desc: "A full academic CV, plus one-page resumes tailored to different roles.", download_pdf: "Download PDF"
     },
     zh: {
       switch: "EN", home: "首页", cv: "简历", skills: "技能", research: "研究",
@@ -72,6 +73,7 @@
       "meta:Role": "角色", "meta:Lab": "实验室", "meta:Advisor": "导师", "meta:Collaborators": "合作者",
       "meta:Period": "时间", "meta:Team": "团队", "meta:Funding": "资助",
       primary_email: "主邮箱", alt_email: "备用邮箱",
+      download_cv: "下载简历", download_cv_desc: "完整学术简历，以及针对不同岗位的一页版简历（英文）。", download_pdf: "下载 PDF",
       "badge:First Author": "第一作者", "badge:Review": "综述", "badge:Under Review": "审稿中",
       "badge:Book Chapter": "书籍章节", "badge:Oral": "口头报告"
     }
@@ -237,6 +239,13 @@
     "gallery": () => S.gallery.map((g, i) => g.video
       ? `<figure class="is-video"><video src="${url(g.video)}"${g.poster ? ` poster="${url(g.poster)}"` : ""} controls playsinline preload="none"></video><figcaption>${L(g.caption) || ""}</figcaption></figure>`
       : `<figure data-i="${i}"><img src="${url(g.src)}" alt="${L(g.caption) || ""}" loading="lazy"><figcaption>${L(g.caption) || ""}</figcaption></figure>`).join(""),
+    "resumes": () => (S.resumes || []).map((r) => `
+      <a class="resume-card" href="${url(r.file)}" target="_blank" rel="noopener">
+        <span class="resume-tag">${esc(L(r.tag))}</span>
+        <h3>${esc(L(r.title))}</h3>
+        <p>${esc(L(r.desc))}</p>
+        <span class="resume-dl">${t("download_pdf")} ↓</span>
+      </a>`).join(""),
     "contact-links": () => socialLinks(),
     "contact-emails": () => [
       so.email && `<strong>${t("primary_email")}:</strong> <a href="mailto:${so.email}">${so.email}</a>`,

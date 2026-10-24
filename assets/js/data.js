@@ -550,6 +550,14 @@ window.SITE = {
     { group: { en: "Languages", zh: "语言" }, items: [{ en: "English (Fluent)", zh: "英语（流利）" }, { en: "Chinese (Native)", zh: "中文（母语）" }] }
   ],
 
+  // ---------- CV 页“下载简历”卡片：PDF 由 操作指南/生成CV 下的脚本生成 ----------
+  resumes: [
+    { tag: { en: "Academic", zh: "学术" }, title: { en: "Full Academic CV", zh: "完整学术简历" }, desc: { en: "All publications, presentations, honors, teaching, and service (3 pages).", zh: "包含全部论文、学术报告、荣誉、教学与服务经历（3 页）。" }, file: "assets/cv.pdf" },
+    { tag: { en: "Industry", zh: "工业界" }, title: { en: "Medical Devices & Instrumentation", zh: "医疗器械与仪器" }, desc: { en: "One-page resume emphasizing portable reader design, optics, and mechanical engineering.", zh: "一页版，突出便携读取仪、光学与机械设计。" }, file: "assets/resumes/anqi-tan-resume-medical-device.pdf" },
+    { tag: { en: "Industry", zh: "工业界" }, title: { en: "Diagnostics & Assay Development", zh: "诊断与检测开发" }, desc: { en: "One-page resume emphasizing lateral flow assay development and human-sample validation.", zh: "一页版，突出侧向流检测开发与人体样本验证。" }, file: "assets/resumes/anqi-tan-resume-diagnostics.pdf" },
+    { tag: { en: "Industry", zh: "工业界" }, title: { en: "AI & Data for Health", zh: "AI 与健康数据" }, desc: { en: "One-page resume emphasizing image analysis, LLM tools, and hackathon wins.", zh: "一页版，突出图像分析、大语言模型工具与黑客松获奖。" }, file: "assets/resumes/anqi-tan-resume-ai-health.pdf" }
+  ],
+
   // ---------- CV 页面上的摘要（PDF 之外的网页版简历）----------
   education: [
     { school: { en: "University of Illinois Urbana-Champaign", zh: "伊利诺伊大学厄巴纳-香槟分校（UIUC）" }, degree: { en: "Ph.D. in Bioengineering", zh: "生物工程 博士" }, date: "Aug 2022 – Present", note: { en: "Advisor: Prof. Brian T. Cunningham", zh: "导师：Brian T. Cunningham 教授" } },
