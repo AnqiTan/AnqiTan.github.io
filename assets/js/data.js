@@ -288,11 +288,17 @@ window.SITE = {
       featured: false,
       image: "assets/img/projects/stage-lighting.jpg",
       summary: {
-        en: "Senior design project: a motorized stage-lighting system with an RGB LED-matrix spotlight on a rotating mount, a laser-cut acrylic frame, and a handheld controller, enabling real-time control of beam direction and color. As the team's mechanical engineer, I worked on the mechanical design and fabrication of the light fixture.",
-        zh: "本科毕业设计：一套电动舞台灯光系统，包括安装在旋转机构上的 RGB LED 阵列聚光灯、激光切割亚克力框架和手持控制器，可实时控制光束方向与颜色。我作为团队中的机械工程成员，负责灯具的机械设计与制作。" },
+        en: "ECE 445 senior design (Team #29): a portable stage-lighting system in which the light follows the operator's hand in real time. A handheld joystick (ESP32 + MPU9250 posture sensor) streams its orientation over WiFi to a central server, which maps it to pitch/roll commands for a servo-driven two-axis light arm; a music-analysis module (beat/energy tracking plus a self-trained emotion-recognition network) generates the LED color sequence. As the team's mechanical engineer, I designed the two-axis manipulator (forward/inverse kinematics simulated in MATLAB, torque analysis with Euler–Lagrange and Newton–Euler methods) and the 3D-printed and laser-cut structure, designed for assembly, maintenance, and portability (fits in a 40 L bag, 9.3 kg, 4.5 h battery life).",
+        zh: "ECE 445 本科毕业设计（第 29 组）：一套便携式舞台灯光系统，灯光实时“模仿”操作者手部动作。手持控制器（ESP32 + MPU9250 姿态传感器）通过 WiFi 把姿态发送到中央服务器，转换为舵机驱动的两轴灯臂的俯仰/横滚指令；音乐分析模块（节拍、能量追踪 + 自训练情绪识别网络）生成 LED 颜色序列。我作为团队中的机械工程成员，负责两轴机械臂设计（MATLAB 正/逆运动学仿真，用欧拉–拉格朗日与牛顿–欧拉方法计算力矩）以及 3D 打印和激光切割结构，兼顾可装配、可维护与便携性（可装入 40 L 背包，重 9.3 kg，续航 4.5 小时）。" },
       meta: {
+        "Role": { en: "Mechanical design lead", zh: "机械设计负责人" },
         "Team": { en: "Ruiqi Li (ECE), Haozhe Chen (ECE), Zhaohua Yang (EE), Anqi Tan (ME)", zh: "Ruiqi Li（ECE）、Haozhe Chen（ECE）、Zhaohua Yang（EE）、谭安琪（ME）" },
-        "Period": "Spring 2022"
+        "Period": "Feb 2022 – May 2022"
+      },
+      links: {
+        SLIDES: "assets/files/mimicry-stage-lighting-final-presentation.pdf",
+        GITHUB: "https://github.com/RickyL-2000/ECE445Project",
+        DEMO: "https://www.youtube.com/watch?v=zT2t5CBC0IQ"
       },
       link: ""
     },
@@ -525,7 +531,7 @@ window.SITE = {
     { src: "assets/img/gallery/dragon-boat-award.jpg", caption: { en: "Outstanding Performance & Innovation Award, 1st International Concrete Dragon Boat Competition (2019)", zh: "首届国际大学生混凝土龙舟赛 · 杰出表现及创新奖（2019）" } },
     { src: "assets/img/gallery/guizhou-team.jpg", caption: { en: "Volunteer teaching team in Changshun, Guizhou (2019)", zh: "贵州长顺支教团合影（2019）" } },
     { src: "assets/img/gallery/robomaster-cad.jpg", caption: { en: "CAD render of our RoboMaster competition robot", zh: "RoboMaster 比赛机器人 CAD 渲染图" } },
-    { video: "assets/img/projects/stage-lighting-demo.mp4", poster: "assets/img/projects/stage-lighting-demo-poster.jpg", caption: { en: "Demo of our senior design: Mimicry Stage Lighting Control System (2022)", zh: "本科毕设演示：Mimicry 舞台灯光控制系统（2022）" } },
+    { video: "assets/img/projects/stage-lighting-demo.mp4", poster: "assets/img/projects/stage-lighting-demo-poster.jpg", caption: { en: "Demo of our senior design: Mimicry Stage Lighting Control System (Feb–May 2022)", zh: "本科毕设演示：Mimicry 舞台灯光控制系统（2022.02–05）" } },
     { video: "assets/img/gallery/cat-team-robot.mp4", poster: "assets/img/gallery/cat-team-robot-poster.jpg", caption: { en: "Robot design animation · The CAT Team (Anqi Tan, Zheyuan Zhang, Junkai Zhang, Qian Chen)", zh: "机器人设计动画 · The CAT Team（谭安琪、Zheyuan Zhang、Junkai Zhang、Qian Chen）" } },
     { src: "assets/img/gallery/industry-visit-floor.jpg", caption: { en: "Learning about sheet-metal parts on a factory floor", zh: "企业参观：在车间了解钣金零件" } },
     { src: "assets/img/gallery/industry-visit-group.jpg", caption: { en: "Organized an industry visit for classmates", zh: "组织同学企业参观" } },
