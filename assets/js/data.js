@@ -502,6 +502,11 @@ window.SITE = {
   // ---------- 相册 ----------
   gallery: [
     // 图片：{ src, caption }；视频：{ video, poster, caption }。caption 可写 { en, zh }
+    { src: "assets/img/gallery/graduation-bachelor.jpg", caption: { en: "Bachelor's graduation (2022)", zh: "本科毕业照（2022）" } },
+    { src: "assets/img/gallery/zju-uiuc-seminar-1.jpg", caption: { en: "ZJU–UIUC seminar at UIUC", zh: "浙大–UIUC 交流研讨会" } },
+    { src: "assets/img/gallery/alaska-fishing.jpg", caption: { en: "Deep-sea fishing in Valdez, Alaska", zh: "阿拉斯加 Valdez 海钓" } },
+    { src: "assets/img/gallery/zju-uiuc-seminar-2.jpg", caption: { en: "Group photo at the ZJU–UIUC seminar", zh: "浙大–UIUC 交流研讨会合影" } },
+    { src: "assets/img/gallery/wedding-bridesmaid.jpg", caption: { en: "Bridesmaid at a friend's wedding", zh: "在好友婚礼上当伴娘" } },
     { src: "assets/img/gallery/lake.jpg", caption: { en: "A summer day by the lake", zh: "夏日湖边" } },
     { src: "assets/img/gallery/dragon-boat-award.jpg", caption: { en: "Outstanding Performance & Innovation Award, 1st International Concrete Dragon Boat Competition (2019)", zh: "首届国际大学生混凝土龙舟赛 · 杰出表现及创新奖（2019）" } },
     { src: "assets/img/gallery/guizhou-team.jpg", caption: { en: "Volunteer teaching team in Changshun, Guizhou (2019)", zh: "贵州长顺支教团合影（2019）" } },
