@@ -5,3 +5,6 @@ __pycache__/
 
 # 私人记录，不上传
 私人记录/
+
+# 待处理的原始照片，不上传
+assets/img/projects/_inbox/

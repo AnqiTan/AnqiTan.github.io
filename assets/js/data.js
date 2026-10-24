@@ -199,15 +199,15 @@ window.SITE = {
     },
     {
       selected: false,
-      venue: "ACEM'20",
+      venue: "Structures20",
       badge: "",
       image: "",
       title: "Utilization of 3D Printing for Concrete Dragon Boat Model",
       authors: "Y.Q. Feng, K.H. Zhang, <strong>A.Q. Tan</strong>, K. Ma, and Y. Xiao",
-      venueFull: "The 2020 World Congress on Advances in Civil, Environmental, & Materials Research (ACEM20). 2020",
-      highlights: ["🏆 Outstanding Performance and Innovation Award, 1st International Concrete Dragon Boat Invitational Competition"],
-      links: {},
-      bibtex: ""
+      venueFull: "The 2020 Structures Congress (Structures20), in the 2020 World Congress on Advances in Civil, Environmental, & Materials Research (ACEM20), Seoul, Korea, Aug 25–28, 2020",
+      highlights: [{ en: "🏆 The dragon boat won the Outstanding Performance and Innovation Award at the 1st International Concrete Dragon Boat Competition (American Concrete Institute & Zhejiang University, 2019)", zh: "🏆 龙舟作品获首届国际大学生混凝土龙舟比赛“杰出表现及创新奖”（美国混凝土协会 & 浙江大学，2019）" }],
+      links: { PDF: "http://www.i-asem.org/publication_conf/structures20/7.CD/1.CD671/CD2671_6751F1.pdf" },
+      bibtex: "@inproceedings{feng2020utilization,\n  title = {Utilization of 3D Printing for Concrete Dragon Boat Model},\n  author = {Feng, Y.Q. and Zhang, K.H. and Tan, A.Q. and Ma, K. and Xiao, Y.},\n  booktitle = {The 2020 Structures Congress (Structures20)},\n  address = {Seoul, Korea},\n  year = {2020}\n}"
     }
   ],
 
@@ -360,15 +360,20 @@ window.SITE = {
       link: ""
     },
     {
-      title: { en: "3D-Printed Lightweight ECC Concrete Dragon Boat", zh: "3D 打印轻骨料 ECC 混凝土龙舟" },
+      title: { en: "Rapid Forming of Special-Shaped Concrete: 3D-Printed Concrete Dragon Boat", zh: "新型特殊异形混凝土快速成型技术研究：3D 打印混凝土龙舟" },
       status: "past",
       featured: false,
       image: "",
       summary: {
-        en: "Developed a lightweight-aggregate engineered cementitious composite (ECC) structure using a 3D-printed skeleton with FRP bars and film as structural components. Published at ACEM20 and received the Outstanding Performance and Innovation Award at the 1st International Concrete Dragon Boat Invitational Competition.",
-        zh: "以 3D 打印骨架为支撑、FRP 筋与 FRP 膜为结构构件，研制轻骨料 ECC 水泥基复合材料结构。成果发表于 ACEM20，并获首届国际混凝土龙舟邀请赛“杰出表现与创新奖”。" },
-      meta: { "Role": { en: "Main member (School-Level Research Training Program)", zh: "主要成员（校级大学生科研训练项目）" }, "Advisor": { en: "Prof. Yan Xiao, ZJU-UIUC Institute & USC", zh: "浙大国际联合学院（ZJUI）/ 南加州大学 Yan Xiao 老师" }, "Period": "Mar 2019 – May 2020" },
-      link: ""
+        en: "Developed a rapid concrete-forming technique that uses a 3D-printed frame with a new lightweight-aggregate engineered cementitious composite (ECC), plus FRP ribs and fabrics as structural components, and applied it to build a concrete dragon boat. The boat won the Outstanding Performance and Innovation Award at the 1st International Concrete Dragon Boat Competition (American Concrete Institute & Zhejiang University), and the work was published at Structures20/ACEM20.",
+        zh: "提出一种新型混凝土快速成型技术：以 3D 打印框架为骨架，采用新型轻骨料 ECC（高延性水泥基复合材料），并以 FRP 筋和 FRP 布作为结构构件，用于制作混凝土龙舟。作品获首届国际大学生混凝土龙舟比赛（美国混凝土协会、浙江大学主办）“杰出表现及创新奖”，论文发表于 Structures20/ACEM20 国际会议。" },
+      meta: {
+        "Role": { en: "Main member (School-Level Research Training Program)", zh: "主要成员（校级大学生科研训练项目）" },
+        "Team": { en: "Yiqi Feng, Anqi Tan, Kaihang Zhang", zh: "冯亦奇、谭安琪、张开航" },
+        "Advisor": { en: "Prof. Yan Xiao, ZJU-UIUC Institute & USC", zh: "浙大国际联合学院（ZJUI）/ 南加州大学 Yan Xiao 老师" },
+        "Period": "Mar 2019 – May 2020"
+      },
+      link: "http://www.i-asem.org/publication_conf/structures20/7.CD/1.CD671/CD2671_6751F1.pdf"
     },
     {
       title: { en: "Camera Tracking Method for a Manipulated Endoscope", zh: "机器人操控内窥镜的相机跟踪方法" },
@@ -458,7 +463,7 @@ window.SITE = {
     { name: { en: "Honorable Mention, Ashby Prize in Computational Science Hackathon, NCSA, UIUC", zh: "UIUC NCSA Ashby Prize 计算科学黑客松 荣誉奖" }, date: "2024" },
     { name: { en: "National Silver Medal, China \"Internet+\" Innovation and Entrepreneurship Competition", zh: "中国“互联网+”大学生创新创业大赛 全国银奖" }, date: "2021" },
     { name: { en: "First Prize, RoboMaster Mecha Master (College Level)", zh: "RoboMaster 机甲大师校级赛 一等奖" }, date: "2019" },
-    { name: { en: "Outstanding Performance and Innovation Award, 1st International Concrete Dragon Boat Invitational Competition", zh: "首届国际混凝土龙舟邀请赛 杰出表现与创新奖" }, date: "2019" },
+    { name: { en: "Outstanding Performance and Innovation Award, 1st International Concrete Dragon Boat Competition (ICDBC), American Concrete Institute & Zhejiang University", zh: "首届国际大学生混凝土龙舟比赛（ICDBC）杰出表现及创新奖（美国混凝土协会、浙江大学；国家级）" }, date: "2019" },
     { name: { en: "Third-Class Scholarship, Zhejiang University", zh: "浙江大学三等奖学金" }, date: "2019" },
     { name: { en: "Public Service Pacesetter, Zhejiang University", zh: "浙江大学公益服务标兵" }, date: "2019" },
     { name: { en: "Model of Social Work, Zhejiang University (twice)", zh: "浙江大学社会工作标兵（两次）" }, date: "2019, 2020" },
@@ -542,11 +547,11 @@ window.SITE = {
     { role: { en: "Undergraduate Research Leader", zh: "本科科研负责人" }, org: { en: "ZJU-UIUC Institute, Zhejiang University", zh: "浙江大学 浙大国际联合学院" }, date: "2019 – 2021", bullets: {
       en: [
         "Led a national-level research training project on a re-localizable RCM mechanism for minimally invasive surgery (first-author paper, IEEE ICARM 2021).",
-        "Led a team implementing camera tracking for a robot-manipulated endoscope; contributed to 3D-printed ECC structures (ACEM20)."
+        "Led a team implementing camera tracking for a robot-manipulated endoscope; contributed to a 3D-printed concrete dragon boat (Structures20/ACEM20)."
       ],
       zh: [
         "主持国家级大学生创新训练项目，研究面向微创手术的可重定位 RCM 机构（第一作者论文，IEEE ICARM 2021）。",
-        "带领团队实现机器人操控内窥镜的相机跟踪；参与 3D 打印 ECC 结构研究（ACEM20）。"
+        "带领团队实现机器人操控内窥镜的相机跟踪；参与 3D 打印混凝土龙舟研究（Structures20/ACEM20）。"
       ] } },
     // TODO: 确认学园学生会主席的结束时间
     { role: { en: "President, Residential College Student Committee", zh: "学园学生委员会 主席" }, org: { en: "Zhejiang University, Haining Campus", zh: "浙江大学海宁国际校区" }, date: "2019 – 2022", bullets: {
