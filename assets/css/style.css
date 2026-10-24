@@ -267,3 +267,9 @@ h3 { font-size: 20px; }
 /* ===== 双语文章：按当前语言只显示对应段落 ===== */
 html[lang="en"] [data-lang="zh"], html[lang="zh-CN"] [data-lang="en"] { display: none !important; }
 .post-credit { font-size: 14px; color: var(--muted); border-top: 1px solid var(--border); padding-top: 14px; margin-top: 28px; }
+.post-fig { margin: 24px 0; }
+.post-fig img { margin: 0 auto; width: auto; max-width: 100%; }
+.post-fig figcaption { font-size: 14px; color: var(--muted); text-align: center; margin-top: 8px; }
+.post-fig-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; }
+.post-fig-row .post-fig { margin: 8px 0; }
+@media (max-width: 600px) { .post-fig-row { grid-template-columns: 1fr; } }

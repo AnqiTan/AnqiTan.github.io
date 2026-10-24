@@ -494,7 +494,7 @@ window.SITE = {
       summary: {
         en: "A week with the children of Jiaoma, Changshun County, as part of the ZJU Liaoyuan volunteer teaching team: what we taught, what we learned, and why it felt like a matcha candy.",
         zh: "作为浙大“燎原”支教团的一员，在贵州长顺县交麻与孩子们度过的一周：我们教了什么、学到了什么，以及为什么这段回忆像一颗抹茶糖。" },
-      cover: "assets/img/blog/guizhou-2019-cover.svg",
+      cover: "assets/img/blog/guizhou-2019/team.jpg",
       url: "blog/2019-guizhou-volunteer-teaching.html"
     }
   ],

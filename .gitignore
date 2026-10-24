@@ -8,3 +8,6 @@ __pycache__/
 
 # 待处理的原始照片，不上传
 assets/img/projects/_inbox/
+
+# 博客待选原图，不上传
+assets/img/blog/_inbox/
