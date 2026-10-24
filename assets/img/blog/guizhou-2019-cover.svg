@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd9a8"/>
+      <stop offset="0.55" stop-color="#fbe9d6"/>
+      <stop offset="1" stop-color="#f6f1ea"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#sky)"/>
+  <circle cx="900" cy="190" r="70" fill="#ffb366" opacity="0.85"/>
+  <path d="M0 380 L160 250 L300 340 L460 210 L620 330 L780 230 L960 350 L1100 260 L1200 320 L1200 600 L0 600 Z" fill="#9cc3a4"/>
+  <path d="M0 450 L200 330 L360 420 L540 300 L720 410 L880 320 L1060 430 L1200 370 L1200 600 L0 600 Z" fill="#6fa27c"/>
+  <path d="M0 520 L240 430 L420 500 L640 410 L860 500 L1040 440 L1200 480 L1200 600 L0 600 Z" fill="#4c7e5a"/>
+  <!-- small school -->
+  <g transform="translate(520,440)">
+    <rect x="0" y="22" width="120" height="62" fill="#fff7ef" stroke="#8c5a3c" stroke-width="3"/>
+    <path d="M-12 26 L60 -10 L132 26 Z" fill="#b84a3e"/>
+    <rect x="48" y="50" width="24" height="34" fill="#8c5a3c"/>
+    <rect x="14" y="40" width="20" height="18" fill="#cfe4f7" stroke="#8c5a3c" stroke-width="2"/>
+    <rect x="86" y="40" width="20" height="18" fill="#cfe4f7" stroke="#8c5a3c" stroke-width="2"/>
+    <line x1="60" y1="-10" x2="60" y2="-44" stroke="#8c5a3c" stroke-width="3"/>
+    <path d="M60 -44 L88 -36 L60 -28 Z" fill="#e8483b"/>
+  </g>
+  <text x="70" y="120" font-size="58" font-weight="700" fill="#5a3a24">Guizhou · 2019</text>
+  <text x="72" y="178" font-size="34" fill="#7a5238">Volunteer Teaching · 贵州支教</text>
+</svg>

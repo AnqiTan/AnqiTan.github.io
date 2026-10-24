@@ -263,3 +263,7 @@ h3 { font-size: 20px; }
   .wrap { padding: 0 16px; }
   .section, .hero { padding: 40px 0; }
 }
+
+/* ===== 双语文章：按当前语言只显示对应段落 ===== */
+html[lang="en"] [data-lang="zh"], html[lang="zh-CN"] [data-lang="en"] { display: none !important; }
+.post-credit { font-size: 14px; color: var(--muted); border-top: 1px solid var(--border); padding-top: 14px; margin-top: 28px; }

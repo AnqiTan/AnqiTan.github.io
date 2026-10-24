@@ -488,6 +488,16 @@ window.SITE = {
   // ---------- 博客：每篇文章在 blog/ 文件夹下一个 html 文件 ----------
   posts: [
     {
+      title: { en: "Volunteer Teaching in Rural Guizhou, 2019: Looking Back", zh: "2019 贵州支教 | 回首展望" },
+      date: "2019-09-17",
+      category: { en: "Volunteering", zh: "支教" },
+      summary: {
+        en: "A week with the children of Jiaoma, Changshun County, as part of the ZJU Liaoyuan volunteer teaching team: what we taught, what we learned, and why it felt like a matcha candy.",
+        zh: "作为浙大“燎原”支教团的一员，在贵州长顺县交麻与孩子们度过的一周：我们教了什么、学到了什么，以及为什么这段回忆像一颗抹茶糖。" },
+      cover: "assets/img/blog/guizhou-2019-cover.svg",
+      url: "blog/2019-guizhou-volunteer-teaching.html"
+    },
+    {
       title: "Hello World — Why I Built This Website",
       date: "2026-10-19",
       category: "Life",
