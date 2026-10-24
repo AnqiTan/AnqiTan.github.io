@@ -275,3 +275,4 @@ html[lang="en"] [data-lang="zh"], html[lang="zh-CN"] [data-lang="en"] { display:
 @media (max-width: 600px) { .post-fig-row { grid-template-columns: 1fr; } }
 .gallery figure.is-video { cursor: default; }
 .gallery video { width: 100%; display: block; background: #000; }
+.project-video { width: 100%; max-width: 520px; margin-top: 12px; border-radius: 10px; background: #000; display: block; }

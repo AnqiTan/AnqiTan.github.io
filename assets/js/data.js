@@ -283,6 +283,22 @@ window.SITE = {
       link: "https://doi.org/10.1021/acsnanomed.5c00150"
     },
     {
+      title: { en: "Mimicry Stage Lighting Control System (Senior Design)", zh: "Mimicry 舞台灯光控制系统（本科毕业设计）" },
+      status: "past",
+      featured: false,
+      image: "assets/img/projects/stage-lighting.jpg",
+      video: "assets/img/projects/stage-lighting-demo.mp4",
+      videoPoster: "assets/img/projects/stage-lighting-demo-poster.jpg",
+      summary: {
+        en: "Senior design project: a motorized stage-lighting system with an RGB LED-matrix spotlight on a rotating mount, a laser-cut acrylic frame, and a handheld controller, enabling real-time control of beam direction and color. As the team's mechanical engineer, I worked on the mechanical design and fabrication of the light fixture.",
+        zh: "本科毕业设计：一套电动舞台灯光系统，包括安装在旋转机构上的 RGB LED 阵列聚光灯、激光切割亚克力框架和手持控制器，可实时控制光束方向与颜色。我作为团队中的机械工程成员，负责灯具的机械设计与制作。" },
+      meta: {
+        "Team": { en: "Ruiqi Li (ECE), Haozhe Chen (ECE), Zhaohua Yang (EE), Anqi Tan (ME)", zh: "Ruiqi Li（ECE）、Haozhe Chen（ECE）、Zhaohua Yang（EE）、谭安琪（ME）" },
+        "Period": "Spring 2022"
+      },
+      link: ""
+    },
+    {
       title: { en: "EEG-Based Sleep Assistance and Fatigue Monitoring (Industry Internship)", zh: "基于脑电的辅助睡眠与疲劳监测（企业实习）" },
       status: "past",
       featured: false,
@@ -511,6 +527,7 @@ window.SITE = {
     { src: "assets/img/gallery/dragon-boat-award.jpg", caption: { en: "Outstanding Performance & Innovation Award, 1st International Concrete Dragon Boat Competition (2019)", zh: "首届国际大学生混凝土龙舟赛 · 杰出表现及创新奖（2019）" } },
     { src: "assets/img/gallery/guizhou-team.jpg", caption: { en: "Volunteer teaching team in Changshun, Guizhou (2019)", zh: "贵州长顺支教团合影（2019）" } },
     { src: "assets/img/gallery/robomaster-cad.jpg", caption: { en: "CAD render of our RoboMaster competition robot", zh: "RoboMaster 比赛机器人 CAD 渲染图" } },
+    { video: "assets/img/projects/stage-lighting-demo.mp4", poster: "assets/img/projects/stage-lighting-demo-poster.jpg", caption: { en: "Demo of our senior design: Mimicry Stage Lighting Control System (2022)", zh: "本科毕设演示：Mimicry 舞台灯光控制系统（2022）" } },
     { video: "assets/img/gallery/cat-team-robot.mp4", poster: "assets/img/gallery/cat-team-robot-poster.jpg", caption: { en: "Robot design animation · The CAT Team (Anqi Tan, Zheyuan Zhang, Junkai Zhang, Qian Chen)", zh: "机器人设计动画 · The CAT Team（谭安琪、Zheyuan Zhang、Junkai Zhang、Qian Chen）" } },
     { src: "assets/img/gallery/industry-visit-floor.jpg", caption: { en: "Learning about sheet-metal parts on a factory floor", zh: "企业参观：在车间了解钣金零件" } },
     { src: "assets/img/gallery/industry-visit-group.jpg", caption: { en: "Organized an industry visit for classmates", zh: "组织同学企业参观" } },

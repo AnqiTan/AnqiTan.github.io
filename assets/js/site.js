@@ -119,6 +119,7 @@
         <h3>${p.link ? `<a href="${url(p.link)}">${L(p.title)}</a>` : L(p.title)}</h3>
         <p>${L(p.summary)}</p>
         <dl class="meta">${metaHTML(p.meta)}</dl>
+        ${p.video ? `<video class="project-video" src="${url(p.video)}"${p.videoPoster ? ` poster="${url(p.videoPoster)}"` : ""} controls playsinline preload="none"></video>` : ""}
       </div>
     </article>`;
 
