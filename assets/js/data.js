@@ -301,10 +301,10 @@ window.SITE = {
       title: { en: "LLM-Based Prediction of CRISPR Screen Outcomes (Hackathon, 1st Place)", zh: "基于大语言模型的 CRISPR 筛选结果预测（黑客松第一名）" },
       status: "past",
       featured: false,
-      image: "",
+      image: "assets/img/projects/crispr-workflow.svg",
       summary: {
-        en: "Two-person team at the 2025 Ashby Prize in Computational Science Hackathon (NCSA). We used large language models to computationally predict CRISPR screen outcomes so scientists can prioritize experiments, splitting the task into separate classification and reasoning stages, and identified a label imbalance in the benchmark test set. Won First Place ($3,000).",
-        zh: "2025 Ashby Prize 计算科学黑客松（NCSA）两人团队项目。利用大语言模型计算预测 CRISPR 筛选结果，帮助科学家决定优先开展哪些实验；我们把任务拆分为“分类”与“推理”两个阶段，并发现了基准测试集的标签不平衡问题。获第一名（3000 美元）。" },
+        en: "CRISPR Mechanism Explainer: a two-person project at the 2025 Ashby Prize in Computational Science Hackathon (NCSA) that uses large language models to predict whether a CRISPR gene perturbation changes a cellular phenotype, and to explain why. We found the public test set was almost entirely labeled \"hit\" (so an always-yes model looks accurate), rebuilt a balanced validation set with experimental-condition context, split the task into classification and mechanism reasoning, fine-tuned Qwen3 to generate three-sentence mechanistic explanations, and shipped a Gradio chat demo. Won First Place ($3,000).",
+        zh: "CRISPR Mechanism Explainer：2025 Ashby Prize 计算科学黑客松（NCSA）两人团队项目，利用大语言模型判断 CRISPR 基因扰动是否改变细胞表型，并解释其机制。我们发现公开测试集几乎全部标为“命中”（一直回答“是”就能得高分），于是重建了带实验条件信息的平衡验证集；把任务拆成“分类”与“机制推理”两步，微调 Qwen3 生成三句话的机制解释，并做成 Gradio 聊天演示。获第一名（3000 美元）。" },
       meta: {
         "Team": "Jiahua Dong, Anqi Tan",
         "Period": "Oct 2025"

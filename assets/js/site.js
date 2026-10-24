@@ -114,7 +114,7 @@
 
   const projectCard = (p) => `
     <article class="project${p.image ? "" : " no-img"}">
-      ${p.image ? `<div class="project-img"><img src="${url(p.image)}" alt="" loading="lazy">${p.imageCredit ? `<span class="img-credit">${L(p.imageCredit)}</span>` : ""}</div>` : ""}
+      ${p.image ? `<div class="project-img"><a href="${url(p.image)}" target="_blank" title="View full size"><img src="${url(p.image)}" alt="" loading="lazy"></a>${p.imageCredit ? `<span class="img-credit">${L(p.imageCredit)}</span>` : ""}</div>` : ""}
       <div class="project-body">
         <h3>${p.link ? `<a href="${url(p.link)}">${L(p.title)}</a>` : L(p.title)}</h3>
         <p>${L(p.summary)}</p>
@@ -146,7 +146,7 @@
       <div class="pub-side">
         <span class="venue">${p.venue || ""}</span>
         ${p.badge ? `<span class="venue-badge">${t("badge:" + p.badge) === "badge:" + p.badge ? p.badge : t("badge:" + p.badge)}</span>` : ""}
-        ${p.image ? `<img src="${url(p.image)}" alt="" loading="lazy">` : ""}
+        ${p.image ? `<a href="${url(p.image)}" target="_blank" title="View full size"><img src="${url(p.image)}" alt="" loading="lazy"></a>` : ""}
         ${p.image && p.imageCredit ? `<span class="img-credit">${L(p.imageCredit)}</span>` : ""}
       </div>
       <div class="pub-main">

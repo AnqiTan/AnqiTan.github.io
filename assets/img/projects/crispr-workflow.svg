@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8a8f98"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="560" rx="18" fill="#ffffff"/>
+
+  <!-- title -->
+  <text x="600" y="52" text-anchor="middle" font-size="30" font-weight="700" fill="#1f2a37">CRISPR Mechanism Explainer · Workflow</text>
+  <text x="600" y="84" text-anchor="middle" font-size="19" fill="#6b7280">Does [perturbation] of [gene] in [cells] under [condition] result in [phenotype]? Why?</text>
+
+  <!-- arrows -->
+  <line x1="282" y1="270" x2="322" y2="270" stroke="#8a8f98" stroke-width="4" marker-end="url(#arr)"/>
+  <line x1="580" y1="270" x2="620" y2="270" stroke="#8a8f98" stroke-width="4" marker-end="url(#arr)"/>
+  <line x1="878" y1="270" x2="918" y2="270" stroke="#8a8f98" stroke-width="4" marker-end="url(#arr)"/>
+
+  <!-- 1 context -->
+  <g>
+    <rect x="24" y="112" width="258" height="316" rx="16" fill="#eef4fc" stroke="#3b6fb6" stroke-width="2"/>
+    <rect x="24" y="112" width="258" height="58" rx="16" fill="#3b6fb6"/>
+    <rect x="24" y="150" width="258" height="20" fill="#3b6fb6"/>
+    <text x="44" y="151" font-size="23" font-weight="700" fill="#fff">1  Screen context</text>
+    <text x="44" y="210" font-size="20" fill="#1f2a37">• Perturbation</text><text x="62" y="232" font-size="15" fill="#6b7280">knockout / CRISPRi</text>
+    <text x="44" y="262" font-size="20" fill="#1f2a37">• Gene</text>
+    <text x="44" y="290" font-size="20" fill="#1f2a37">• Cell line</text>
+    <text x="44" y="318" font-size="20" fill="#1f2a37">• Phenotype</text>
+    <rect x="36" y="336" width="234" height="74" rx="10" fill="#fff4e5" stroke="#e08a2e" stroke-width="1.5"/>
+    <text x="48" y="366" font-size="19" font-weight="700" fill="#a85a12">+ Condition (added)</text>
+    <text x="48" y="394" font-size="17" fill="#7a4a12">drug · dose · virus · KO</text>
+  </g>
+
+  <!-- 2 data audit -->
+  <g>
+    <rect x="322" y="112" width="258" height="316" rx="16" fill="#fdf1ef" stroke="#b84a3e" stroke-width="2"/>
+    <rect x="322" y="112" width="258" height="58" rx="16" fill="#b84a3e"/>
+    <rect x="322" y="150" width="258" height="20" fill="#b84a3e"/>
+    <text x="342" y="151" font-size="23" font-weight="700" fill="#fff">2  Data audit</text>
+    <text x="342" y="210" font-size="20" fill="#1f2a37">Public test set:</text>
+    <text x="342" y="240" font-size="20" font-weight="700" fill="#b84a3e">≈ all labeled “HIT = Yes”</text>
+    <text x="342" y="270" font-size="18" fill="#4b5563">→ always-“Yes” scores high</text>
+    <text x="342" y="296" font-size="18" fill="#4b5563">   without any reasoning</text>
+    <rect x="334" y="320" width="234" height="90" rx="10" fill="#ffffff" stroke="#b84a3e" stroke-width="1.5"/>
+    <text x="346" y="350" font-size="19" font-weight="700" fill="#1f2a37">Balanced validation set</text>
+    <text x="346" y="376" font-size="17" fill="#4b5563">with condition context</text>
+    <text x="346" y="398" font-size="17" fill="#4b5563">+ true negative samples</text>
+  </g>
+
+  <!-- 3 model -->
+  <g>
+    <rect x="620" y="112" width="258" height="316" rx="16" fill="#f4f0fb" stroke="#7a5bb5" stroke-width="2"/>
+    <rect x="620" y="112" width="258" height="58" rx="16" fill="#7a5bb5"/>
+    <rect x="620" y="150" width="258" height="20" fill="#7a5bb5"/>
+    <text x="640" y="151" font-size="23" font-weight="700" fill="#fff">3  Two-stage LLM</text>
+    <rect x="632" y="188" width="234" height="96" rx="10" fill="#ffffff" stroke="#7a5bb5" stroke-width="1.5"/>
+    <text x="644" y="218" font-size="19" font-weight="700" fill="#1f2a37">Stage 1 · Classify</text>
+    <text x="644" y="246" font-size="18" fill="#4b5563">Is the gene a HIT?</text>
+    <text x="644" y="272" font-size="18" fill="#4b5563">Yes / No</text>
+    <line x1="749" y1="290" x2="749" y2="306" stroke="#7a5bb5" stroke-width="3" marker-end="url(#arr)"/>
+    <rect x="632" y="312" width="234" height="98" rx="10" fill="#ffffff" stroke="#7a5bb5" stroke-width="1.5"/>
+    <text x="644" y="342" font-size="19" font-weight="700" fill="#1f2a37">Stage 2 · Explain</text>
+    <text x="644" y="370" font-size="18" fill="#4b5563">Fine-tuned Qwen3 (SFT)</text>
+    <text x="644" y="396" font-size="18" fill="#4b5563">→ 3-sentence mechanism</text>
+  </g>
+
+  <!-- 4 demo -->
+  <g>
+    <rect x="918" y="112" width="258" height="316" rx="16" fill="#eef8f1" stroke="#2f8f5b" stroke-width="2"/>
+    <rect x="918" y="112" width="258" height="58" rx="16" fill="#2f8f5b"/>
+    <rect x="918" y="150" width="258" height="20" fill="#2f8f5b"/>
+    <text x="938" y="151" font-size="23" font-weight="700" fill="#fff">4  Chat demo</text>
+    <rect x="934" y="188" width="226" height="130" rx="10" fill="#ffffff" stroke="#2f8f5b" stroke-width="1.5"/>
+    <rect x="1010" y="200" width="138" height="34" rx="8" fill="#e8eefc"/>
+    <text x="1020" y="223" font-size="15" fill="#1f2a37">screen context…</text>
+    <rect x="946" y="244" width="200" height="62" rx="8" fill="#f3f4f6"/>
+    <text x="956" y="268" font-size="15" fill="#1f2a37">“Because RBM28 affects</text>
+    <text x="956" y="290" font-size="15" fill="#1f2a37">RNA splicing, …”</text>
+    <text x="938" y="352" font-size="19" fill="#1f2a37">Gradio web app:</text>
+    <text x="938" y="380" font-size="18" fill="#4b5563">Yes / No + mechanism</text>
+    <text x="938" y="406" font-size="18" fill="#4b5563">explanation</text>
+  </g>
+
+  <!-- insight + award -->
+  <rect x="24" y="452" width="900" height="84" rx="14" fill="#fff8ec" stroke="#e8c37a" stroke-width="1.5"/>
+  <text x="44" y="486" font-size="19" font-weight="700" fill="#7a4a12">Key insight: context matters</text>
+  <text x="44" y="516" font-size="16" fill="#5b4a2e">TP53 KO in KBM-7 + “response to chemicals” (etoposide): truth = No, yet 4 LLMs all answered Yes.</text>
+  <rect x="944" y="452" width="232" height="84" rx="14" fill="#2f8f5b"/>
+  <text x="1060" y="487" text-anchor="middle" font-size="21" font-weight="700" fill="#fff">🏆 1st Place</text>
+  <text x="1060" y="516" text-anchor="middle" font-size="16" fill="#e7f6ee">Ashby Prize Hackathon 2025</text>
+</svg>
