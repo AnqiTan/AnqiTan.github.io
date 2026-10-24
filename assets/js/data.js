@@ -129,7 +129,7 @@ window.SITE = {
       venue: "ACS Nano Med.'26",
       badge: "",
       image: "assets/img/projects/ng-plfa.jpg",
-      imageCredit: "Fig. 1A, Liu, Jiang, Tan et al., ACS Nano Medicine 2026",
+      imageCredit: "Fig. 1, Liu, Jiang, Tan et al., ACS Nano Medicine 2026",
       title: "Ultrasensitive Point-of-Care Antigen Test for Detection of Neisseria gonorrhoeae Using Plasmon-Enhanced Lateral Flow Assays",
       authors: "Yuxiong Liu, Qisheng Jiang, Anqi Tan, Gayathri Kondepati, Prashant Gupta, Yixuan Wang, Yajur Chandar, Tracey H. Bach, Stacey L. House, Peter A. Rice, Bijal A. Parikh, Brian T. Cunningham, Sanjay Ram, Ige A. George, Srikanth Singamaneni, and Sumanth Gandra",
       venueFull: "ACS Nano Medicine, 1(4), 1036–1047. 2026",
@@ -271,7 +271,7 @@ window.SITE = {
       status: "current",
       featured: false,
       image: "assets/img/projects/ng-plfa.jpg",
-      imageCredit: "Fig. 1A, Liu, Jiang, Tan et al., ACS Nano Medicine 2026",
+      imageCredit: "Fig. 1, Liu, Jiang, Tan et al., ACS Nano Medicine 2026",
       summary: {
         en: "Contributing to plasmon-enhanced lateral flow assays (p-LFAs) for ultrasensitive point-of-care detection of infectious-disease antigens and nucleic acids, including SARS-CoV-2 and Neisseria gonorrhoeae (ACS Nano Medicine 2026).",
         zh: "参与等离激元增强侧向流检测（p-LFA）研究，用于新冠病毒、淋病奈瑟菌等传染病抗原和核酸的超灵敏即时检测（ACS Nano Medicine 2026）。" },
