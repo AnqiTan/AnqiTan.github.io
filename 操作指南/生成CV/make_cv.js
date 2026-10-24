@@ -31,7 +31,7 @@ add({ t: "subtitle", text: en(S.title) });
 add({ t: "contact", items: [
   { text: S.social.email, href: "mailto:" + S.social.email },
   { text: "anqitan.github.io", href: "https://anqitan.github.io" },
-  { text: "Google Scholar", href: S.social.scholar },
+  { text: S.social.scholar.replace("https://", ""), href: S.social.scholar },   // 显示完整网址，打印出来也能找到
 ] });
 
 add({ t: "h", text: "Education" });

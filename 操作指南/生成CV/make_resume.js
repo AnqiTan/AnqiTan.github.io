@@ -109,7 +109,7 @@ p { margin: 1pt 0; }
 </style></head><body>
 <h1>${esc(S.name)}</h1>
 <div class="headline">${esc(v.headline)}</div>
-<div class="contact"><a href="mailto:${S.social.email}">${S.social.email}</a><span class="sep">|</span><a href="https://anqitan.github.io">anqitan.github.io</a><span class="sep">|</span><a href="${S.social.scholar}">Google Scholar</a></div>
+<div class="contact"><a href="mailto:${S.social.email}">${S.social.email}</a><span class="sep">|</span><a href="https://anqitan.github.io">anqitan.github.io</a><span class="sep">|</span><a href="${S.social.scholar}">${S.social.scholar.replace("https://", "")}</a></div>
 <p class="summary">${esc(v.summary)}</p>
 <h2>Education</h2>
 ${EDU.map(([l, r, n]) => `<div class="entry"><span class="l">${esc(l)}</span><span class="r">${esc(r)}</span></div>${n ? `<div class="note">${esc(n)}</div>` : ""}`).join("")}
