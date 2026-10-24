@@ -103,7 +103,7 @@ window.SITE = {
       selected: true,
       venue: "APHA'26",
       badge: "Oral",
-      image: "assets/img/projects/reader-phone.jpg",
+      image: "assets/img/projects/cortisol-assay-principle.jpg",
       title: "Portable Plasmonic Fluor-Enhanced Lateral Flow Assay for Quantitative Salivary Cortisol Measurement in Community Settings",
       authors: "Anqi Tan, Kai-Ning Wang, Tasfia Ashrafee, Ami Patel, Yuxiong Liu, Saurabh Umrao, Srikanth Singamaneni, Jenna L. Riis, Jacinda K. Dariotis, and Brian T. Cunningham",
       venueFull: "APHA 2026 Annual Meeting and Expo, San Antonio, TX. Accepted for oral presentation, Nov 3, 2026",
