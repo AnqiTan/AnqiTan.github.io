@@ -444,13 +444,12 @@ window.SITE = {
 
   // ---------- Teaching / 助教 ----------
   teaching: [
-    // TODO: BIOE 415 的 date 换成学期，如 "Spring 2025"
-    { date: { en: "Grad TA", zh: "研究生助教" }, text: {
-      en: "<strong>BIOE 415 / ECE 415: Biomedical Instrumentation Lab</strong>, University of Illinois Urbana-Champaign",
-      zh: "<strong>BIOE 415 / ECE 415：生物医学仪器实验</strong>，UIUC" } },
+    { date: "Fall 2025", text: {
+      en: "Graduate TA, <strong>BIOE 415 / ECE 415: Biomedical Instrumentation Lab</strong>, University of Illinois Urbana-Champaign (lab section AB2). [<a href=\"https://courses.illinois.edu/schedule/2025/fall/BIOE/415\" target=\"_blank\">Course Explorer</a>]",
+      zh: "研究生助教，<strong>BIOE 415 / ECE 415：生物医学仪器实验</strong>，UIUC（实验课 AB2 班）。[<a href=\"https://courses.illinois.edu/schedule/2025/fall/BIOE/415\" target=\"_blank\">UIUC 课程官网</a>]" } },
     { date: "2020 – 2022", text: {
-      en: "<strong>ME 170: Computer-Aided Design</strong>, University of Illinois Urbana-Champaign (three spring semesters)",
-      zh: "<strong>ME 170：计算机辅助设计</strong>，UIUC（连续三个春季学期）" } }
+      en: "Undergraduate TA, <strong>ME 170: Computer-Aided Design</strong>, University of Illinois Urbana-Champaign (three spring semesters)",
+      zh: "本科生助教，<strong>ME 170：计算机辅助设计</strong>，UIUC（连续三个春季学期）" } }
   ],
 
   // ---------- 奖项（首页和 CV 页都会显示）----------
@@ -527,8 +526,7 @@ window.SITE = {
         "负责 Live Hormone 项目：基于竞争法侧向流检测的睾酮、皮质醇、孕酮实时监测平台。",
         "参与等离激元增强侧向流传染病检测研究，以及 Chemical Reviews、Lab on a Chip 综述的撰写。"
       ] } },
-    // TODO: BIOE 415 助教的 date 填学期
-    { role: { en: "Teaching Assistant", zh: "助教" }, org: { en: "BIOE/ECE 415 Biomedical Instrumentation Lab, UIUC", zh: "UIUC BIOE/ECE 415 生物医学仪器实验" }, date: "", bullets: {
+    { role: { en: "Teaching Assistant", zh: "助教" }, org: { en: "BIOE/ECE 415 Biomedical Instrumentation Lab, UIUC", zh: "UIUC BIOE/ECE 415 生物医学仪器实验" }, date: "Fall 2025", bullets: {
       en: ["Supported laboratory instruction in biomedical instrumentation for undergraduate students."],
       zh: ["协助本科生生物医学仪器实验课程教学。"] } },
     { role: { en: "Research Assistant Intern, Institute of Brain Science", zh: "脑科学研究院 研究助理实习生" }, org: { en: "Zhejiang Qiangnao Technology Co., Ltd. (BrainCo), Hangzhou", zh: "浙江强脑科技有限公司（BrainCo），杭州" }, date: "May 2022 – Aug 2022", bullets: {
