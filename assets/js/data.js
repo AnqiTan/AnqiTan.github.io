@@ -287,8 +287,6 @@ window.SITE = {
       status: "past",
       featured: false,
       image: "assets/img/projects/stage-lighting.jpg",
-      video: "assets/img/projects/stage-lighting-demo.mp4",
-      videoPoster: "assets/img/projects/stage-lighting-demo-poster.jpg",
       summary: {
         en: "Senior design project: a motorized stage-lighting system with an RGB LED-matrix spotlight on a rotating mount, a laser-cut acrylic frame, and a handheld controller, enabling real-time control of beam direction and color. As the team's mechanical engineer, I worked on the mechanical design and fabrication of the light fixture.",
         zh: "本科毕业设计：一套电动舞台灯光系统，包括安装在旋转机构上的 RGB LED 阵列聚光灯、激光切割亚克力框架和手持控制器，可实时控制光束方向与颜色。我作为团队中的机械工程成员，负责灯具的机械设计与制作。" },
