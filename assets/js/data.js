@@ -220,7 +220,7 @@ window.SITE = {
       title: { en: "Point-of-Care Molecular Phenotyping of Sepsis and ARDS (DoD PRMRP)", zh: "脓毒症与 ARDS 分子表型的即时检测（美国国防部 PRMRP 项目）" },
       status: "current",
       featured: true,
-      image: "",
+      image: "assets/img/projects/dod-multiplex-lfa.png",
       summary: {
         en: "A $4.87M Department of Defense project to build a rapid blood test and handheld reader that measures IL-8 and sTNFR-1 on a single multiplexed plasmonic-fluor lateral flow strip and classifies critically ill patients into hyperinflammatory or hypoinflammatory phenotypes at the bedside, including in military and resource-limited settings. I lead the development of the portable, field-deployable fluorescence reader.",
         zh: "美国国防部资助的 487 万美元项目：开发快速血液检测与手持式读取仪，在一条多重 plasmonic-fluor 侧向流试纸上同时检测 IL-8 和 sTNFR-1，并在床旁将危重患者分为高炎症型或低炎症型表型，可用于军事和资源有限的场景。我负责便携式、可现场部署的荧光读取仪的研发。" },
