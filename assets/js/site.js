@@ -7,6 +7,13 @@
   const esc = (s) => String(s ?? "");
   const baseTitle = document.title;
 
+  // 浏览器标签页图标（favicon）
+  if (!document.querySelector('link[rel="icon"]')) {
+    const ic = document.createElement("link");
+    ic.rel = "icon"; ic.type = "image/svg+xml"; ic.href = url("assets/img/favicon.svg");
+    document.head.append(ic);
+  }
+
   // ---------- 语言 ----------
   const LANGS = ["en", "zh"];
   let lang = (() => {
@@ -256,7 +263,7 @@
     header.className = "site-header";
     header.innerHTML = `
       <div class="wrap header-inner">
-        <a class="brand" href="${url("index.html")}"><span class="brand-mark">${brand.trim().charAt(0)}</span>${brand}</a>
+        <a class="brand" href="${url("index.html")}">${brand}</a>
         <div class="header-right">
           <nav><ul class="nav-list">${navHTML}</ul></nav>
           <button class="lang-btn" type="button" aria-label="Switch language">${t("switch")}</button>

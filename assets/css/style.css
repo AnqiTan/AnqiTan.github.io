@@ -61,9 +61,8 @@ h3 { font-size: 20px; }
 /* ===== Header ===== */
 .site-header { position: sticky; top: 0; z-index: 50; background: var(--tint); border-bottom: 1px solid var(--border); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; height: 72px; }
-.brand { display: flex; align-items: center; gap: 10px; font-family: "Ubuntu", sans-serif; font-weight: 700; font-size: 22px; color: var(--text); }
+.brand { display: flex; align-items: center; font-family: "Ubuntu", "PingFang SC", "Microsoft YaHei", sans-serif; font-weight: 700; font-size: 22px; letter-spacing: .01em; color: var(--text); }
 .brand:hover { text-decoration: none; }
-.brand-mark { width: 34px; height: 34px; border-radius: 9px; background: var(--accent); color: var(--accent-ink); display: grid; place-items: center; font-size: 18px; }
 .nav-list { list-style: none; display: flex; gap: 8px; margin: 0; padding: 0; }
 .nav-list > li { position: relative; }
 .nav-list > li > a, .dd-toggle {
