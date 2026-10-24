@@ -189,7 +189,8 @@ window.SITE = {
       selected: false,
       venue: "ICARM'21",
       badge: "",
-      image: "",
+      image: "assets/img/projects/rcm-cad.jpg",
+      imageCredit: "Fig. 3, Tan et al., IEEE ICARM 2021 (© 2021 IEEE)",
       title: "Design Optimization of a Mechanically Constrained Re-Localizable Remote-Center-of-Motion",
       authors: "Anqi Tan, Shenwei Chen, Hanyu Gan, and Liangjing Yang",
       venueFull: "2021 6th IEEE International Conference on Advanced Robotics and Mechatronics (ICARM). 2021",
@@ -326,7 +327,8 @@ window.SITE = {
       title: { en: "Re-Localizable Remote-Center-of-Motion Mechanism for Minimally Invasive Surgery", zh: "面向微创手术的可重定位远程运动中心（RCM）机构" },
       status: "past",
       featured: true,
-      image: "",                  // TODO: 机构 CAD 图/样机照片
+      image: "assets/img/projects/rcm-cad.jpg",
+      imageCredit: "Fig. 3, Tan et al., IEEE ICARM 2021 (© 2021 IEEE)",
       summary: {
         en: "Led a national-level undergraduate research project to design and optimize a mechanically constrained, re-localizable remote-center-of-motion (RCM) mechanism for robot-assisted minimally invasive procedures. Published as first author at IEEE ICARM 2021.",
         zh: "主持国家级大学生创新训练项目，设计并优化一种机械约束式、可重定位的远程运动中心（RCM）机构，用于机器人辅助微创手术。以第一作者发表于 IEEE ICARM 2021。" },

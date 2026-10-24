@@ -211,7 +211,7 @@
     "awards-list": () => S.awards.map((a) => `<li><span>${L(a.name)}</span><span class="date">${D(a.date || "")}</span></li>`).join(""),
     "projects-mini": () => S.projects.filter((p) => p.featured).map((p) => `
       <a class="mini-project${p.image ? "" : " no-img"}" href="${url(p.link || "projects.html")}">
-        ${p.image ? `<img src="${url(p.image)}" alt="" loading="lazy">` : ""}
+        ${p.image ? `<div><img src="${url(p.image)}" alt="" loading="lazy">${p.imageCredit ? `<span class="img-credit">${L(p.imageCredit)}</span>` : ""}</div>` : ""}
         <div><h3>${L(p.title)}</h3><p>${L(p.summary)}</p>
         ${p.meta && p.meta.Period ? `<span class="date">${D(p.meta.Period)}</span>` : ""}</div>
       </a>`).join(""),
