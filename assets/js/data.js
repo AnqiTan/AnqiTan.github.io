@@ -503,9 +503,9 @@ window.SITE = {
   gallery: [
     // 图片：{ src, caption }；视频：{ video, poster, caption }。caption 可写 { en, zh }
     { src: "assets/img/gallery/graduation-bachelor.jpg", caption: { en: "Bachelor's graduation (2022)", zh: "本科毕业照（2022）" } },
-    { src: "assets/img/gallery/zju-uiuc-seminar-1.jpg", caption: { en: "ZJU–UIUC seminar at UIUC", zh: "浙大–UIUC 交流研讨会" } },
-    { src: "assets/img/gallery/alaska-fishing.jpg", caption: { en: "Deep-sea fishing in Valdez, Alaska", zh: "阿拉斯加 Valdez 海钓" } },
-    { src: "assets/img/gallery/zju-uiuc-seminar-2.jpg", caption: { en: "Group photo at the ZJU–UIUC seminar", zh: "浙大–UIUC 交流研讨会合影" } },
+    { src: "assets/img/gallery/zju-uiuc-seminar-1.jpg", caption: { en: "ZJU International Campus delegation visit to UIUC", zh: "浙大国际校区代表团访问 UIUC" } },
+    { src: "assets/img/gallery/alaska-fishing.jpg", caption: { en: "Deep-sea fishing in Valdez, Alaska (2024)", zh: "阿拉斯加 Valdez 海钓（2024）" } },
+    { src: "assets/img/gallery/zju-uiuc-seminar-2.jpg", caption: { en: "Group photo with the ZJU International Campus delegation at UIUC", zh: "浙大国际校区代表团访问 UIUC 合影" } },
     { src: "assets/img/gallery/wedding-bridesmaid.jpg", caption: { en: "Bridesmaid at a friend's wedding", zh: "在好友婚礼上当伴娘" } },
     { src: "assets/img/gallery/lake.jpg", caption: { en: "A summer day by the lake", zh: "夏日湖边" } },
     { src: "assets/img/gallery/dragon-boat-award.jpg", caption: { en: "Outstanding Performance & Innovation Award, 1st International Concrete Dragon Boat Competition (2019)", zh: "首届国际大学生混凝土龙舟赛 · 杰出表现及创新奖（2019）" } },
@@ -513,9 +513,9 @@ window.SITE = {
     { src: "assets/img/gallery/robomaster-cad.jpg", caption: { en: "CAD render of our RoboMaster competition robot", zh: "RoboMaster 比赛机器人 CAD 渲染图" } },
     { video: "assets/img/gallery/cat-team-robot.mp4", poster: "assets/img/gallery/cat-team-robot-poster.jpg", caption: { en: "Robot design animation · The CAT Team (Anqi Tan, Zheyuan Zhang, Junkai Zhang, Qian Chen)", zh: "机器人设计动画 · The CAT Team（谭安琪、Zheyuan Zhang、Junkai Zhang、Qian Chen）" } },
     { src: "assets/img/gallery/industry-visit-floor.jpg", caption: { en: "Learning about sheet-metal parts on a factory floor", zh: "企业参观：在车间了解钣金零件" } },
-    { src: "assets/img/gallery/industry-visit-group.jpg", caption: { en: "Industry visit with classmates", zh: "和同学们一起企业参观" } },
+    { src: "assets/img/gallery/industry-visit-group.jpg", caption: { en: "Organized an industry visit for classmates", zh: "组织同学企业参观" } },
     { src: "assets/img/gallery/autumn-games.jpg", caption: { en: "Autumn Fun Games with the residential college", zh: "学园秋季趣味运动会" } },
-    { src: "assets/img/gallery/friends-winter.jpg", caption: { en: "Winter with friends", zh: "和朋友们的冬天" } }
+    { src: "assets/img/gallery/friends-winter.jpg", caption: { en: "New Year's Eve wish-sharing event at the residential college", zh: "书院跨年心意传递活动" } }
   ],
 
   // ---------- 技能 ----------
