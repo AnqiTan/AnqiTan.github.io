@@ -273,3 +273,5 @@ html[lang="en"] [data-lang="zh"], html[lang="zh-CN"] [data-lang="en"] { display:
 .post-fig-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; }
 .post-fig-row .post-fig { margin: 8px 0; }
 @media (max-width: 600px) { .post-fig-row { grid-template-columns: 1fr; } }
+.gallery figure.is-video { cursor: default; }
+.gallery video { width: 100%; display: block; background: #000; }

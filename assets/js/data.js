@@ -367,7 +367,7 @@ window.SITE = {
       title: { en: "Rapid Forming of Special-Shaped Concrete: 3D-Printed Concrete Dragon Boat", zh: "新型特殊异形混凝土快速成型技术研究：3D 打印混凝土龙舟" },
       status: "past",
       featured: false,
-      image: "",
+      image: "assets/img/gallery/dragon-boat-award.jpg",
       summary: {
         en: "Developed a rapid concrete-forming technique that uses a 3D-printed frame with a new lightweight-aggregate engineered cementitious composite (ECC), plus FRP ribs and fabrics as structural components, and applied it to build a concrete dragon boat. The boat won the Outstanding Performance and Innovation Award at the 1st International Concrete Dragon Boat Competition (American Concrete Institute & Zhejiang University), and the work was published at Structures20/ACEM20.",
         zh: "提出一种新型混凝土快速成型技术：以 3D 打印框架为骨架，采用新型轻骨料 ECC（高延性水泥基复合材料），并以 FRP 筋和 FRP 布作为结构构件，用于制作混凝土龙舟。作品获首届国际大学生混凝土龙舟比赛（美国混凝土协会、浙江大学主办）“杰出表现及创新奖”，论文发表于 Structures20/ACEM20 国际会议。" },
@@ -405,7 +405,7 @@ window.SITE = {
       title: { en: "RoboMaster Competition Robot", zh: "RoboMaster 机甲大师比赛机器人" },
       status: "past",
       featured: false,
-      image: "",
+      image: "assets/img/gallery/robomaster-cad.jpg",
       summary: {
         en: "Designed the full mechanical structure of a competition robot, including motor selection, transmission, gimbal, buffer mechanism, and projectile system. Won First Prize in the college-level RoboMaster Mecha Master competition.",
         zh: "负责比赛机器人整体机械结构设计，包括电机选型、传动系统、云台、缓冲机构与发射机构。获 RoboMaster 机甲大师校级赛一等奖。" },
@@ -501,9 +501,16 @@ window.SITE = {
 
   // ---------- 相册 ----------
   gallery: [
-    { src: "assets/img/placeholder.svg", caption: "Photo caption" },
-    { src: "assets/img/placeholder.svg", caption: "Photo caption" },
-    { src: "assets/img/placeholder.svg", caption: "Photo caption" }
+    // 图片：{ src, caption }；视频：{ video, poster, caption }。caption 可写 { en, zh }
+    { src: "assets/img/gallery/lake.jpg", caption: { en: "A summer day by the lake", zh: "夏日湖边" } },
+    { src: "assets/img/gallery/dragon-boat-award.jpg", caption: { en: "Outstanding Performance & Innovation Award, 1st International Concrete Dragon Boat Competition (2019)", zh: "首届国际大学生混凝土龙舟赛 · 杰出表现及创新奖（2019）" } },
+    { src: "assets/img/gallery/guizhou-team.jpg", caption: { en: "Volunteer teaching team in Changshun, Guizhou (2019)", zh: "贵州长顺支教团合影（2019）" } },
+    { src: "assets/img/gallery/robomaster-cad.jpg", caption: { en: "CAD render of our RoboMaster competition robot", zh: "RoboMaster 比赛机器人 CAD 渲染图" } },
+    { video: "assets/img/gallery/cat-team-robot.mp4", poster: "assets/img/gallery/cat-team-robot-poster.jpg", caption: { en: "Robot design animation · The CAT Team (Anqi Tan, Zheyuan Zhang, Junkai Zhang, Qian Chen)", zh: "机器人设计动画 · The CAT Team（谭安琪、Zheyuan Zhang、Junkai Zhang、Qian Chen）" } },
+    { src: "assets/img/gallery/industry-visit-floor.jpg", caption: { en: "Learning about sheet-metal parts on a factory floor", zh: "企业参观：在车间了解钣金零件" } },
+    { src: "assets/img/gallery/industry-visit-group.jpg", caption: { en: "Industry visit with classmates", zh: "和同学们一起企业参观" } },
+    { src: "assets/img/gallery/autumn-games.jpg", caption: { en: "Autumn Fun Games with the residential college", zh: "学园秋季趣味运动会" } },
+    { src: "assets/img/gallery/friends-winter.jpg", caption: { en: "Winter with friends", zh: "和朋友们的冬天" } }
   ],
 
   // ---------- 技能 ----------

@@ -225,8 +225,9 @@
       <div class="entry"><div class="entry-head"><h3>${L(e.role)} — ${L(e.org)}</h3><span class="date">${D(e.date)}</span></div>
         <ul>${L(e.bullets).map((b) => `<li>${b}</li>`).join("")}</ul></div>`).join(""),
     "awards": () => S.awards.map((a) => `<div class="entry-head"><span>${L(a.name)}</span><span class="date">${D(a.date)}</span></div>`).join(""),
-    "gallery": () => S.gallery.map((g, i) =>
-      `<figure data-i="${i}"><img src="${url(g.src)}" alt="${L(g.caption) || ""}" loading="lazy"><figcaption>${L(g.caption) || ""}</figcaption></figure>`).join(""),
+    "gallery": () => S.gallery.map((g, i) => g.video
+      ? `<figure class="is-video"><video src="${url(g.video)}"${g.poster ? ` poster="${url(g.poster)}"` : ""} controls playsinline preload="none"></video><figcaption>${L(g.caption) || ""}</figcaption></figure>`
+      : `<figure data-i="${i}"><img src="${url(g.src)}" alt="${L(g.caption) || ""}" loading="lazy"><figcaption>${L(g.caption) || ""}</figcaption></figure>`).join(""),
     "contact-links": () => socialLinks(),
     "contact-emails": () => [
       so.email && `<strong>${t("primary_email")}:</strong> <a href="mailto:${so.email}">${so.email}</a>`,
@@ -342,7 +343,7 @@
     document.body.append(box);
     gal.addEventListener("click", (e) => {
       const fig = e.target.closest("figure");
-      if (!fig) return;
+      if (!fig || fig.classList.contains("is-video")) return;   // 视频直接在卡片里播放
       const g = S.gallery[fig.dataset.i];
       box.querySelector("img").src = url(g.src);
       box.querySelector("p").textContent = L(g.caption) || "";
