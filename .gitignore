@@ -11,3 +11,8 @@ assets/img/projects/_inbox/
 
 # 博客待选原图，不上传
 assets/img/blog/_inbox/
+
+# CV 生成工具的依赖和中间文件
+操作指南/生成CV/node_modules/
+操作指南/生成CV/output/
+操作指南/生成CV/package-lock.json
