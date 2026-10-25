@@ -542,8 +542,9 @@ window.SITE = {
   // ---------- CV 页“下载简历”卡片：PDF 由 操作指南/生成CV 下的脚本生成 ----------
   resumes: [
     { tag: { en: "Academic", zh: "学术" }, title: { en: "Full Academic CV", zh: "完整学术简历" }, desc: { en: "All publications, presentations, honors, teaching, and service (3 pages).", zh: "包含全部论文、学术报告、荣誉、教学与服务经历（3 页）。" }, file: "assets/cv.pdf" },
+    { tag: { en: "Industry", zh: "工业界" }, title: { en: "Optical & Hardware Systems", zh: "光学与硬件系统" }, desc: { en: "One-page resume emphasizing end-to-end instrument design: optics, mechanical, embedded hardware, and Android software.", zh: "一页版，突出仪器全链条设计：光学、机械、嵌入式硬件与 Android 软件。" }, file: "assets/resumes/anqi-tan-resume-hardware-systems.pdf" },
     { tag: { en: "Industry", zh: "工业界" }, title: { en: "Medical Devices & Instrumentation", zh: "医疗器械与仪器" }, desc: { en: "One-page resume emphasizing portable reader design, optics, and mechanical engineering.", zh: "一页版，突出便携读取仪、光学与机械设计。" }, file: "assets/resumes/anqi-tan-resume-medical-device.pdf" },
-    { tag: { en: "Industry", zh: "工业界" }, title: { en: "Diagnostics & Assay Development", zh: "诊断与检测开发" }, desc: { en: "One-page resume emphasizing lateral flow assay development and human-sample validation.", zh: "一页版，突出侧向流检测开发与人体样本验证。" }, file: "assets/resumes/anqi-tan-resume-diagnostics.pdf" },
+    { tag: { en: "Industry", zh: "工业界" }, title: { en: "Diagnostic Devices", zh: "诊断器械" }, desc: { en: "One-page resume emphasizing point-of-care readers for lateral flow tests and human-sample validation.", zh: "一页版，突出侧向流检测的即时读数仪与人体样本验证。" }, file: "assets/resumes/anqi-tan-resume-diagnostics.pdf" },
     { tag: { en: "Industry", zh: "工业界" }, title: { en: "AI & Data for Health", zh: "AI 与健康数据" }, desc: { en: "One-page resume emphasizing image analysis, LLM tools, and hackathon wins.", zh: "一页版，突出图像分析、大语言模型工具与黑客松获奖。" }, file: "assets/resumes/anqi-tan-resume-ai-health.pdf" }
   ],
 
