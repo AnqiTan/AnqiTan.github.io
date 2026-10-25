@@ -41,8 +41,8 @@ def card():
     d.text((x, 150), "Anqi Tan", font=font("georgiab.ttf", 78), fill=TEXT)
     d.text((x, 252), "Ph.D. Student in Bioengineering, UIUC", font=font("calibri.ttf", 38), fill=TEXT)
     lines = [
-        "Portable optical sensing instruments",
-        "Hardware & software for point-of-care devices",
+        "Biosensing devices for point-of-care diagnostics",
+        "Optical readers · hardware & software",
     ]
     for i, s in enumerate(lines):
         d.text((x, 322 + i * 46), s, font=font("calibri.ttf", 33), fill=MUTED)

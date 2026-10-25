@@ -22,12 +22,12 @@ window.SITE = {
   // 首页自我介绍：每个字符串是一段。可用 <strong>加粗</strong> 和 <a href="...">链接</a>
   intro: {
     en: [
-      "I am a Ph.D. student in <strong>Bioengineering</strong> at <strong>UIUC</strong>, working with <a href=\"https://nano.ece.illinois.edu/people/brian-t-cunningham/\" target=\"_blank\">Prof. Brian T. Cunningham</a> in the <a href=\"https://nano.ece.illinois.edu\" target=\"_blank\">Nanosensors Group</a>. I study <strong>biosensors and portable monitoring devices</strong>, with a focus on <strong>plasmon-enhanced lateral flow assays</strong> and <strong>pocket-size readers</strong> for ultrasensitive point-of-care diagnostics, from infectious disease detection to real-time hormone monitoring.",
+      "I am a Ph.D. student in <strong>Bioengineering</strong> at <strong>UIUC</strong>, working with <a href=\"https://nano.ece.illinois.edu/people/brian-t-cunningham/\" target=\"_blank\">Prof. Brian T. Cunningham</a> in the <a href=\"https://nano.ece.illinois.edu\" target=\"_blank\">Nanosensors Group</a>. I build <strong>biosensing devices for point-of-care diagnostics</strong>: <strong>portable optical readers</strong>, together with the <strong>hardware and software</strong> that turn ultrasensitive plasmon-enhanced lateral flow tests into quantitative measurements, with applications from infectious disease detection to real-time hormone monitoring.",
       "I am passionate about bridging biomedical monitoring with engineering so that people can better understand their own health. Before my Ph.D., I received B.S. degrees in Mechanical Engineering from both UIUC and Zhejiang University, where I led a national-level research project on surgical robot mechanism design and was product leader of an intelligent cell culture platform that won a <strong>National Silver Medal</strong> in the China \"Internet+\" Competition.",
       "🙋 Feel free to reach out via <a href=\"mailto:anqitan2@illinois.edu\">email</a> if you are interested in my research."
     ],
     zh: [
-      "我是<strong>伊利诺伊大学厄巴纳-香槟分校（UIUC）生物工程系</strong>的博士生，师从 <a href=\"https://nano.ece.illinois.edu/people/brian-t-cunningham/\" target=\"_blank\">Brian T. Cunningham 教授</a>，就读于 <a href=\"https://nano.ece.illinois.edu\" target=\"_blank\">Nanosensors Group（纳米传感器课题组）</a>。我的研究方向是<strong>生物传感器与便携式健康监测设备</strong>，重点关注<strong>等离激元增强侧向流层析检测（LFA）</strong>和<strong>口袋式读取仪</strong>，应用于从传染病检测到实时激素监测的超灵敏即时诊断（POC）。",
+      "我是<strong>伊利诺伊大学厄巴纳-香槟分校（UIUC）生物工程系</strong>的博士生，师从 <a href=\"https://nano.ece.illinois.edu/people/brian-t-cunningham/\" target=\"_blank\">Brian T. Cunningham 教授</a>，就读于 <a href=\"https://nano.ece.illinois.edu\" target=\"_blank\">Nanosensors Group（纳米传感器课题组）</a>。我做的是<strong>面向即时诊断（POC）的生物传感器件</strong>：<strong>便携式光学读取仪</strong>，以及把超灵敏的等离激元增强侧向流检测（LFA）变成定量结果的<strong>硬件与软件</strong>，应用范围从传染病检测到实时激素监测。",
       "我希望把生物医学监测与工程设计结合起来，让每个人都能更好地了解自己的身体状况。博士之前，我获得了 UIUC 与浙江大学的机械工程双学士学位；本科期间主持了国家级大学生创新训练项目，研究微创手术机器人机构设计，并作为产品负责人参与“智能细胞培养平台”项目，获得中国“互联网+”大学生创新创业大赛<strong>全国银奖</strong>。",
       "🙋 如果你对我的研究感兴趣，欢迎通过<a href=\"mailto:anqitan2@illinois.edu\">邮件</a>联系我。"
     ]
@@ -501,11 +501,11 @@ window.SITE = {
   // ---------- Research 页面 ----------
   research: {
     statement: {
-      en: "My research focuses on ultrasensitive, low-cost biosensing technologies that bring laboratory-grade diagnostics to the point of care. I develop plasmon-enhanced lateral flow assays and pocket-size readout systems for applications ranging from infectious disease detection to real-time hormone monitoring, aiming to integrate biomedical monitoring with engineering design so that people can better understand and manage their own health.",
-      zh: "我的研究聚焦于超灵敏、低成本的生物传感技术，把实验室级别的诊断能力带到即时检测场景。我开发等离激元增强侧向流检测和口袋式读取系统，应用范围涵盖传染病检测到实时激素监测，希望将生物医学监测与工程设计相结合，帮助人们更好地了解和管理自己的健康。" },
+      en: "My research focuses on the device side of biosensing: low-cost, portable instruments that bring laboratory-grade diagnostics to the point of care. I design optical readers and the hardware and software around them (optics, mechanical housings, Raspberry Pi-based acquisition, and automated image quantification) for ultrasensitive plasmon-enhanced lateral flow tests, with applications ranging from infectious disease detection to real-time hormone monitoring, so that people can better understand and manage their own health.",
+      zh: "我的研究聚焦于生物传感的器件端：低成本、便携的检测仪器，把实验室级别的诊断能力带到即时检测场景。我为超灵敏的等离激元增强侧向流检测设计光学读取仪，以及与之配套的硬件和软件（光路、机械结构、基于树莓派的采集与自动图像定量），应用范围涵盖传染病检测到实时激素监测，帮助人们更好地了解和管理自己的健康。" },
     interests: {
-      en: ["Biosensors", "Point-of-Care Diagnostics", "Plasmon-Enhanced Lateral Flow Assays", "Portable Readers & Instrumentation", "Hormone Monitoring", "Salivary Biomarkers"],
-      zh: ["生物传感器", "即时诊断（POC）", "等离激元增强侧向流检测", "便携式读取仪器", "激素监测", "唾液生物标志物"] }
+      en: ["Biosensing Devices", "Point-of-Care Diagnostics", "Portable Optical Readers & Instrumentation", "Hardware–Software Integration for Biomedical Measurement", "Plasmon-Enhanced Lateral Flow Tests", "Real-Time Hormone Monitoring"],
+      zh: ["生物传感器件", "即时诊断（POC）", "便携式光学读取仪与仪器", "生物医学测量的软硬件集成", "等离激元增强侧向流检测", "实时激素监测"] }
   },
 
   // ---------- 博客：每篇文章在 blog/ 文件夹下一个 html 文件 ----------
