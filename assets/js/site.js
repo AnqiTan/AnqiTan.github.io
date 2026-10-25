@@ -209,8 +209,9 @@
       const [first, ...rest] = esc(S.name).split(" ");
       return `<strong>${first}</strong> ${rest.join(" ")}`;
     },
+    // 首页图标不放备用邮箱和 ORCID（页脚和学术 CV 里有）
     "social-icons": () => [
-      ...Object.entries(so).filter(([k, v]) => v && k !== "emailAlt").map(([k, v]) =>
+      ...Object.entries(so).filter(([k, v]) => v && !["emailAlt", "orcid"].includes(k)).map(([k, v]) =>
         `<a href="${k === "email" ? "mailto:" + v : v}" target="_blank" rel="noopener" title="${t(k)}">${ICONS[k] || ""}<span>${t(k)}</span></a>`),
       S.cv && `<a href="${url(S.cv)}" target="_blank" title="${t("cv")}">${ICONS.cv}<span>${t("cv")}</span></a>`
     ].filter(Boolean).join(""),
