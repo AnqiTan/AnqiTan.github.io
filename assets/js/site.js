@@ -33,7 +33,7 @@
       news: "News", selected_papers: "Selected Papers", selected_projects: "Selected Projects", talks: "Talks & Posters",
       teaching: "Teaching", awards: "Awards & Honors", all_pubs: "All publications →", all_projects: "All projects →",
       show_more: "Show more", coming_soon: "Coming soon.", no_posts: "No posts yet.",
-      email: "Email", scholar: "Scholar", github: "GitHub", linkedin: "LinkedIn", google_scholar: "Google Scholar",
+      email: "Email", scholar: "Scholar", github: "GitHub", linkedin: "LinkedIn", google_scholar: "Google Scholar", orcid: "ORCID",
       cv_eyebrow: "Curriculum Vitae", cv_title: "CV",
       cv_desc: 'A summary of my education and experience. <a data-href="cv" target="_blank">Download the full PDF →</a>',
       education: "Education", honors: "Honors & Awards", experience: "Experience", full_cv: "Full CV",
@@ -58,7 +58,7 @@
       news: "动态", selected_papers: "代表论文", selected_projects: "代表项目", talks: "报告与海报",
       teaching: "教学经历", awards: "荣誉奖项", all_pubs: "全部论文 →", all_projects: "全部项目 →",
       show_more: "显示更多", coming_soon: "敬请期待。", no_posts: "暂无文章。",
-      email: "邮箱", scholar: "谷歌学术", github: "GitHub", linkedin: "LinkedIn", google_scholar: "谷歌学术",
+      email: "邮箱", scholar: "谷歌学术", github: "GitHub", linkedin: "LinkedIn", google_scholar: "谷歌学术", orcid: "ORCID",
       cv_eyebrow: "个人简历", cv_title: "简历",
       cv_desc: '我的教育背景与经历概览。<a data-href="cv" target="_blank">下载完整 PDF →</a>',
       education: "教育背景", honors: "荣誉奖项", experience: "经历", full_cv: "完整简历",
@@ -178,6 +178,7 @@
     scholar: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3z"/><path d="M5 13.2v3.6C6.7 18.8 9.2 20 12 20s5.3-1.2 7-3.2v-3.6L12 17l-7-3.8z"/></svg>',
     github: '<svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>',
     linkedin: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.79-1.7-2.79-1.7 0-1.96 1.33-1.96 2.7V21h-4z"/></svg>',
+    orcid: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#A6CE39"/><text x="12" y="16" text-anchor="middle" font-size="10" font-weight="700" fill="#fff" font-family="Arial, sans-serif">iD</text></svg>',
     cv: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg>'
   };
 
@@ -186,7 +187,8 @@
     so.emailAlt && `<a href="mailto:${so.emailAlt}">Gmail</a>`,
     so.linkedin && `<a href="${so.linkedin}" target="_blank" rel="noopener">LinkedIn</a>`,
     so.github && `<a href="${so.github}" target="_blank" rel="noopener">GitHub</a>`,
-    so.scholar && `<a href="${so.scholar}" target="_blank" rel="noopener">${t("google_scholar")}</a>`
+    so.scholar && `<a href="${so.scholar}" target="_blank" rel="noopener">${t("google_scholar")}</a>`,
+    so.orcid && `<a href="${so.orcid}" target="_blank" rel="noopener">ORCID</a>`
   ].filter(Boolean).join("");
 
   const R = {

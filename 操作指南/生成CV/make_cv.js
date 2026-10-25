@@ -32,6 +32,7 @@ add({ t: "contact", items: [
   { text: S.social.email, href: "mailto:" + S.social.email },
   { text: "anqitan.github.io", href: "https://anqitan.github.io" },
   { text: "Google Scholar", href: S.social.scholar },   // 纸质版靠上面的个人网站网址找到，Scholar 用链接文字更简洁
+  ...(S.social.orcid ? [{ text: "ORCID " + S.social.orcid.split("/").pop(), href: S.social.orcid }] : []),
 ] });
 
 add({ t: "h", text: "Education" });

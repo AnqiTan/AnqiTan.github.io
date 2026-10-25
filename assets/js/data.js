@@ -37,6 +37,7 @@ window.SITE = {
     email: "anqitan2@illinois.edu",          // 主邮箱
     emailAlt: "angie.anqi.tan@gmail.com",    // 备用邮箱（只在联系页和页脚显示）
     scholar: "https://scholar.google.com/citations?user=SkxZzOoAAAAJ",
+    orcid: "https://orcid.org/0009-0003-4013-5508",
     github: "",                   // TODO: 想放的话填 "https://github.com/AnqiTan"
     linkedin: ""                  // TODO: LinkedIn 链接
   },
