@@ -139,18 +139,6 @@ window.SITE = {
       bibtex: "@article{liu2026ultrasensitive,\n  title = {Ultrasensitive Point-of-Care Antigen Test for Detection of Neisseria gonorrhoeae Using Plasmon-Enhanced Lateral Flow Assays},\n  author = {Liu, Yuxiong and Jiang, Qisheng and Tan, Anqi and Kondepati, Gayathri and Gupta, Prashant and Wang, Yixuan and Chandar, Yajur and Bach, Tracey H. and House, Stacey L. and Rice, Peter A. and Parikh, Bijal A. and Cunningham, Brian T. and Ram, Sanjay and George, Ige A. and Singamaneni, Srikanth and Gandra, Sumanth},\n  journal = {ACS Nano Medicine},\n  volume = {1},\n  number = {4},\n  pages = {1036--1047},\n  year = {2026},\n  doi = {10.1021/acsnanomed.5c00150}\n}"
     },
     {
-      selected: false,
-      venue: "Elsevier'26",
-      badge: "Under Review",
-      image: "",
-      title: "Application of Hybrid Photo-Plasmonic Interfaces: Insights from the Synergy of LSPR and Photonic Crystal Modes",
-      authors: "Weinan Liu, Skye Shepherd, Joseph Tibbs, Amanda Bacon, Leyang Liu, Huyen Thi Ngoc Nguyen, Anqi Tan, Wang-Chien Chen, My Thi Tra Nguyen, Saurabh Umrao, Anh Igarashi, Seemesh Bhaskar, Xing Wang, and Brian T. Cunningham",
-      venueFull: "Book chapter, Elsevier (under review)",
-      highlights: [],
-      links: {},
-      bibtex: ""
-    },
-    {
       selected: true,
       venue: "Chem. Rev.'25",
       badge: "Review",

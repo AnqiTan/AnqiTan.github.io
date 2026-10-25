@@ -26,7 +26,7 @@ const BUL = {
   cortisol: "Developed a competitive plasmonic-fluor lateral flow assay for salivary cortisol with a <b>≤0.12 ng/mL</b> detection limit (antibody loading, blocking, and sample-preparation optimization); collected saliva from <b>153 adults</b>; accepted for an <b>oral presentation at APHA 2026</b>.",
   cortisolShort: "Developed a plasmonic-fluor lateral flow assay for salivary cortisol (<b>≤0.12 ng/mL</b> LOD; <b>153 adults</b> sampled); <b>oral presentation, APHA 2026</b>.",
   infect: "Contributed to an ultrasensitive plasmon-enhanced LFA antigen test for <i>Neisseria gonorrhoeae</i> with WashU School of Medicine (<i>ACS Nano Medicine</i> 2026).",
-  pubs: "Co-authored 4 journal papers and reviews (<i>Chemical Reviews</i>, <i>Lab on a Chip</i>, <i>ACS Nano Medicine</i>, <i>Biosensors</i>) and 2 book chapters on biosensing and point-of-care diagnostics.",
+  pubs: "Co-authored 4 journal papers and reviews (<i>Chemical Reviews</i>, <i>Lab on a Chip</i>, <i>ACS Nano Medicine</i>, <i>Biosensors</i>) and an Elsevier book chapter on biosensing and point-of-care diagnostics.",
   brainco: "Completed research tasks for acoustic/electrical-stimulation sleep assistance and multimodal-EEG fatigue monitoring.",
   rcm: "Led a national-level research project designing a re-localizable remote-center-of-motion mechanism for minimally invasive surgery (<b>first-author paper, IEEE ICARM 2021</b>).",
 };
