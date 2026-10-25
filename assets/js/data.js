@@ -533,9 +533,9 @@ window.SITE = {
   // ---------- 技能 ----------
   skills: [
     { group: { en: "Biosensing & Wet Lab", zh: "生物传感与湿实验" }, items: ["Lateral Flow Assays", "Plasmonic-Fluor Labels", "ELISA", "3D Cell Culture", "Fluorescence Staining"] },
-    { group: { en: "Mechanical Design & CAD", zh: "机械设计与 CAD" }, items: ["SolidWorks", "Creo", "Inventor", "Fusion 360", "AutoCAD"] },
+    { group: { en: "Mechanical Design & CAD", zh: "机械设计与 CAD" }, items: ["SolidWorks", "Creo", "Inventor", "Fusion 360", "AutoCAD", "Blender"] },
     { group: { en: "Fabrication & Simulation", zh: "制造与仿真" }, items: ["3D Printing", "Melt Electrowriting", "COMSOL", "FEA"] },
-    { group: { en: "Programming & Hardware", zh: "编程与硬件" }, items: ["Python", "MATLAB", "LabVIEW", "Arduino"] },
+    { group: { en: "Programming & Hardware", zh: "编程与硬件" }, items: ["Python", "MATLAB", "LabVIEW", "Arduino", { en: "App Development", zh: "App 开发" }] },
     { group: { en: "Languages", zh: "语言" }, items: [{ en: "English (Fluent)", zh: "英语（流利）" }, { en: "Chinese (Native)", zh: "中文（母语）" }] }
   ],
 

@@ -53,9 +53,9 @@ const TEACH = "TA, BIOE/ECE 415 Biomedical Instrumentation Lab (Fall 2025) · TA
 
 const SK = {
   bio: ["Biosensing", "lateral flow assays (competitive & sandwich), plasmonic-fluor labels, immunoassay optimization, ELISA, saliva/plasma sample prep, 3D cell culture, fluorescence imaging"],
-  eng: ["Engineering", "SolidWorks, Creo, Fusion 360, 3D printing, laser cutting, optical/instrument design, COMSOL, FEA, design for assembly"],
-  prog: ["Programming", "Python, MATLAB, LabVIEW, Raspberry Pi, Arduino, ESP32"],
-  ai: ["AI & Data", "Python, LLM fine-tuning (Qwen3), OpenAI API, Gradio, image processing, curve fitting (4PL), MATLAB"],
+  eng: ["Engineering", "SolidWorks, Creo, Fusion 360, Blender, 3D printing, laser cutting, optical/instrument design, COMSOL, FEA, design for assembly"],
+  prog: ["Programming", "Python, MATLAB, LabVIEW, app development, Raspberry Pi, Arduino, ESP32"],
+  ai: ["AI & Data", "Python, app development, LLM fine-tuning (Qwen3), OpenAI API, Gradio, image processing, curve fitting (4PL), MATLAB"],
   hw: ["Hardware", "Raspberry Pi, ESP32, Arduino, LabVIEW, sensors (IMU), optics"],
   lang: ["Languages", "English (fluent), Chinese (native)"],
 };
