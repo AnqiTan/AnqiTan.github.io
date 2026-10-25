@@ -5,7 +5,7 @@
   const page = document.body.dataset.page || "";
   const url = (p) => (!p || /^(https?:|mailto:|#)/.test(p) ? p : root + p);
   const esc = (s) => String(s ?? "");
-  const baseTitle = document.title;
+  const baseTitle = document.title.replace(S.name, "{name}");   // HTML 里写真名，方便领英/搜索引擎抓取
 
   // 浏览器标签页图标（favicon）
   if (!document.querySelector('link[rel="icon"]')) {

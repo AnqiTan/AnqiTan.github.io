@@ -39,7 +39,7 @@ window.SITE = {
     scholar: "https://scholar.google.com/citations?user=SkxZzOoAAAAJ",
     orcid: "https://orcid.org/0009-0003-4013-5508",
     github: "",                   // TODO: 想放的话填 "https://github.com/AnqiTan"
-    linkedin: ""                  // TODO: LinkedIn 链接
+    linkedin: "https://www.linkedin.com/in/anqi-tan-35521a228"
   },
 
   // ---------- 首页 News：日期 + 一句话，新的放最上面 ----------
