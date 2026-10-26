@@ -299,8 +299,8 @@ window.SITE = {
       featured: false,
       image: "",
       summary: {
-        en: "Research assistant intern at the Institute of Brain Science of BrainCo (Zhejiang Qiangnao Technology). Completed research tasks for two projects: sleep assisted by acoustic and electrical stimulation, and fatigue monitoring with multimodal EEG.",
-        zh: "在浙江强脑科技（BrainCo）脑科学研究院担任研究助理实习生，完成“声电刺激辅助睡眠”与“多模态脑电疲劳监测”两个项目的研究任务。" },
+        en: "Research assistant intern at the Institute of Brain Science of BrainCo (Zhejiang Qiangnao Technology). Supported R&D on two products, sleep aid via acoustic and electrical stimulation and fatigue monitoring with multimodal EEG, through literature and competitor reviews, volunteer recruitment, and data collection.",
+        zh: "在浙江强脑科技（BrainCo）脑科学研究院担任研究助理实习生，参与“声电刺激辅助睡眠”与“多模态脑电疲劳监测”两个产品的研发，负责文献与竞品调研、测试志愿者招募与数据采集。" },
       meta: {
         "Role": { en: "Research assistant intern", zh: "研究助理实习生" },
         "Lab": { en: "Institute of Brain Science, BrainCo, Hangzhou", zh: "强脑科技 脑科学研究院，杭州" },
@@ -575,10 +575,10 @@ window.SITE = {
       zh: ["协助本科生生物医学仪器实验课程教学。"] } },
     { role: { en: "Research Assistant Intern, Institute of Brain Science", zh: "脑科学研究院 研究助理实习生" }, org: { en: "Zhejiang Qiangnao Technology Co., Ltd. (BrainCo), Hangzhou", zh: "浙江强脑科技有限公司（BrainCo），杭州" }, date: "May 2022 – Aug 2022", bullets: {
       en: [
-        "Completed research tasks for two projects: sleep assisted by acoustic and electrical stimulation, and fatigue monitoring with multimodal EEG."
+        "Supported R&D on two products, sleep aid via acoustic and electrical stimulation and fatigue monitoring with multimodal EEG: reviewed the literature and analyzed competing products, recruited and coordinated test volunteers, and collected experimental data."
       ],
       zh: [
-        "完成“声电刺激辅助睡眠”与“多模态脑电疲劳监测”两个项目的研究任务。"
+        "参与“声电刺激辅助睡眠”与“多模态脑电疲劳监测”两个产品的研发：整理文献、分析竞品、招募并协调测试志愿者、采集实验数据。"
       ] } },
     { role: { en: "Teaching Assistant", zh: "助教" }, org: { en: "ME 170 Computer-Aided Design, UIUC", zh: "UIUC ME 170 计算机辅助设计" }, date: "Spring 2020, Spring 2021, Spring 2022", bullets: {
       en: ["Supported instruction in CAD modeling for undergraduate mechanical engineering students."],

@@ -20,18 +20,20 @@ const EDU = [
 const BUL = {
   dod: "Lead developer of the portable fluorescence reader for a <b>$4.87M DoD (PRMRP)</b> project on point-of-care sepsis/ARDS phenotyping with Stanford, WashU, and UCSF.",
   dodDx: "Contribute to a <b>$4.87M DoD (PRMRP)</b> project developing a multiplexed IL-8/sTNFR-1 plasmonic-fluor LFA and handheld reader to classify sepsis/ARDS phenotypes at the bedside; lead the reader development.",
-  reader: "Built a <b>$87 pocket-size NIR fluorescence reader</b> end to end: 750 nm excitation and custom optical filtering, Raspberry Pi imaging hardware, and an <b>Android control app (Kotlin)</b> with automated T/C analysis in <b>20 s per strip</b>; agrees with a lab ImageQuant scanner (<b>R² = 0.99</b>, <b>3.2% CV</b>); first-author manuscript in preparation.",
+  reader: "Built an <b>$87 pocket-size NIR fluorescence reader</b> end to end: 750 nm excitation and custom optical filtering, Raspberry Pi imaging hardware, and an <b>Android control app (Kotlin)</b> with automated T/C analysis in <b>20 s per strip</b>; agrees with a lab ImageQuant scanner (<b>R² = 0.99</b>, <b>3.2% CV</b>); first-author manuscript in preparation.",
   readerShort: "Built an <b>$87 pocket-size fluorescence reader</b> (20 s per strip; R² = 0.99 vs. a lab ImageQuant scanner, 3.2% CV) with an Android control app (Kotlin).",
   readerAI: "Developed the image-analysis pipeline for a pocket-size fluorescence reader: <b>automated test/control-line detection, background correction, and 4PL calibration</b> to convert strip images into cortisol concentrations in an Android app (Kotlin).",
   readerSW: "Wrote the reader's analysis pipeline (<b>automated test/control-line detection, background correction, 4PL calibration</b>) that converts strip images into cortisol concentrations.",
   cortisol: "Developed a competitive plasmonic-fluor lateral flow assay for salivary cortisol with a <b>≤0.12 ng/mL</b> detection limit (antibody loading, blocking, and sample-preparation optimization); collected saliva from <b>153 adults</b>; accepted for an <b>oral presentation at APHA 2026</b>.",
   cortisolShort: "Developed a plasmonic-fluor lateral flow assay for salivary cortisol (<b>≤0.12 ng/mL</b> LOD; <b>153 adults</b> sampled); <b>oral presentation, APHA 2026</b>.",
   infect: "Contributed to an ultrasensitive plasmon-enhanced LFA antigen test for <i>Neisseria gonorrhoeae</i> with WashU School of Medicine (<i>ACS Nano Medicine</i> 2026).",
+  brainco: "Literature and competitor reviews, volunteer recruitment, and data collection for a sleep-aid stimulator and an EEG fatigue monitor.",
   rcm: "Led a national-level research project designing a re-localizable remote-center-of-motion mechanism for minimally invasive surgery (<b>first-author paper, IEEE ICARM 2021</b>).",
 };
 
 const EXP = (order) => [
   { head: "Graduate Research Assistant, Nanosensors Group, UIUC", date: "Sep 2022 – Present", bullets: order.map((k) => BUL[k]) },
+  { head: "Research Assistant Intern, Institute of Brain Science, BrainCo (Hangzhou)", date: "May 2022 – Aug 2022", bullets: [BUL.brainco] },
   { head: "Undergraduate Research Leader, ZJU-UIUC Institute", date: "2019 – 2021", bullets: [BUL.rcm] },
 ];
 
@@ -101,7 +103,7 @@ const VARIANTS = [
 // ==================== 排版 ====================
 const entry = (e) => `<div class="entry"><span class="l">${esc(e.head)}</span><span class="r">${esc(e.date)}</span></div><ul>${e.bullets.map((b) => `<li>${b}</li>`).join("")}</ul>`;
 const render = (v) => `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Resume - ${esc(S.name)}</title><style>
-@page { size: Letter; margin: 0.42in 0.6in; }
+@page { size: Letter; margin: 0.36in 0.6in; }
 body { font-family: Calibri, "Segoe UI", Arial, sans-serif; font-size: 10.5pt; line-height: 1.24; color: #1f1f1f; margin: 0; }
 a { color: #8C2F26; text-decoration: none; }
 h1 { text-align: center; font-size: 20pt; margin: 0; letter-spacing: .02em; }
@@ -109,7 +111,7 @@ h1 { text-align: center; font-size: 20pt; margin: 0; letter-spacing: .02em; }
 .contact { text-align: center; margin-bottom: 3pt; }
 .sep { color: #999; margin: 0 7pt; }
 .summary { margin: 3pt 0 0; font-style: italic; color: #333; text-align: center; }
-h2 { font-size: 10.5pt; color: #8C2F26; text-transform: uppercase; letter-spacing: .06em; border-bottom: 1pt solid #8C2F26; padding-bottom: 1pt; margin: 7pt 0 2pt; }
+h2 { font-size: 10.5pt; color: #8C2F26; text-transform: uppercase; letter-spacing: .06em; border-bottom: 1pt solid #8C2F26; padding-bottom: 1pt; margin: 6pt 0 2pt; }
 .entry { display: flex; justify-content: space-between; gap: 12pt; margin-top: 3pt; font-weight: 700; }
 .entry .r { white-space: nowrap; font-weight: 400; }
 .note { font-style: italic; }
