@@ -551,8 +551,6 @@ window.SITE = {
   // ---------- CV 页面上的摘要（PDF 之外的网页版简历）----------
   education: [
     { school: { en: "University of Illinois Urbana-Champaign", zh: "伊利诺伊大学厄巴纳-香槟分校（UIUC）" }, degree: { en: "Ph.D. in Bioengineering", zh: "生物工程 博士" }, date: "Aug 2022 – Present", note: { en: "Advisor: Prof. Brian T. Cunningham", zh: "导师：Brian T. Cunningham 教授" } },
-    // TODO: 确认硕士是否已授予/授予时间
-    { school: { en: "University of Illinois Urbana-Champaign", zh: "伊利诺伊大学厄巴纳-香槟分校（UIUC）" }, degree: { en: "M.S. in Bioengineering", zh: "生物工程 硕士" }, date: "Aug 2022 – Present", note: "" },
     { school: { en: "University of Illinois Urbana-Champaign", zh: "伊利诺伊大学厄巴纳-香槟分校（UIUC）" }, degree: { en: "B.S. in Mechanical Engineering", zh: "机械工程 学士" }, date: "Aug 2018 – Jun 2022", note: "" },
     { school: { en: "Zhejiang University (ZJU-UIUC Institute)", zh: "浙江大学（浙江大学伊利诺伊大学厄巴纳香槟校区联合学院）" }, degree: { en: "B.S. in Mechanical Engineering", zh: "机械工程 学士" }, date: "Aug 2018 – Jun 2022", note: "" }
   ],
