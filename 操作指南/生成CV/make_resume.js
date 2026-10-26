@@ -42,8 +42,8 @@ const EXP = (order) => [
 const PROJ = {
   stage: { head: "Mimicry Stage Lighting Control System (Senior Design, mechanical lead)", date: "Feb 2022 – May 2022",
     bullets: ["Designed a two-axis light manipulator (MATLAB kinematics, Euler–Lagrange torque analysis) and a 3D-printed/laser-cut portable structure (9.3 kg, 4.5 h battery); the light follows a handheld ESP32 + IMU controller in real time."] },
-  reticle: { head: "RETICLE: Pathology VLM Agent (co-first author, in preparation)", date: "2026 – Present",
-    bullets: ["Co-developed an agent in which a vision-language model calls calibrated expert models and retrieves cited evidence; raised accuracy on metastasis sizing and mitosis counting from near chance (25–31%) to <b>66–72%</b>."] },
+  reticle: { head: "RETICLE: Pathology VLM Agent (co-first author)", date: "2026 – Present",
+    bullets: ["Built the expert models, retrieval over 98K case reports and 592K images, agent framework, and evaluation; lifted metastasis-sizing and mitosis-counting accuracy from near chance (25–31%) to <b>66–72%</b>."] },
   crispr: { head: "CRISPR Mechanism Explainer (Ashby Prize Hackathon, NCSA) — 1st Place", date: "Oct 2025",
     bullets: ["Found label bias in the public benchmark, rebuilt a balanced validation set, and fine-tuned an LLM (Qwen3) to classify CRISPR screen outcomes and explain the mechanism; shipped a Gradio demo."] },
   gw: { head: "LLM-Automated Gravitational-Wave Workflow (Ashby Prize Hackathon) — Honorable Mention", date: "Apr 2024",
