@@ -557,15 +557,17 @@ window.SITE = {
   experience: [
     { role: { en: "Graduate Research Assistant", zh: "研究助理（博士生）" }, org: { en: "Nanosensors Group, UIUC", zh: "UIUC Nanosensors Group" }, date: "Sep 2022 – Present", bullets: {
       en: [
+        "Built an $87 pocket-size NIR fluorescence reader for plasmonic-fluor-tagged lateral flow strips end to end: 750 nm excitation and custom optical filtering, Raspberry Pi imaging hardware, and an Android control app (Kotlin); reads a strip in 20 s and agrees with a lab ImageQuant scanner (R² = 0.99, 3.2% CV). First-author manuscript in preparation.",
+        "Wrote the reader's analysis pipeline (automated test/control-line detection, background correction, 4PL calibration) that converts strip images into hormone concentrations.",
         "Leading development of the portable fluorescence reader for a $4.87M DoD (PRMRP) project on point-of-care phenotyping of sepsis and ARDS, in collaboration with Stanford, WashU, and UCSF.",
-        "Leading development of a pocket-size scanner for plasmonic-fluor-tagged lateral flow test strips (first-author manuscript in preparation).",
-        "Leading the Live Hormone project: a competitive LFA platform for real-time testosterone, cortisol, and progesterone monitoring.",
+        "Leading the Live Hormone project: a competitive LFA platform for real-time testosterone, cortisol, and progesterone monitoring; the salivary cortisol assay reaches ≤0.12 ng/mL, with saliva collected from 153 adults (oral presentation, APHA 2026).",
         "Contributing to plasmon-enhanced LFAs for infectious disease detection and to reviews in Chemical Reviews and Lab on a Chip."
       ],
       zh: [
+        "独立完成一款物料成本 87 美元的口袋式近红外荧光读取仪，用于 plasmonic-fluor 标记的侧向流试纸条：750 nm 激发与定制光学滤波、树莓派成像硬件、Android 控制 App（Kotlin）；读一条试纸 20 秒，与实验室 ImageQuant 扫描仪高度一致（R² = 0.99，CV 3.2%）。第一作者论文撰写中。",
+        "编写读取仪的分析算法（自动识别测试线/质控线、背景校正、4PL 标定），将试纸图像换算为激素浓度。",
         "负责美国国防部（PRMRP）487 万美元脓毒症/ARDS 即时表型检测项目中的便携式荧光读取仪研发，合作方包括斯坦福、圣路易斯华盛顿大学和 UCSF。",
-        "负责开发面向 plasmonic-fluor 标记侧向流试纸条的口袋式扫描仪（第一作者论文撰写中）。",
-        "负责 Live Hormone 项目：基于竞争法侧向流检测的睾酮、皮质醇、孕酮实时监测平台。",
+        "负责 Live Hormone 项目：基于竞争法侧向流检测的睾酮、皮质醇、孕酮实时监测平台；唾液皮质醇检测限 ≤0.12 ng/mL，已采集 153 名成人唾液样本（APHA 2026 口头报告）。",
         "参与等离激元增强侧向流传染病检测研究，以及 Chemical Reviews、Lab on a Chip 综述的撰写。"
       ] } },
     { role: { en: "Teaching Assistant", zh: "助教" }, org: { en: "BIOE/ECE 415 Biomedical Instrumentation Lab, UIUC", zh: "UIUC BIOE/ECE 415 生物医学仪器实验" }, date: "Fall 2025", bullets: {
