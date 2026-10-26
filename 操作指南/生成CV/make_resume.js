@@ -12,9 +12,9 @@ const S = window.SITE;
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
 // ==================== 素材库（措辞在这里改）====================
-// TODO: 毕业时间按你自己的估计写成 Fall 2027；和导师确认后改成具体月份（实习岗位会看你是否"实习后还在读"）
+// 毕业时间：prelim（需先发论文）之前不写预计毕业时间，用 Present；HR 问到再口头说明。prelim 通过后标题可改成 Ph.D. Candidate
 const EDU = [
-  ["Ph.D. in Bioengineering, University of Illinois Urbana-Champaign", "Aug 2022 – Expected Fall 2027", "Advisor: Prof. Brian T. Cunningham · Nanosensors Group"],
+  ["Ph.D. in Bioengineering, University of Illinois Urbana-Champaign", "Aug 2022 – Present", "Advisor: Prof. Brian T. Cunningham · Nanosensors Group"],
   ["B.S. in Mechanical Engineering (dual degree), UIUC & Zhejiang University", "Aug 2018 – Jun 2022", ""],
 ];
 
@@ -74,7 +74,7 @@ const AVAIL = "Available May–Aug 2027 (on-site or remote) and part-time remote
 const VARIANTS = [
   {
     id: "hardware-systems",
-    headline: "Ph.D. Candidate, Bioengineering · Seeking 2027 Internship in Optical & Hardware Engineering",
+    headline: "Ph.D. Student, Bioengineering · Seeking 2027 Internship in Optical & Hardware Engineering",
     summary: "Designs portable optical instruments end to end: optics, mechanical design, embedded hardware, and the Android and analysis software that make them usable.",
     exp: EXP(["reader", "readerSW", "dodShort", "cortisolShort"]),
     proj: [PROJ.stage],
@@ -82,7 +82,7 @@ const VARIANTS = [
   },
   {
     id: "medical-device",
-    headline: "Ph.D. Candidate, Bioengineering · Seeking 2027 Internship in Medical Device R&D",
+    headline: "Ph.D. Student, Bioengineering · Seeking 2027 Internship in Medical Device R&D",
     summary: "Mechanical engineer turned biosensing researcher who builds low-cost, portable diagnostic instruments and tests them with real users and human samples.",
     exp: EXP(["reader", "dod", "cortisolShort"]),
     proj: [PROJ.stage],
@@ -90,7 +90,7 @@ const VARIANTS = [
   },
   {
     id: "diagnostics",
-    headline: "Ph.D. Candidate, Bioengineering · Seeking 2027 Internship in Diagnostics R&D",
+    headline: "Ph.D. Student, Bioengineering · Seeking 2027 Internship in Diagnostics R&D",
     summary: "Develops plasmon-enhanced lateral flow assays and the portable readers that quantify them, and validates both with human samples in lab and community settings.",
     exp: EXP(["cortisol", "readerDx", "dod", "infect"]),
     proj: [PROJ.crispr],
@@ -98,7 +98,7 @@ const VARIANTS = [
   },
   {
     id: "ai-health",
-    headline: "Ph.D. Candidate, Bioengineering · Seeking 2027 Internship in AI & Data for Health",
+    headline: "Ph.D. Student, Bioengineering · Seeking 2027 Internship in AI & Data for Health",
     summary: "Builds data pipelines and LLM tools around real biomedical devices and human-sample data; 1st place, Ashby Prize Computational Science Hackathon (2025).",
     exp: EXP(["readerAI", "cortisolShort", "dodShort"]),
     proj: [PROJ.crispr, PROJ.gw],
