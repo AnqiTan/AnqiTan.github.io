@@ -20,7 +20,6 @@ const EDU = [
 const BUL = {
   dod: "Lead developer of the portable fluorescence reader for a <b>$4.87M DoD (PRMRP)</b> project on point-of-care sepsis/ARDS phenotyping with Stanford, WashU, and UCSF.",
   dodDx: "Contribute to a <b>$4.87M DoD (PRMRP)</b> project developing a multiplexed IL-8/sTNFR-1 plasmonic-fluor LFA and handheld reader to classify sepsis/ARDS phenotypes at the bedside; lead the reader development.",
-  // TODO: 检测限待确认（0.012 还是 ≤0.12 ng/mL）后加到 reader 这条
   reader: "Built a <b>$87 pocket-size NIR fluorescence reader</b> end to end: 750 nm excitation and custom optical filtering, Raspberry Pi imaging hardware, and an <b>Android control app (Kotlin)</b> with automated T/C analysis in <b>20 s per strip</b>; agrees with a lab ImageQuant scanner (<b>R² = 0.99</b>, <b>3.2% CV</b>); first-author manuscript in preparation.",
   readerShort: "Built an <b>$87 pocket-size fluorescence reader</b> (20 s per strip; R² = 0.99 vs. a lab ImageQuant scanner, 3.2% CV) with an Android control app (Kotlin).",
   readerAI: "Developed the image-analysis pipeline for a pocket-size fluorescence reader: <b>automated test/control-line detection, background correction, and 4PL calibration</b> to convert strip images into cortisol concentrations in an Android app (Kotlin).",
