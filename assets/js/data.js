@@ -89,7 +89,7 @@ window.SITE = {
   // links: 按钮名 → 链接（如 PAPER / PDF / CODE / SLIDES），留空的不显示；作者里你的名字自动加粗
   publications: [
     {
-      selected: false,
+      selected: true,
       venue: "In Prep.",
       badge: "First Author",
       image: "",
@@ -177,9 +177,9 @@ window.SITE = {
       bibtex: "@article{bacon2023review,\n  title = {Review of HIV Self Testing Technologies and Promising Approaches for the Next Generation},\n  author = {Bacon, Amanda and Wang, Weijing and Lee, Hankeun and Umrao, Saurabh and Sinawang, Prima Dewi and Akin, Demir and Khemtonglang, Kodchakorn and Tan, Anqi and Hirshfield, Sabina and Demirci, Utkan and Wang, Xing and Cunningham, Brian T.},\n  journal = {Biosensors},\n  volume = {13},\n  number = {2},\n  pages = {298},\n  year = {2023},\n  doi = {10.3390/bios13020298}\n}"
     },
     {
-      selected: false,
+      selected: true,
       venue: "ICARM'21",
-      badge: "",
+      badge: "First Author",
       image: "assets/img/projects/rcm-cad.jpg",
       imageCredit: "Fig. 3, Tan et al., IEEE ICARM 2021 (© 2021 IEEE)",
       title: "Design Optimization of a Mechanically Constrained Re-Localizable Remote-Center-of-Motion",
@@ -230,8 +230,8 @@ window.SITE = {
       featured: true,
       image: "assets/img/projects/reader-render.jpg",
       summary: {
-        en: "Designing a low-cost (~$100), pocket-size (66 × 68 × 95 mm) near-infrared fluorescence reader for plasmonic-fluor-tagged paper test strips, built on a Raspberry Pi with 750 nm LED excitation, optical filtering, phone-controlled acquisition, and automated T/C quantification. Its fluorescence images are comparable to a laboratory ImageQuant scanner at a fraction of the size and cost. This reader is also the device platform for our DoD sepsis/ARDS project. First-author manuscript in preparation.",
-        zh: "设计一款低成本（约 100 美元）、口袋大小（66 × 68 × 95 mm）的近红外荧光读取仪，用于读取 plasmonic-fluor 标记的纸基试纸条：基于树莓派，750 nm LED 激发、光学滤波、手机控制采集与自动 T/C 定量。荧光成像效果与实验室 ImageQuant 扫描仪相当，而体积和成本大幅降低。该读取仪也是我们国防部脓毒症/ARDS 项目的设备平台。第一作者论文撰写中。" },
+        en: "Designing a low-cost ($87 in parts), pocket-size (66 × 68 × 95 mm) near-infrared fluorescence reader for plasmonic-fluor-tagged paper test strips, built on a Raspberry Pi with 750 nm LED excitation, optical filtering, phone-controlled acquisition, and automated T/C quantification in about 20 seconds per strip. Its readings agree with a laboratory ImageQuant scanner (R² = 0.99, 3.2% CV) at a fraction of the size and cost. This reader is also the device platform for our DoD sepsis/ARDS project. First-author manuscript in preparation.",
+        zh: "设计一款低成本（物料约 87 美元）、口袋大小（66 × 68 × 95 mm）的近红外荧光读取仪，用于读取 plasmonic-fluor 标记的纸基试纸条：基于树莓派，750 nm LED 激发、光学滤波、手机控制采集与自动 T/C 定量，读一条试纸约 20 秒。读数与实验室 ImageQuant 扫描仪高度一致（R² = 0.99，CV 3.2%），而体积和成本大幅降低。该读取仪也是我们国防部脓毒症/ARDS 项目的设备平台。第一作者论文撰写中。" },
       meta: {
         "Role": { en: "Lead researcher", zh: "项目负责人" },
         "Lab": { en: "Nanosensors Group, UIUC", zh: "UIUC Nanosensors Group" },
@@ -299,8 +299,8 @@ window.SITE = {
       featured: false,
       image: "",
       summary: {
-        en: "Research assistant intern at the Institute of Brain Science of BrainCo (Zhejiang Qiangnao Technology). Completed research tasks for two projects: sleep assisted by acoustic and electrical stimulation, and fatigue monitoring with multimodal EEG.",
-        zh: "在浙江强脑科技（BrainCo）脑科学研究院担任研究助理实习生，完成“声电刺激辅助睡眠”与“多模态脑电疲劳监测”两个项目的研究任务。" },
+        en: "Research assistant intern at the Institute of Brain Science of BrainCo (Zhejiang Qiangnao Technology). Supported R&D on two products, sleep aid via acoustic and electrical stimulation and fatigue monitoring with multimodal EEG, through literature and competitor reviews, volunteer recruitment, and data collection.",
+        zh: "在浙江强脑科技（BrainCo）脑科学研究院担任研究助理实习生，参与“声电刺激辅助睡眠”与“多模态脑电疲劳监测”两个产品的研发，负责文献与竞品调研、测试志愿者招募与数据采集。" },
       meta: {
         "Role": { en: "Research assistant intern", zh: "研究助理实习生" },
         "Lab": { en: "Institute of Brain Science, BrainCo, Hangzhou", zh: "强脑科技 脑科学研究院，杭州" },
@@ -551,23 +551,23 @@ window.SITE = {
   // ---------- CV 页面上的摘要（PDF 之外的网页版简历）----------
   education: [
     { school: { en: "University of Illinois Urbana-Champaign", zh: "伊利诺伊大学厄巴纳-香槟分校（UIUC）" }, degree: { en: "Ph.D. in Bioengineering", zh: "生物工程 博士" }, date: "Aug 2022 – Present", note: { en: "Advisor: Prof. Brian T. Cunningham", zh: "导师：Brian T. Cunningham 教授" } },
-    // TODO: 确认硕士是否已授予/授予时间
-    { school: { en: "University of Illinois Urbana-Champaign", zh: "伊利诺伊大学厄巴纳-香槟分校（UIUC）" }, degree: { en: "M.S. in Bioengineering", zh: "生物工程 硕士" }, date: "Aug 2022 – Present", note: "" },
     { school: { en: "University of Illinois Urbana-Champaign", zh: "伊利诺伊大学厄巴纳-香槟分校（UIUC）" }, degree: { en: "B.S. in Mechanical Engineering", zh: "机械工程 学士" }, date: "Aug 2018 – Jun 2022", note: "" },
     { school: { en: "Zhejiang University (ZJU-UIUC Institute)", zh: "浙江大学（浙江大学伊利诺伊大学厄巴纳香槟校区联合学院）" }, degree: { en: "B.S. in Mechanical Engineering", zh: "机械工程 学士" }, date: "Aug 2018 – Jun 2022", note: "" }
   ],
   experience: [
     { role: { en: "Graduate Research Assistant", zh: "研究助理（博士生）" }, org: { en: "Nanosensors Group, UIUC", zh: "UIUC Nanosensors Group" }, date: "Sep 2022 – Present", bullets: {
       en: [
+        "Built an $87 pocket-size NIR fluorescence reader for plasmonic-fluor-tagged lateral flow strips end to end: 750 nm excitation and custom optical filtering, Raspberry Pi imaging hardware, and an Android control app (Kotlin); reads a strip in 20 s and agrees with a lab ImageQuant scanner (R² = 0.99, 3.2% CV). First-author manuscript in preparation.",
+        "Wrote the reader's analysis pipeline (automated test/control-line detection, background correction, 4PL calibration) that converts strip images into hormone concentrations.",
         "Leading development of the portable fluorescence reader for a $4.87M DoD (PRMRP) project on point-of-care phenotyping of sepsis and ARDS, in collaboration with Stanford, WashU, and UCSF.",
-        "Leading development of a pocket-size scanner for plasmonic-fluor-tagged lateral flow test strips (first-author manuscript in preparation).",
-        "Leading the Live Hormone project: a competitive LFA platform for real-time testosterone, cortisol, and progesterone monitoring.",
+        "Leading the Live Hormone project: a competitive LFA platform for real-time testosterone, cortisol, and progesterone monitoring; the salivary cortisol assay reaches ≤0.12 ng/mL, with saliva collected from 153 adults (oral presentation, APHA 2026).",
         "Contributing to plasmon-enhanced LFAs for infectious disease detection and to reviews in Chemical Reviews and Lab on a Chip."
       ],
       zh: [
+        "独立完成一款物料成本 87 美元的口袋式近红外荧光读取仪，用于 plasmonic-fluor 标记的侧向流试纸条：750 nm 激发与定制光学滤波、树莓派成像硬件、Android 控制 App（Kotlin）；读一条试纸 20 秒，与实验室 ImageQuant 扫描仪高度一致（R² = 0.99，CV 3.2%）。第一作者论文撰写中。",
+        "编写读取仪的分析算法（自动识别测试线/质控线、背景校正、4PL 标定），将试纸图像换算为激素浓度。",
         "负责美国国防部（PRMRP）487 万美元脓毒症/ARDS 即时表型检测项目中的便携式荧光读取仪研发，合作方包括斯坦福、圣路易斯华盛顿大学和 UCSF。",
-        "负责开发面向 plasmonic-fluor 标记侧向流试纸条的口袋式扫描仪（第一作者论文撰写中）。",
-        "负责 Live Hormone 项目：基于竞争法侧向流检测的睾酮、皮质醇、孕酮实时监测平台。",
+        "负责 Live Hormone 项目：基于竞争法侧向流检测的睾酮、皮质醇、孕酮实时监测平台；唾液皮质醇检测限 ≤0.12 ng/mL，已采集 153 名成人唾液样本（APHA 2026 口头报告）。",
         "参与等离激元增强侧向流传染病检测研究，以及 Chemical Reviews、Lab on a Chip 综述的撰写。"
       ] } },
     { role: { en: "Teaching Assistant", zh: "助教" }, org: { en: "BIOE/ECE 415 Biomedical Instrumentation Lab, UIUC", zh: "UIUC BIOE/ECE 415 生物医学仪器实验" }, date: "Fall 2025", bullets: {
@@ -575,10 +575,10 @@ window.SITE = {
       zh: ["协助本科生生物医学仪器实验课程教学。"] } },
     { role: { en: "Research Assistant Intern, Institute of Brain Science", zh: "脑科学研究院 研究助理实习生" }, org: { en: "Zhejiang Qiangnao Technology Co., Ltd. (BrainCo), Hangzhou", zh: "浙江强脑科技有限公司（BrainCo），杭州" }, date: "May 2022 – Aug 2022", bullets: {
       en: [
-        "Completed research tasks for two projects: sleep assisted by acoustic and electrical stimulation, and fatigue monitoring with multimodal EEG."
+        "Supported R&D on two products, sleep aid via acoustic and electrical stimulation and fatigue monitoring with multimodal EEG: reviewed the literature and analyzed competing products, recruited and coordinated test volunteers, and collected experimental data."
       ],
       zh: [
-        "完成“声电刺激辅助睡眠”与“多模态脑电疲劳监测”两个项目的研究任务。"
+        "参与“声电刺激辅助睡眠”与“多模态脑电疲劳监测”两个产品的研发：整理文献、分析竞品、招募并协调测试志愿者、采集实验数据。"
       ] } },
     { role: { en: "Teaching Assistant", zh: "助教" }, org: { en: "ME 170 Computer-Aided Design, UIUC", zh: "UIUC ME 170 计算机辅助设计" }, date: "Spring 2020, Spring 2021, Spring 2022", bullets: {
       en: ["Supported instruction in CAD modeling for undergraduate mechanical engineering students."],

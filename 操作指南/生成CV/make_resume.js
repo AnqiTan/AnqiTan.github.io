@@ -12,17 +12,16 @@ const S = window.SITE;
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
 // ==================== 素材库（措辞在这里改）====================
-// 毕业时间：prelim（需先发论文）之前不写预计毕业时间，用 Present；HR 问到再口头说明。prelim 通过后标题可改成 Ph.D. Candidate
+// prelim 还没过（需先发论文），标题写 Ph.D. Student；通过后再改成 Ph.D. Candidate
 const EDU = [
-  ["Ph.D. in Bioengineering, University of Illinois Urbana-Champaign", "Aug 2022 – Present", "Advisor: Prof. Brian T. Cunningham · Nanosensors Group"],
+  ["Ph.D. in Bioengineering, University of Illinois Urbana-Champaign", "Aug 2022 – Expected Dec 2027", "Advisor: Prof. Brian T. Cunningham · Nanosensors Group"],
   ["B.S. in Mechanical Engineering (dual degree), UIUC & Zhejiang University", "Aug 2018 – Jun 2022", ""],
 ];
 
 // 每条 = 做了什么 + 怎么做的 + 结果/规模。动词统一：进行中用现在时，已结束用过去时。
 const BUL = {
-  // TODO: 补实测数字（检测限、与 ImageQuant 的 R²、单次读数秒数、物料成本），替换 "comparable to a benchtop ImageQuant scanner"
-  reader: "Designed and built a <b>~$100 pocket-size (66×68×95 mm) NIR fluorescence reader</b> for lateral flow strips end to end: 750 nm excitation and optical filtering, Raspberry Pi camera hardware, and an <b>Android app (Kotlin)</b> for acquisition and automated test/control-line quantification; imaging comparable to a benchtop ImageQuant scanner (first-author manuscript in preparation).",
-  readerDx: "Designed and built a <b>~$100 pocket-size NIR fluorescence reader</b> (750 nm excitation, Raspberry Pi camera, <b>Android app in Kotlin</b>) that automatically quantifies test/control lines; imaging comparable to a benchtop ImageQuant scanner (first-author manuscript in preparation).",
+  reader: "Designed and built an <b>$87 pocket-size NIR fluorescence reader</b> for lateral flow strips end to end: 750 nm excitation and optical filtering, Raspberry Pi camera hardware, and an <b>Android app (Kotlin)</b> that quantifies test/control lines in <b>20 s per strip</b>; agrees with a lab ImageQuant scanner (<b>R² = 0.99</b>, <b>3.2% CV</b>); first-author manuscript in preparation.",
+  readerDx: "Designed and built an <b>$87 pocket-size NIR fluorescence reader</b> (750 nm excitation, Raspberry Pi camera, <b>Android app in Kotlin</b>) that quantifies test/control lines in <b>20 s per strip</b>; agrees with a lab ImageQuant scanner (<b>R² = 0.99</b>, <b>3.2% CV</b>); first-author manuscript in preparation.",
   readerAI: "Built the image-analysis pipeline for a pocket-size fluorescence reader (<b>automated test/control-line detection, background correction, 4PL calibration</b>) that turns phone-captured strip images into cortisol concentrations inside an Android app (Kotlin).",
   readerSW: "Wrote the reader's analysis pipeline (<b>automated test/control-line detection, background correction, 4PL calibration</b>) that converts strip images into analyte concentrations.",
   dod: "Lead reader development for a <b>$4.87M DoD (PRMRP)</b> multi-site project with Stanford, WashU, and UCSF that builds a multiplexed IL-8/sTNFR-1 lateral flow test to classify sepsis/ARDS phenotypes at the bedside.",
@@ -30,14 +29,13 @@ const BUL = {
   cortisol: "Lead the Live Hormone project: developed a competitive plasmonic-fluor LFA for salivary cortisol (<b>LOD ≤0.12 ng/mL</b>, covering the physiological range) by optimizing antibody loading, blocking, and sample prep; collected saliva from <b>153 adults</b> in lab and community settings; <b>oral presentation, APHA 2026</b>.",
   cortisolShort: "Lead the Live Hormone project: a salivary cortisol lateral flow test (<b>LOD ≤0.12 ng/mL</b>) with a phone-controlled reader, tested with <b>153 adults</b>; <b>oral presentation, APHA 2026</b>.",
   infect: "Contributed to an ultrasensitive plasmon-enhanced LFA antigen test for <i>Neisseria gonorrhoeae</i> with WashU School of Medicine (<i>ACS Nano Medicine</i> 2026).",
-  // TODO: 补你在强脑具体做了什么（例如：采集了多少人的脑电数据、做了哪些信号处理/分析、用了什么工具、产出了什么）
-  brainco: "Supported two EEG studies at the company's brain-science institute: sleep assistance with acoustic and electrical stimulation, and fatigue monitoring with multimodal EEG.",
+  brainco: "Conducted literature and competitor reviews, recruited volunteers, and collected data for a sleep-aid stimulator and an EEG fatigue monitor.",
   rcm: "Led a national-level undergraduate research project designing a re-localizable remote-center-of-motion mechanism for minimally invasive surgery (<b>first-author paper, IEEE ICARM 2021</b>).",
 };
 
 const EXP = (order) => [
   { head: "Graduate Research Assistant, Nanosensors Group, UIUC", date: "Sep 2022 – Present", bullets: order.map((k) => BUL[k]) },
-  { head: "Research Assistant Intern, BrainCo (Zhejiang Qiangnao Technology), Hangzhou, China", date: "May 2022 – Aug 2022", bullets: [BUL.brainco] },
+  { head: "Research Assistant Intern, Institute of Brain Science, BrainCo (Hangzhou, China)", date: "May 2022 – Aug 2022", bullets: [BUL.brainco] },
   { head: "Undergraduate Research Leader, ZJU-UIUC Institute", date: "2019 – 2021", bullets: [BUL.rcm] },
 ];
 
@@ -53,7 +51,7 @@ const PROJ = {
 };
 
 // 投稿后把 "in preparation" 改成 "submitted"
-const PUBS = "<b>First author:</b> IEEE ICARM 2021 · pocket fluorescence reader manuscript (in preparation). <b>Co-author:</b> 4 journal papers (<i>Chemical Reviews</i>, <i>Lab on a Chip</i>, <i>ACS Nano Medicine</i>, <i>Biosensors</i>) and 1 Elsevier book chapter. <b>Talks:</b> APHA 2026 (oral), LOAC 2026.";
+const PUBS = "<b>First author:</b> pocket fluorescence reader manuscript (in preparation) · IEEE ICARM 2021. <b>Co-author:</b> 4 journal papers (<i>Chemical Reviews</i>, <i>Lab on a Chip</i>, <i>ACS Nano Medicine</i>, <i>Biosensors</i>) and 1 Elsevier book chapter. <b>Talks:</b> APHA 2026 (oral), LOAC 2026.";
 const HONORS = "1st Place, Ashby Prize Computational Science Hackathon, NCSA (2025) · National Silver Medal, China \"Internet+\" Innovation & Entrepreneurship Competition (2021) · TA, BIOE/ECE 415 Biomedical Instrumentation Lab (2025) and ME 170 Computer-Aided Design (3 semesters)";
 
 const SK = {

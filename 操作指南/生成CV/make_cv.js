@@ -67,16 +67,8 @@ const cite = (p) => [
   { text: ` “${strip(p.title)}.” ` },
   { text: strip(en(p.venueFull)) + ".", italic: true },
 ];
-[
-  ["Journal Articles and Reviews", P.filter((p) => /Lab Chip|ACS Nano|Chem\. Rev|Biosensors/.test(p.venue))],
-  ["Book Chapters", P.filter((p) => p.badge === "Book Chapter")],
-  ["Conference Papers and Abstracts", P.filter((p) => /APHA|ICARM|Structures20/.test(p.venue))],
-  ["Manuscripts Under Review / In Preparation", P.filter((p) => /In Prep/.test(p.venue) || p.badge === "Under Review")],
-].forEach(([name, list], gi) => {
-  if (!list.length) return;
-  add({ t: "sub", text: name });
-  list.forEach((p) => add({ t: "num", group: "p" + gi, segs: cite(p) }));
-});
+// 按 data.js 顺序（年份倒序）列成一个编号列表，不分组
+P.forEach((p) => add({ t: "num", group: "pubs", segs: cite(p) }));
 
 add({ t: "h", text: "Conference Presentations" });
 S.talks.forEach((x) => add({ t: "num", group: "talks", segs: [...segs(strip(en(x.text)).replace(/\s*\[Abstract\]/, "")), { text: ` (${x.date})`, muted: true }] }));
