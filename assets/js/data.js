@@ -230,8 +230,8 @@ window.SITE = {
       featured: true,
       image: "assets/img/projects/reader-render.jpg",
       summary: {
-        en: "Designing a low-cost ($87 in parts), pocket-size (66 × 68 × 95 mm) near-infrared fluorescence reader for plasmonic-fluor-tagged paper test strips, built on a Raspberry Pi with 750 nm LED excitation, optical filtering, phone-controlled acquisition, and automated T/C quantification in about 20 seconds per strip. Its fluorescence images are comparable to a laboratory ImageQuant scanner at a fraction of the size and cost. This reader is also the device platform for our DoD sepsis/ARDS project. First-author manuscript in preparation.",
-        zh: "设计一款低成本（物料约 87 美元）、口袋大小（66 × 68 × 95 mm）的近红外荧光读取仪，用于读取 plasmonic-fluor 标记的纸基试纸条：基于树莓派，750 nm LED 激发、光学滤波、手机控制采集与自动 T/C 定量，读一条试纸约 20 秒。荧光成像效果与实验室 ImageQuant 扫描仪相当，而体积和成本大幅降低。该读取仪也是我们国防部脓毒症/ARDS 项目的设备平台。第一作者论文撰写中。" },
+        en: "Designing a low-cost ($87 in parts), pocket-size (66 × 68 × 95 mm) near-infrared fluorescence reader for plasmonic-fluor-tagged paper test strips, built on a Raspberry Pi with 750 nm LED excitation, optical filtering, phone-controlled acquisition, and automated T/C quantification in about 20 seconds per strip. Its readings agree with a laboratory ImageQuant scanner (R² = 0.99, 3.2% CV) at a fraction of the size and cost. This reader is also the device platform for our DoD sepsis/ARDS project. First-author manuscript in preparation.",
+        zh: "设计一款低成本（物料约 87 美元）、口袋大小（66 × 68 × 95 mm）的近红外荧光读取仪，用于读取 plasmonic-fluor 标记的纸基试纸条：基于树莓派，750 nm LED 激发、光学滤波、手机控制采集与自动 T/C 定量，读一条试纸约 20 秒。读数与实验室 ImageQuant 扫描仪高度一致（R² = 0.99，CV 3.2%），而体积和成本大幅降低。该读取仪也是我们国防部脓毒症/ARDS 项目的设备平台。第一作者论文撰写中。" },
       meta: {
         "Role": { en: "Lead researcher", zh: "项目负责人" },
         "Lab": { en: "Nanosensors Group, UIUC", zh: "UIUC Nanosensors Group" },

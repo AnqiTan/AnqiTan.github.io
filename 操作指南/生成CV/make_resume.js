@@ -13,16 +13,16 @@ const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replac
 
 // ==================== 素材库（措辞在这里改）====================
 const EDU = [
-  ["Ph.D. in Bioengineering, University of Illinois Urbana-Champaign", "Aug 2022 – Expected May 2027", "Advisor: Prof. Brian T. Cunningham · Nanosensors Group"],
+  ["Ph.D. in Bioengineering, University of Illinois Urbana-Champaign", "Aug 2022 – Expected Dec 2027", "Advisor: Prof. Brian T. Cunningham · Nanosensors Group"],
   ["B.S. in Mechanical Engineering (dual degree), UIUC & Zhejiang University", "Aug 2018 – Jun 2022", ""],
 ];
 
 const BUL = {
   dod: "Lead developer of the portable fluorescence reader for a <b>$4.87M DoD (PRMRP)</b> project on point-of-care sepsis/ARDS phenotyping with Stanford, WashU, and UCSF.",
   dodDx: "Contribute to a <b>$4.87M DoD (PRMRP)</b> project developing a multiplexed IL-8/sTNFR-1 plasmonic-fluor LFA and handheld reader to classify sepsis/ARDS phenotypes at the bedside; lead the reader development.",
-  // TODO: 补实测数字（检测限、与 ImageQuant 的 R²、单次读数秒数、物料成本），替换 "comparable to a lab ImageQuant scanner"
-  reader: "Built a <b>$87 pocket-size NIR fluorescence reader</b> end to end: 750 nm excitation and custom optical filtering, Raspberry Pi imaging hardware, and an <b>Android control app (Kotlin)</b> with automated T/C analysis in <b>20 s per strip</b>; image quality comparable to a lab ImageQuant scanner; first-author manuscript in preparation.",
-  readerShort: "Built an <b>$87 pocket-size fluorescence reader</b> (20 s per strip) with an Android control app (Kotlin), comparable to a lab ImageQuant scanner.",
+  // TODO: 检测限待确认（0.012 还是 ≤0.12 ng/mL）后加到 reader 这条
+  reader: "Built a <b>$87 pocket-size NIR fluorescence reader</b> end to end: 750 nm excitation and custom optical filtering, Raspberry Pi imaging hardware, and an <b>Android control app (Kotlin)</b> with automated T/C analysis in <b>20 s per strip</b>; agrees with a lab ImageQuant scanner (<b>R² = 0.99</b>, <b>3.2% CV</b>); first-author manuscript in preparation.",
+  readerShort: "Built an <b>$87 pocket-size fluorescence reader</b> (20 s per strip; R² = 0.99 vs. a lab ImageQuant scanner, 3.2% CV) with an Android control app (Kotlin).",
   readerAI: "Developed the image-analysis pipeline for a pocket-size fluorescence reader: <b>automated test/control-line detection, background correction, and 4PL calibration</b> to convert strip images into cortisol concentrations in an Android app (Kotlin).",
   readerSW: "Wrote the reader's analysis pipeline (<b>automated test/control-line detection, background correction, 4PL calibration</b>) that converts strip images into cortisol concentrations.",
   cortisol: "Developed a competitive plasmonic-fluor lateral flow assay for salivary cortisol with a <b>≤0.12 ng/mL</b> detection limit (antibody loading, blocking, and sample-preparation optimization); collected saliva from <b>153 adults</b>; accepted for an <b>oral presentation at APHA 2026</b>.",
