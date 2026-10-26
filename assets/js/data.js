@@ -461,7 +461,6 @@ window.SITE = {
   ],
 
   // ---------- Talks / 报告 ----------
-  // 只放已确认的报告/海报；APHA Phase II（Wang et al., Submitted）待接收后再加
   talks: [
     { date: "Nov 2026", text: {
       en: "<strong>Oral presentation (accepted)</strong>: \"Portable plasmonic fluor-enhanced lateral flow assay for quantitative salivary cortisol measurement in community settings.\" <a href=\"https://www.apha.org/events-and-meetings/apha-calendar/2026-apha-annual-meeting-and-expo\" target=\"_blank\">APHA 2026 Annual Meeting and Expo</a>, San Antonio, TX, Nov 3, 2026.",
@@ -550,8 +549,7 @@ window.SITE = {
     { video: "assets/img/gallery/cat-team-robot.mp4", poster: "assets/img/gallery/cat-team-robot-poster.jpg", caption: { en: "Robot design animation · The CAT Team (Anqi Tan, Zheyuan Zhang, Junkai Zhang, Qian Chen)", zh: "机器人设计动画 · The CAT Team（谭安琪、Zheyuan Zhang、Junkai Zhang、Qian Chen）" } },
     { src: "assets/img/gallery/industry-visit-floor.jpg", caption: { en: "Learning about sheet-metal parts on a factory floor", zh: "企业参观：在车间了解钣金零件" } },
     { src: "assets/img/gallery/industry-visit-group.jpg", caption: { en: "Organized an industry visit for classmates", zh: "组织同学企业参观" } },
-    { src: "assets/img/gallery/autumn-games.jpg", caption: { en: "Autumn Fun Games with the residential college", zh: "学园秋季趣味运动会" } },
-    { src: "assets/img/gallery/friends-winter.jpg", caption: { en: "New Year's Eve wish-sharing event at the residential college", zh: "书院跨年心意传递活动" } }
+    { src: "assets/img/gallery/autumn-games.jpg", caption: { en: "Autumn Fun Games with the residential college", zh: "学园秋季趣味运动会" } }
   ],
 
   // ---------- 技能 ----------

@@ -12,7 +12,6 @@ const S = window.SITE;
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
 // ==================== 素材库（措辞在这里改）====================
-// prelim 还没过（需先发论文），标题写 Ph.D. Student；通过后再改成 Ph.D. Candidate
 const EDU = [
   ["Ph.D. in Bioengineering, University of Illinois Urbana-Champaign", "Aug 2022 – Expected Dec 2027", "Advisor: Prof. Brian T. Cunningham · Nanosensors Group"],
   ["B.S. in Mechanical Engineering (dual degree), UIUC & Zhejiang University", "Aug 2018 – Jun 2022", ""],
@@ -65,7 +64,6 @@ const SK = {
   lang: ["Languages", "English (fluent), Chinese (native)"],
 };
 
-// 求职意向一行：HR 第一眼要看到"你是谁、要什么、什么时候能来"
 const AVAIL = "Available May–Aug 2027 (on-site or remote) and part-time remote during the school year.";
 
 // ==================== 岗位版本 ====================
