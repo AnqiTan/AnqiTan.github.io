@@ -45,6 +45,8 @@ const PROJ = {
     bullets: ["Two-person team; found the public benchmark was almost all \"hit\" labels, rebuilt a balanced validation set with experimental context, and fine-tuned an LLM (Qwen3) to classify CRISPR screen outcomes and explain the mechanism; shipped a Gradio chat demo."] },
   gw: { head: "LLM-Automated Gravitational-Wave Workflow (Ashby Prize Hackathon) — Honorable Mention", date: "Apr 2024",
     bullets: ["Five-person team; built a pipeline that uses the OpenAI API as a natural-language front end to classify gravitational-wave signals from black-hole mergers."] },
+  cell: { head: "Intelligent Cell Culture Platform (China \"Internet+\" Competition) — National Silver Medal", date: "2021",
+    bullets: ["Product lead for an automated, modular manipulator platform for standardized cell production."] },
 };
 
 // 投稿后把 "in preparation" 改成 "submitted"
