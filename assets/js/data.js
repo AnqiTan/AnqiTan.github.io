@@ -488,6 +488,7 @@ window.SITE = {
   awards: [
     { name: { en: "First Place ($3,000), Ashby Prize in Computational Science Hackathon, NCSA, UIUC", zh: "UIUC NCSA Ashby Prize 计算科学黑客松 第一名（3000 美元）" }, date: "2025" },
     { name: { en: "Honorable Mention, Ashby Prize in Computational Science Hackathon, NCSA, UIUC", zh: "UIUC NCSA Ashby Prize 计算科学黑客松 荣誉奖" }, date: "2024" },
+    { name: { en: "National Silver Medal, China \"Internet+\" Innovation and Entrepreneurship Competition", zh: "中国“互联网+”大学生创新创业大赛 全国银奖" }, date: "2021" },
     { name: { en: "First Prize, RoboMaster Mecha Master (College Level)", zh: "RoboMaster 机甲大师校级赛 一等奖" }, date: "2019" },
     { name: { en: "Outstanding Performance and Innovation Award, 1st International Concrete Dragon Boat Competition (ICDBC), American Concrete Institute & Zhejiang University", zh: "首届国际大学生混凝土龙舟比赛（ICDBC）杰出表现及创新奖（美国混凝土协会、浙江大学；国家级）" }, date: "2019" },
     { name: { en: "Third-Class Scholarship, Zhejiang University", zh: "浙江大学三等奖学金" }, date: "2019" },

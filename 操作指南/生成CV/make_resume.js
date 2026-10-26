@@ -49,7 +49,7 @@ const PROJ = {
 
 // 投稿后把 "in preparation" 改成 "submitted"
 const PUBS = "<b>First author:</b> 3 manuscripts in preparation (LumaPF reader for real-time salivary cortisol imaging; active learning for particle counting; plasmonic LFA labels) · IEEE ICARM 2021. <b>Co-author:</b> 4 journal papers (<i>Chemical Reviews</i>, <i>Lab on a Chip</i>, <i>ACS Nano Medicine</i>, <i>Biosensors</i>) and 1 Elsevier book chapter. <b>Talks:</b> APHA 2026 (oral), LOAC 2026.";
-const HONORS = "1st Place, Ashby Prize Computational Science Hackathon, NCSA (2025) · TA, BIOE/ECE 415 Biomedical Instrumentation Lab (2025) and ME 170 Computer-Aided Design (3 semesters)";
+const HONORS = "1st Place, Ashby Prize Computational Science Hackathon, NCSA (2025) · National Silver Medal, China \"Internet+\" Innovation & Entrepreneurship Competition (2021) · TA, BIOE/ECE 415 Biomedical Instrumentation Lab (2025) and ME 170 Computer-Aided Design (3 semesters)";
 
 const SK = {
   bio: ["Biosensing", "lateral flow assays (competitive & sandwich), plasmonic-fluor labels, immunoassay optimization, ELISA, saliva/plasma sample prep, fluorescence imaging, human-sample studies"],
