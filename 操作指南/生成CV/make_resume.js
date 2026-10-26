@@ -41,6 +41,8 @@ const EXP = (order) => [
 const PROJ = {
   stage: { head: "Mimicry Stage Lighting Control System (Senior Design, mechanical lead)", date: "Feb 2022 – May 2022",
     bullets: ["Designed a two-axis light manipulator (MATLAB kinematics, Euler–Lagrange torque analysis) and a 3D-printed/laser-cut portable structure (9.3 kg, 4.5 h battery); the light follows a handheld ESP32 + IMU controller in real time."] },
+  reticle: { head: "RETICLE: Pathology VLM Agent (co-first author, in preparation)", date: "2026 – Present",
+    bullets: ["Co-developed an agent in which a vision-language model calls calibrated expert models and retrieves cited evidence; raised accuracy on metastasis sizing and mitosis counting from near chance (25–31%) to <b>66–72%</b>."] },
   crispr: { head: "CRISPR Mechanism Explainer (Ashby Prize Hackathon, NCSA) — 1st Place", date: "Oct 2025",
     bullets: ["Two-person team; found the public benchmark was almost all \"hit\" labels, rebuilt a balanced validation set with experimental context, and fine-tuned an LLM (Qwen3) to classify CRISPR screen outcomes and explain the mechanism; shipped a Gradio chat demo."] },
   gw: { head: "LLM-Automated Gravitational-Wave Workflow (Ashby Prize Hackathon) — Honorable Mention", date: "Apr 2024",
@@ -50,7 +52,7 @@ const PROJ = {
 };
 
 // 投稿后把 "in preparation" 改成 "submitted"
-const PUBS = "<b>First author:</b> 3 manuscripts in preparation (LumaPF reader for real-time salivary cortisol imaging; active learning for particle counting; plasmonic LFA labels) · IEEE ICARM 2021. <b>Co-author:</b> 4 journal papers (<i>Chemical Reviews</i>, <i>Lab on a Chip</i>, <i>ACS Nano Medicine</i>, <i>Biosensors</i>) and 1 Elsevier book chapter. <b>Talks:</b> APHA 2026 (oral), LOAC 2026.";
+const PUBS = "<b>First author:</b> 3 manuscripts in preparation (LumaPF cortisol reader; active learning for particle counting; plasmonic LFA labels) · IEEE ICARM 2021. <b>Co-first author:</b> RETICLE (in preparation). <b>Co-author:</b> 4 journal papers (<i>Chemical Reviews</i>, <i>Lab on a Chip</i>, <i>ACS Nano Medicine</i>, <i>Biosensors</i>) and 1 Elsevier book chapter. <b>Talks:</b> APHA 2026 (oral), LOAC 2026.";
 const HONORS = "1st Place, Ashby Prize Computational Science Hackathon, NCSA (2025) · National Silver Medal, China \"Internet+\" Innovation & Entrepreneurship Competition (2021) · TA, BIOE/ECE 415 Biomedical Instrumentation Lab (2025) and ME 170 Computer-Aided Design (3 semesters)";
 
 const SK = {
@@ -89,7 +91,7 @@ const VARIANTS = [
     headline: "Ph.D. Student, Bioengineering · Seeking 2027 Internship in Diagnostics R&D",
     summary: "Develops plasmon-enhanced lateral flow assays and the portable readers that quantify them, and validates both with human samples in lab and community settings.",
     exp: EXP(["cortisol", "readerDx", "dod", "infect"]),
-    proj: [PROJ.crispr],
+    proj: [PROJ.reticle],
     skills: [SK.bio, SK.eng, SK.prog, SK.lang],
   },
   {
@@ -97,7 +99,7 @@ const VARIANTS = [
     headline: "Ph.D. Student, Bioengineering · Seeking 2027 Internship in AI & Data for Health",
     summary: "Builds data pipelines and LLM tools around real biomedical devices and human-sample data; 1st place, Ashby Prize Computational Science Hackathon (2025).",
     exp: EXP(["readerAI", "cortisolShort", "dodShort"]),
-    proj: [PROJ.crispr, PROJ.gw],
+    proj: [PROJ.reticle, PROJ.crispr],
     skills: [SK.ai, SK.bio, SK.hw, SK.lang],
   },
 ];

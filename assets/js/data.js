@@ -126,6 +126,18 @@ window.SITE = {
     },
     {
       selected: true,
+      venue: "In Prep.",
+      badge: "Co-First Author",
+      image: "",
+      title: "RETICLE: A General-Purpose Pathology Agent That Measures, Looks Closer, and Retrieves Evidence",
+      authors: "Anqi Tan*, Jiahua Dong*, Yuxiong Wang, Brian T. Cunningham, and Kun Wang (*equal contribution)",
+      venueFull: "Manuscript in preparation",
+      highlights: [{ en: "Co-first author · Grew out of the 2026 Ashby Prize Computational Science Hackathon (NCSA)", zh: "共同第一作者 · 源自 2026 Ashby Prize 计算科学黑客松（NCSA）" }],
+      links: { CODE: "https://github.com/Dongjiahua/RETICLE" },
+      bibtex: ""
+    },
+    {
+      selected: true,
       venue: "APHA'26",
       badge: "Oral",
       image: "assets/img/projects/cortisol-assay-principle.jpg",

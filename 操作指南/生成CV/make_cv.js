@@ -150,8 +150,8 @@ for (const b of B) {
 }
 closeList();
 const page = `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>CV - ${esc(S.name)}</title><style>
-@page { size: Letter; margin: 0.6in 0.7in; }
-body { font-family: Calibri, "Segoe UI", Arial, sans-serif; font-size: 10.5pt; line-height: 1.32; color: #1f1f1f; margin: 0; }
+@page { size: Letter; margin: 0.5in 0.7in; }
+body { font-family: Calibri, "Segoe UI", Arial, sans-serif; font-size: 10.5pt; line-height: 1.28; color: #1f1f1f; margin: 0; }
 a { color: #8C2F26; text-decoration: none; }
 h1 { text-align: center; font-size: 22pt; margin: 0 0 2pt; letter-spacing: .02em; }
 .subtitle { text-align: center; color: #444; }
