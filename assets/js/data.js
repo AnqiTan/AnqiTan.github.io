@@ -23,12 +23,12 @@ window.SITE = {
   intro: {
     en: [
       "I am a Ph.D. student in <strong>Bioengineering</strong> at <strong>UIUC</strong>, working with <a href=\"https://nano.ece.illinois.edu/people/brian-t-cunningham/\" target=\"_blank\">Prof. Brian T. Cunningham</a> in the <a href=\"https://nano.ece.illinois.edu\" target=\"_blank\">Nanosensors Group</a>. I build <strong>biosensing devices for point-of-care diagnostics</strong>: <strong>portable optical readers</strong>, together with the <strong>hardware and software</strong> that turn ultrasensitive plasmon-enhanced lateral flow tests into quantitative measurements, with applications from infectious disease detection to real-time hormone monitoring.",
-      "I am passionate about bridging biomedical monitoring with engineering so that people can better understand their own health. Before my Ph.D., I received B.S. degrees in Mechanical Engineering from both UIUC and Zhejiang University, where I led a national-level research project on surgical robot mechanism design and was product leader of an intelligent cell culture platform that won a <strong>National Silver Medal</strong> in the China \"Internet+\" Competition.",
+      "I am passionate about bridging biomedical monitoring with engineering so that people can better understand their own health. Before my Ph.D., I received B.S. degrees in Mechanical Engineering from both UIUC and Zhejiang University, where I led a national-level research project on surgical robot mechanism design.",
       "🙋 Feel free to reach out via <a href=\"mailto:anqitan2@illinois.edu\">email</a> if you are interested in my research."
     ],
     zh: [
       "我是<strong>伊利诺伊大学厄巴纳-香槟分校（UIUC）生物工程系</strong>的博士生，师从 <a href=\"https://nano.ece.illinois.edu/people/brian-t-cunningham/\" target=\"_blank\">Brian T. Cunningham 教授</a>，就读于 <a href=\"https://nano.ece.illinois.edu\" target=\"_blank\">Nanosensors Group（纳米传感器课题组）</a>。我做的是<strong>面向即时诊断（POC）的生物传感器件</strong>：<strong>便携式光学读取仪</strong>，以及把超灵敏的等离激元增强侧向流检测（LFA）变成定量结果的<strong>硬件与软件</strong>，应用范围从传染病检测到实时激素监测。",
-      "我希望把生物医学监测与工程设计结合起来，让每个人都能更好地了解自己的身体状况。博士之前，我获得了 UIUC 与浙江大学的机械工程双学士学位；本科期间主持了国家级大学生创新训练项目，研究微创手术机器人机构设计，并作为产品负责人参与“智能细胞培养平台”项目，获得中国“互联网+”大学生创新创业大赛<strong>全国银奖</strong>。",
+      "我希望把生物医学监测与工程设计结合起来，让每个人都能更好地了解自己的身体状况。博士之前，我获得了 UIUC 与浙江大学的机械工程双学士学位；本科期间主持了国家级大学生创新训练项目，研究微创手术机器人机构设计。",
       "🙋 如果你对我的研究感兴趣，欢迎通过<a href=\"mailto:anqitan2@illinois.edu\">邮件</a>联系我。"
     ]
   },
@@ -377,17 +377,6 @@ window.SITE = {
       link: "https://doi.org/10.1109/ICARM52023.2021.9536150"
     },
     {
-      title: { en: "Intelligent Cell Culture Platform (China \"Internet+\" Competition)", zh: "智能细胞培养平台（“互联网+”大赛项目）" },
-      status: "past",
-      featured: false,
-      image: "",
-      summary: {
-        en: "Served as product leader for a fully compatible intelligent cell culture platform built around an automated, modular manipulator for standardized cell production. The project received RMB 8 million in R&D funding and won a National Silver Medal (International Track).",
-        zh: "担任产品负责人，打造以自动化、模块化“机械手”为核心技术的全兼容智能细胞培养平台，实现细胞生产的自动化与标准化。项目获得 800 万元研发资金支持，获“互联网+”大赛国际赛道全国银奖。" },
-      meta: { "Role": { en: "Product leader", zh: "产品负责人" }, "Period": "2021" },
-      link: ""
-    },
-    {
       title: { en: "Biocompatible Electrically Stimulated Band-Aid", zh: "高生物相容性电刺激创可贴" },
       status: "past",
       featured: false,
@@ -461,7 +450,6 @@ window.SITE = {
   ],
 
   // ---------- Talks / 报告 ----------
-  // 只放已确认的报告/海报；APHA Phase II（Wang et al., Submitted）待接收后再加
   talks: [
     { date: "Nov 2026", text: {
       en: "<strong>Oral presentation (accepted)</strong>: \"Portable plasmonic fluor-enhanced lateral flow assay for quantitative salivary cortisol measurement in community settings.\" <a href=\"https://www.apha.org/events-and-meetings/apha-calendar/2026-apha-annual-meeting-and-expo\" target=\"_blank\">APHA 2026 Annual Meeting and Expo</a>, San Antonio, TX, Nov 3, 2026.",
@@ -500,7 +488,6 @@ window.SITE = {
   awards: [
     { name: { en: "First Place ($3,000), Ashby Prize in Computational Science Hackathon, NCSA, UIUC", zh: "UIUC NCSA Ashby Prize 计算科学黑客松 第一名（3000 美元）" }, date: "2025" },
     { name: { en: "Honorable Mention, Ashby Prize in Computational Science Hackathon, NCSA, UIUC", zh: "UIUC NCSA Ashby Prize 计算科学黑客松 荣誉奖" }, date: "2024" },
-    { name: { en: "National Silver Medal, China \"Internet+\" Innovation and Entrepreneurship Competition", zh: "中国“互联网+”大学生创新创业大赛 全国银奖" }, date: "2021" },
     { name: { en: "First Prize, RoboMaster Mecha Master (College Level)", zh: "RoboMaster 机甲大师校级赛 一等奖" }, date: "2019" },
     { name: { en: "Outstanding Performance and Innovation Award, 1st International Concrete Dragon Boat Competition (ICDBC), American Concrete Institute & Zhejiang University", zh: "首届国际大学生混凝土龙舟比赛（ICDBC）杰出表现及创新奖（美国混凝土协会、浙江大学；国家级）" }, date: "2019" },
     { name: { en: "Third-Class Scholarship, Zhejiang University", zh: "浙江大学三等奖学金" }, date: "2019" },
@@ -537,11 +524,9 @@ window.SITE = {
   // ---------- 相册 ----------
   gallery: [
     // 图片：{ src, caption }；视频：{ video, poster, caption }。caption 可写 { en, zh }
-    { src: "assets/img/gallery/graduation-bachelor.jpg", caption: { en: "Bachelor's graduation (2022)", zh: "本科毕业照（2022）" } },
     { src: "assets/img/gallery/zju-uiuc-seminar-1.jpg", caption: { en: "ZJU International Campus delegation visit to UIUC", zh: "浙大国际校区代表团访问 UIUC" } },
     { src: "assets/img/gallery/alaska-fishing.jpg", caption: { en: "Deep-sea fishing in Valdez, Alaska (2024)", zh: "阿拉斯加 Valdez 海钓（2024）" } },
     { src: "assets/img/gallery/zju-uiuc-seminar-2.jpg", caption: { en: "Group photo with the ZJU International Campus delegation at UIUC", zh: "浙大国际校区代表团访问 UIUC 合影" } },
-    { src: "assets/img/gallery/wedding-bridesmaid.jpg", caption: { en: "Bridesmaid at a friend's wedding", zh: "在好友婚礼上当伴娘" } },
     { src: "assets/img/gallery/lake.jpg", caption: { en: "A summer day by the lake", zh: "夏日湖边" } },
     { src: "assets/img/gallery/dragon-boat-award.jpg", caption: { en: "Outstanding Performance & Innovation Award, 1st International Concrete Dragon Boat Competition (2019)", zh: "首届国际大学生混凝土龙舟赛 · 杰出表现及创新奖（2019）" } },
     { src: "assets/img/gallery/guizhou-team.jpg", caption: { en: "Volunteer teaching team in Changshun, Guizhou (2019)", zh: "贵州长顺支教团合影（2019）" } },
@@ -551,7 +536,6 @@ window.SITE = {
     { src: "assets/img/gallery/industry-visit-floor.jpg", caption: { en: "Learning about sheet-metal parts on a factory floor", zh: "企业参观：在车间了解钣金零件" } },
     { src: "assets/img/gallery/industry-visit-group.jpg", caption: { en: "Organized an industry visit for classmates", zh: "组织同学企业参观" } },
     { src: "assets/img/gallery/autumn-games.jpg", caption: { en: "Autumn Fun Games with the residential college", zh: "学园秋季趣味运动会" } },
-    { src: "assets/img/gallery/friends-winter.jpg", caption: { en: "New Year's Eve wish-sharing event at the residential college", zh: "书院跨年心意传递活动" } }
   ],
 
   // ---------- 技能 ----------
