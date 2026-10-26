@@ -181,12 +181,14 @@ console.log("wrote", htmlPath);
 
 const pdfPath = path.join(ROOT, "assets", "cv.pdf");
 const browsers = [
+  process.env.CHROME,
+  "/opt/pw-browsers/chromium-1243/chrome-linux64/chrome",
   "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
   "C:\\Program Files\\Microsoft\\Edge\\Application\\msedge.exe",
   "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
-].filter((p) => fs.existsSync(p));
+].filter((p) => p && fs.existsSync(p));
 if (browsers.length) {
-  execFileSync(browsers[0], ["--headless", "--disable-gpu", "--no-pdf-header-footer", `--print-to-pdf=${pdfPath}`, "file:///" + htmlPath.replace(/\\/g, "/")], { stdio: "ignore", timeout: 60000 });
+  execFileSync(browsers[0], [...(process.platform === "linux" ? ["--no-sandbox"] : []), "--headless", "--disable-gpu", "--no-pdf-header-footer", `--print-to-pdf=${pdfPath}`, "file://" + (process.platform === "win32" ? "/" : "") + htmlPath.replace(/\\/g, "/")], { stdio: "ignore", timeout: 60000 });
   console.log("wrote", pdfPath);
 } else {
   console.log("未找到 Edge/Chrome，请手动用浏览器打开 HTML 并打印为 PDF");
