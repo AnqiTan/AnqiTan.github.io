@@ -114,19 +114,6 @@ window.SITE = {
     },
     {
       selected: true,
-      venue: "ICARM'21",
-      badge: "First Author",
-      image: "assets/img/projects/rcm-cad.jpg",
-      imageCredit: "Fig. 3, Tan et al., IEEE ICARM 2021 (© 2021 IEEE)",
-      title: "Design Optimization of a Mechanically Constrained Re-Localizable Remote-Center-of-Motion",
-      authors: "Anqi Tan, Shenwei Chen, Hanyu Gan, and Liangjing Yang",
-      venueFull: "2021 6th IEEE International Conference on Advanced Robotics and Mechatronics (ICARM). 2021",
-      highlights: [],
-      links: { PAPER: "https://doi.org/10.1109/ICARM52023.2021.9536150" },
-      bibtex: "@inproceedings{tan2021design,\n  title = {Design Optimization of a Mechanically Constrained Re-Localizable Remote-Center-of-Motion},\n  author = {Tan, Anqi and Chen, Shenwei and Gan, Hanyu and Yang, Liangjing},\n  booktitle = {2021 6th IEEE International Conference on Advanced Robotics and Mechatronics (ICARM)},\n  year = {2021},\n  doi = {10.1109/ICARM52023.2021.9536150}\n}"
-    },
-    {
-      selected: true,
       venue: "Lab Chip'26",
       badge: "Review",
       image: "assets/img/papers/labchip-2026.jpg",
@@ -188,6 +175,19 @@ window.SITE = {
       highlights: [],
       links: { PAPER: "https://doi.org/10.3390/bios13020298" },
       bibtex: "@article{bacon2023review,\n  title = {Review of HIV Self Testing Technologies and Promising Approaches for the Next Generation},\n  author = {Bacon, Amanda and Wang, Weijing and Lee, Hankeun and Umrao, Saurabh and Sinawang, Prima Dewi and Akin, Demir and Khemtonglang, Kodchakorn and Tan, Anqi and Hirshfield, Sabina and Demirci, Utkan and Wang, Xing and Cunningham, Brian T.},\n  journal = {Biosensors},\n  volume = {13},\n  number = {2},\n  pages = {298},\n  year = {2023},\n  doi = {10.3390/bios13020298}\n}"
+    },
+    {
+      selected: true,
+      venue: "ICARM'21",
+      badge: "First Author",
+      image: "assets/img/projects/rcm-cad.jpg",
+      imageCredit: "Fig. 3, Tan et al., IEEE ICARM 2021 (© 2021 IEEE)",
+      title: "Design Optimization of a Mechanically Constrained Re-Localizable Remote-Center-of-Motion",
+      authors: "Anqi Tan, Shenwei Chen, Hanyu Gan, and Liangjing Yang",
+      venueFull: "2021 6th IEEE International Conference on Advanced Robotics and Mechatronics (ICARM). 2021",
+      highlights: [],
+      links: { PAPER: "https://doi.org/10.1109/ICARM52023.2021.9536150" },
+      bibtex: "@inproceedings{tan2021design,\n  title = {Design Optimization of a Mechanically Constrained Re-Localizable Remote-Center-of-Motion},\n  author = {Tan, Anqi and Chen, Shenwei and Gan, Hanyu and Yang, Liangjing},\n  booktitle = {2021 6th IEEE International Conference on Advanced Robotics and Mechatronics (ICARM)},\n  year = {2021},\n  doi = {10.1109/ICARM52023.2021.9536150}\n}"
     },
     {
       selected: false,
