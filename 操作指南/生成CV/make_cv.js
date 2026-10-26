@@ -67,11 +67,14 @@ const cite = (p) => [
   { text: ` “${strip(p.title)}.” ` },
   { text: strip(en(p.venueFull)) + ".", italic: true },
 ];
+// 一作放最前（按 data.js 顺序：在投/撰写中 → APHA → ICARM），其余按类型
+const first = (p) => /^(<strong>)?Anqi Tan/.test(p.authors);
+const rest = P.filter((p) => !first(p));
 [
-  ["Journal Articles and Reviews", P.filter((p) => /Lab Chip|ACS Nano|Chem\. Rev|Biosensors/.test(p.venue))],
-  ["Book Chapters", P.filter((p) => p.badge === "Book Chapter")],
-  ["Conference Papers and Abstracts", P.filter((p) => /APHA|ICARM|Structures20/.test(p.venue))],
-  ["Manuscripts Under Review / In Preparation", P.filter((p) => /In Prep/.test(p.venue) || p.badge === "Under Review")],
+  ["First-Author Publications", P.filter(first)],
+  ["Co-Authored Journal Articles and Reviews", rest.filter((p) => /Lab Chip|ACS Nano|Chem\. Rev|Biosensors/.test(p.venue))],
+  ["Co-Authored Book Chapters", rest.filter((p) => p.badge === "Book Chapter")],
+  ["Co-Authored Conference Papers", rest.filter((p) => /APHA|ICARM|Structures20/.test(p.venue))],
 ].forEach(([name, list], gi) => {
   if (!list.length) return;
   add({ t: "sub", text: name });

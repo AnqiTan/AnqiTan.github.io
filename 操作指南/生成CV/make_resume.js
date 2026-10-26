@@ -47,7 +47,7 @@ const PROJ = {
 };
 
 // 投稿后把 "manuscript in preparation" 改成 "submitted"
-const PUBS = "<b>First author:</b> IEEE ICARM 2021 paper · APHA 2026 oral presentation · pocket fluorescence reader manuscript (in preparation). <b>Co-author:</b> 4 journal papers (<i>Chemical Reviews</i>, <i>Lab on a Chip</i>, <i>ACS Nano Medicine</i>, <i>Biosensors</i>) and 1 Elsevier book chapter.";
+const PUBS = "<b>First author:</b> pocket fluorescence reader manuscript (in preparation) · APHA 2026 oral presentation · IEEE ICARM 2021 paper. <b>Co-author:</b> 4 journal papers (<i>Chemical Reviews</i>, <i>Lab on a Chip</i>, <i>ACS Nano Medicine</i>, <i>Biosensors</i>) and 1 Elsevier book chapter.";
 const HONORS = "1st Place, Ashby Prize Computational Science Hackathon, NCSA (2025) · Honorable Mention, Ashby Prize Hackathon (2024) · National Silver Medal, China \"Internet+\" Innovation & Entrepreneurship Competition (2021)";
 const TEACH = "TA, BIOE/ECE 415 Biomedical Instrumentation Lab (Fall 2025) · TA, ME 170 Computer-Aided Design (3 semesters)";
 
