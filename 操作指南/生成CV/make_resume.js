@@ -1,4 +1,4 @@
-// 按岗位生成多份一页英文 resume，输出到 assets/resumes/<id>.pdf（网站 CV 页可下载）
+// 按岗位生成多份一页英文 resume，输出到 assets/resumes/<id>/Anqi_Tan_Resume.pdf（网站 CV 页可下载）
 // 用法（在本文件夹）：node make_resume.js
 // 每个岗位版本 = 下面 VARIANTS 里的一项：标题、简介、经历要点的顺序和取舍、技能顺序。
 const fs = require("fs");
@@ -156,7 +156,9 @@ fs.mkdirSync(htmlDir, { recursive: true });
 fs.mkdirSync(pdfDir, { recursive: true });
 for (const v of VARIANTS) {
   const htmlPath = path.join(htmlDir, `Resume_${v.id}.html`);
-  const pdfPath = path.join(pdfDir, `anqi-tan-resume-${v.id}.pdf`);
+  // 每个版本一个文件夹，文件名统一，投递时看不出版本
+  fs.mkdirSync(path.join(pdfDir, v.id), { recursive: true });
+  const pdfPath = path.join(pdfDir, v.id, "Anqi_Tan_Resume.pdf");
   fs.writeFileSync(htmlPath, render(v), "utf8");
   execFileSync(browser, [...(process.platform === "linux" ? ["--no-sandbox"] : []), "--headless", "--disable-gpu", "--no-pdf-header-footer", `--print-to-pdf=${pdfPath}`, "file://" + (process.platform === "win32" ? "/" : "") + htmlPath.replace(/\\/g, "/")], { stdio: "ignore", timeout: 60000 });
   console.log("wrote", pdfPath);
